@@ -18,15 +18,25 @@ export const Navbar = () => {
   const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);
 
   return (
-    <nav className="grid grid-cols-1 lg:grid-cols-7 gap-4 backdrop-blur-3xl fixed top-0 left-0 right-0 z-50 bg-transparent p-2 center w-full items-center">
+    <nav className="grid grid-cols-1 lg:grid-cols-7 gap-4 backdrop-blur-3xl fixed top-0 left-0 right-0 z-50 bg-black opacity-80 p-2 center w-full items-center">
       {/* Mobile Menu */}
       <div className="lg:hidden justify-start transition-all">
         {isSideMenuOpen ? (
-          <button onClick={closeMenu} className="p-2 text-white font-light">
+          <button
+            id="close-menu"
+            aria-label="Close Menu"
+            onClick={closeMenu}
+            className="p-2 text-white font-light"
+          >
             <IoCloseOutline size={50} />
           </button>
         ) : (
-          <button onClick={openMenu} className="p-2 text-white font-light">
+          <button
+            id="open-menu"
+            aria-label="Open Menu"
+            onClick={openMenu}
+            className="p-2 text-white font-light"
+          >
             <IoReorderThreeOutline size={50} />
           </button>
         )}
