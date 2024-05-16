@@ -17,7 +17,8 @@ export function HeaderDemo() {
         className="mt-8 bg-gradient-to-br from-slate-200 to-violet-600 py-4 bg-clip-text text-center text-4xl font-medium tracking-tight text-transparent md:text-7xl"
       >
         Welcome to the
-        <br /> Big Creator\'s site
+        <br />
+        {`Big Creator\'s site`}
       </motion.h1>
     </Header>
   );
