@@ -9,6 +9,9 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
+      screens: {
+        lg: "940px",
+      },
       colors: {
         primary: {
           DEFAULT: "rgb(var(--primary))",
