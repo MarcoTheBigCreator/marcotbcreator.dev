@@ -9,6 +9,12 @@ const config: Config = {
   darkMode: "class",
   theme: {
     extend: {
+      colors: {
+        primary: {
+          DEFAULT: "rgb(var(--primary))",
+          foreground: "rgb(var(--primary-foreground))",
+        },
+      },
       animation: {
         shimmer: "shimmer 2s linear infinite",
       },
