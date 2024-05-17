@@ -27,7 +27,7 @@ const config: Config = {
       },
       animation: {
         shimmer: 'shimmer 2s linear infinite',
-        spotlight: 'spotlight 1s ease .75s 1 forwards',
+        spotlight: 'spotlight 1.5s ease .75s 1 forwards',
       },
       keyframes: {
         shimmer: {
