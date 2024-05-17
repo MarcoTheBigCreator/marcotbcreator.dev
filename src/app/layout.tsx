@@ -20,9 +20,7 @@ export default function RootLayout({
     <html lang="en" className="min-h-screen pt-16">
       <body className={inter.className}>
         <Navbar />
-        <div className="lg:hidden">
-          <MobileMenu />
-        </div>
+        <MobileMenu />
         {children}
       </body>
     </html>
