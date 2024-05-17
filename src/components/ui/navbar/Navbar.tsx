@@ -28,7 +28,7 @@ export const Navbar = () => {
             onClick={closeMenu}
             className="p-2 text-white font-light"
           >
-            <IoCloseOutline size={50} />
+            <IoCloseOutline size={40} />
           </button>
         ) : (
           <button
@@ -37,7 +37,7 @@ export const Navbar = () => {
             onClick={openMenu}
             className="p-2 text-white font-light"
           >
-            <IoReorderThreeOutline size={50} />
+            <IoReorderThreeOutline size={30} />
           </button>
         )}
       </div>

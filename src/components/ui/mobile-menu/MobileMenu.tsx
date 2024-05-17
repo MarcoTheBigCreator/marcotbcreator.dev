@@ -14,11 +14,11 @@ export const MobileMenu = () => {
   }
 
   return (
-    <div className="lg:hidden">
+    <div className="w-full h-full lg:hidden">
       {/* Sidemenu */}
       <nav
         className={clsx(
-          "fixed p-3 right-0 top-20 w-screen h-screen bg-black bg-opacity-95 backdrop-blur z-20 shadow-xl transform transition-all duration-300 overflow-y-auto overflow-x-auto",
+          "fixed p-3 right-0 top-10 w-screen h-screen bg-black z-20 shadow-xl transform transition-all duration-300 overflow-y-auto overflow-x-auto",
           { "translate-x-full": !isSideMenuOpen }
         )}
       >
@@ -27,14 +27,14 @@ export const MobileMenu = () => {
           <Link
             key={item.name}
             href={item.href}
-            className="flex items-center mt-10 p-2 hover:bg-violet-700 rounded transition-all"
+            className="flex items-center mt-10 p-2 hover:bg-violet-700 rounded transition-all ml-3 text-xl font-semibold text-twhite"
           >
-            <span className="ml-3 text-xl text-twhite">{item.name}</span>
+            {item.name}
           </Link>
         ))}
         <Link href="https://drive.google.com/uc?export=download&id=1pOki3L2ewRbi2l7fKzHhpJq5h8Or8CZb">
-          <button className="flex items-center mt-10 p-2 hover:bg-violet-700 rounded transition-all">
-            <span className="ml-3 text-xl text-white">Resume</span>
+          <button className="flex items-center mt-10 p-2 hover:bg-violet-700 rounded transition-all ml-3 text-xl font-semibold text-white">
+            Resume
           </button>
         </Link>
         <div className="w-full h-px bg-gray-200 my-5" />
