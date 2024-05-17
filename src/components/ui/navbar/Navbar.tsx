@@ -4,6 +4,7 @@ import { Logo } from "@/components/logo/Logo";
 import Link from "next/link";
 import {
   IoCloseOutline,
+  IoDownload,
   IoDownloadOutline,
   IoReorderThreeOutline,
 } from "react-icons/io5";
@@ -11,11 +12,14 @@ import { LaguageButton } from "../laguange-button/LaguageButton";
 import { useUIStore } from "@/store";
 import { navItems } from "../ui-data/nav-items";
 import { languages } from "../ui-data/languages";
+import { useState } from "react";
 
 export const Navbar = () => {
   const openMenu = useUIStore((state) => state.openSideMenu);
   const closeMenu = useUIStore((state) => state.closeSideMenu);
   const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);
+
+  const [isResumeOnHover, setIsResumeOnHover] = useState(false);
 
   return (
     <nav className="grid grid-cols-1 lg:grid-cols-7 gap-4 backdrop-blur-3xl fixed top-0 left-0 right-0 z-50 bg-black opacity-85 p-2 center w-full items-center">
@@ -26,7 +30,7 @@ export const Navbar = () => {
             id="close-menu"
             aria-label="Close Menu"
             onClick={closeMenu}
-            className="p-2 text-white font-light"
+            className="p-2 text-white font-medium"
           >
             <IoCloseOutline size={40} />
           </button>
@@ -35,7 +39,7 @@ export const Navbar = () => {
             id="open-menu"
             aria-label="Open Menu"
             onClick={openMenu}
-            className="p-2 text-white font-light"
+            className="p-2 text-white font-medium"
           >
             <IoReorderThreeOutline size={30} />
           </button>
@@ -55,21 +59,27 @@ export const Navbar = () => {
           <Link
             key={item.name}
             href={item.href}
-            className="m-2 px-5 p-2 flex align-middle justify-center hover:shadow-[0_6px_20px_rgba(140,0,255,55%)] hover:bg-violet-700 rounded-full text-white font-light transition duration-200 ease-linear"
+            className="m-2 px-5 p-2 flex align-middle justify-center hover:shadow-[0_6px_20px_rgba(140,0,255,55%)] hover:bg-violet-700 rounded-full text-white font-medium transition duration-200 ease-linear"
           >
             {item.name}
           </Link>
         ))}
         <Link
           href="https://drive.google.com/uc?export=download&id=1pOki3L2ewRbi2l7fKzHhpJq5h8Or8CZb"
-          className="m-2 p-2 flex align-middle justify-center hover:shadow-[0_6px_20px_rgba(140,0,255,55%)] hover:bg-violet-700 rounded-full text-white font-light transition duration-200 ease-linear"
+          className="m-2 p-2 flex align-middle justify-center hover:shadow-[0_6px_20px_rgba(140,0,255,55%)] hover:bg-violet-700 rounded-full text-white font-medium transition duration-200 ease-linear"
+          onMouseEnter={() => setIsResumeOnHover(true)}
+          onMouseLeave={() => setIsResumeOnHover(false)}
         >
-          <IoDownloadOutline size={20} className="mr-1" />
+          {isResumeOnHover ? (
+            <IoDownload size={20} className="mr-1" />
+          ) : (
+            <IoDownloadOutline size={20} className="mr-1" />
+          )}
           Resume
         </Link>
       </div>
       {/* Resume Button */}
-      <div className="hidden lg:flex col-span-2 gap-2 justify-center">
+      <div className="hidden lg:flex col-span-2 gap-4 justify-center">
         {languages.map((language) => (
           <LaguageButton key={language.name} text={language.name} />
         ))}
