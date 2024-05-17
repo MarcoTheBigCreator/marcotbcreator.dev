@@ -36,8 +36,8 @@ export const TypeWriterEffect = ({
           width: 'fit-content',
         },
         {
-          duration: 0.5,
-          delay: stagger(0.04),
+          duration: 1,
+          delay: stagger(0.045),
           ease: 'easeInOut',
         }
       );
