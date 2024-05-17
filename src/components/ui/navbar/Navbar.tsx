@@ -6,7 +6,7 @@ import {
   IoCloseOutline,
   IoDownload,
   IoDownloadOutline,
-  IoReorderThreeOutline,
+  IoReorderTwoOutline,
 } from 'react-icons/io5';
 import { LaguageButton } from '../laguange-button/LaguageButton';
 import { useUIStore } from '@/store';
@@ -41,7 +41,7 @@ export const Navbar = () => {
             onClick={openMenu}
             className="p-2 text-white font-medium"
           >
-            <IoReorderThreeOutline size={30} />
+            <IoReorderTwoOutline size={40} />
           </button>
         )}
       </div>
@@ -65,7 +65,7 @@ export const Navbar = () => {
           </Link>
         ))}
         <Link
-          href="https://drive.google.com/uc?export=download&id=1pOki3L2ewRbi2l7fKzHhpJq5h8Or8CZb"
+          href="https://res.cloudinary.com/dmlpgks2h/image/upload//fl_attachment:cv-en//v1715931123/Portfolio/cv-en.pdf?_s=public-apps"
           className="m-2 p-2 flex align-middle justify-center hover:shadow-[0_6px_20px_rgba(140,0,255,55%)] hover:bg-violet-700 rounded-full text-white font-medium transition duration-200 ease-linear"
           onMouseEnter={() => setIsResumeOnHover(true)}
           onMouseLeave={() => setIsResumeOnHover(false)}

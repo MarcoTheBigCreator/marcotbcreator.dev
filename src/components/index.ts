@@ -9,3 +9,6 @@ export * from './ui/header/Header';
 export * from './ui/type-writer/TypeWriter';
 export * from './ui/type-writer/TypeWriterEffect';
 export * from './ui/text-generate-effect/TextGenerateEffect';
+export * from './ui/animated-tooltip/AnimatedTooltip';
+export * from './ui/about/ProfileImage';
+export * from './about/About';

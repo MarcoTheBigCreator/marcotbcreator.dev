@@ -32,7 +32,7 @@ export const MobileMenu = () => {
             {item.name}
           </Link>
         ))}
-        <Link href="https://drive.google.com/uc?export=download&id=1pOki3L2ewRbi2l7fKzHhpJq5h8Or8CZb">
+        <Link href="https://res.cloudinary.com/dmlpgks2h/image/upload//fl_attachment:cv-en//v1715931123/Portfolio/cv-en.pdf?_s=public-apps">
           <button className="flex items-center mt-10 p-2 hover:bg-violet-700 rounded transition-all ml-3 text-xl font-semibold text-white">
             Resume
           </button>
