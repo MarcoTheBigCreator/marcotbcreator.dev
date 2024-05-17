@@ -1,18 +1,18 @@
-"use client";
+'use client';
 
-import { Logo } from "@/components/logo/Logo";
-import Link from "next/link";
+import { Logo } from '@/components/logo/Logo';
+import Link from 'next/link';
 import {
   IoCloseOutline,
   IoDownload,
   IoDownloadOutline,
   IoReorderThreeOutline,
-} from "react-icons/io5";
-import { LaguageButton } from "../laguange-button/LaguageButton";
-import { useUIStore } from "@/store";
-import { navItems } from "../ui-data/nav-items";
-import { languages } from "../ui-data/languages";
-import { useState } from "react";
+} from 'react-icons/io5';
+import { LaguageButton } from '../laguange-button/LaguageButton';
+import { useUIStore } from '@/store';
+import { navItems } from '../ui-data/nav-items';
+import { languages } from '../ui-data/languages';
+import { useState } from 'react';
 
 export const Navbar = () => {
   const openMenu = useUIStore((state) => state.openSideMenu);

@@ -1,8 +1,8 @@
 export const languages = [
   {
-    name: "EN",
+    name: 'EN',
   },
   {
-    name: "ES",
+    name: 'ES',
   },
 ];

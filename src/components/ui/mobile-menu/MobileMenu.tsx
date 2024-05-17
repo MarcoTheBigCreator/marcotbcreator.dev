@@ -1,16 +1,16 @@
-"use client";
+'use client';
 
-import Link from "next/link";
-import { useUIStore } from "@/store";
-import clsx from "clsx";
-import { navItems } from "../ui-data/nav-items";
-import { languages } from "../ui-data/languages";
-import { LaguageButton } from "@/components";
+import Link from 'next/link';
+import { useUIStore } from '@/store';
+import clsx from 'clsx';
+import { navItems } from '../ui-data/nav-items';
+import { languages } from '../ui-data/languages';
+import { LaguageButton } from '@/components';
 
 export const MobileMenu = () => {
   const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);
   if (isSideMenuOpen) {
-    document.body.style.overflow = "hidden";
+    document.body.style.overflow = 'hidden';
   }
 
   return (
@@ -18,8 +18,8 @@ export const MobileMenu = () => {
       {/* Sidemenu */}
       <nav
         className={clsx(
-          "fixed p-3 right-0 top-10 w-screen h-screen bg-black z-20 shadow-xl transform transition-all duration-300 overflow-y-auto overflow-x-auto",
-          { "translate-x-full": !isSideMenuOpen }
+          'fixed p-3 right-0 top-10 w-screen h-screen bg-black z-20 shadow-xl transform transition-all duration-300 overflow-y-auto overflow-x-auto',
+          { 'translate-x-full': !isSideMenuOpen }
         )}
       >
         {/* Menu */}
