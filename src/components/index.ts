@@ -5,3 +5,4 @@ export { LaguageButton } from "./ui/laguange-button/LaguageButton";
 export * from "./ui/ui-data/nav-items";
 export * from "./ui/ui-data/languages";
 export * from "./ui/spotlight-effect/Spotlight";
+export * from "./ui/header/Header";
