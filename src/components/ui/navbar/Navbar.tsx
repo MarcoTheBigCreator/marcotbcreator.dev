@@ -44,7 +44,7 @@ export const Navbar = () => {
 
       {/* Brand */}
       <div className="hidden lg:flex col-span-2 justify-center ">
-        <Link href="#" className="flex text-lg font-semibold gap-2">
+        <Link href="#" className="flex text-lg font-semibold gap-2 text-white">
           <Logo width={30} height={30} color="white" />
           MarcoTheBigCreator
         </Link>
@@ -61,9 +61,7 @@ export const Navbar = () => {
           </Link>
         ))}
         <Link
-          href="/resumes/cv-harvard-en.pdf"
-          target="_blank"
-          download={true}
+          href="https://drive.google.com/uc?export=download&id=1pOki3L2ewRbi2l7fKzHhpJq5h8Or8CZb"
           className="m-2 p-2 flex align-middle justify-center hover:shadow-[0_6px_20px_rgba(140,0,255,55%)] hover:bg-violet-700 rounded-full text-white font-light transition duration-200 ease-linear"
         >
           <IoDownloadOutline size={20} className="mr-1" />

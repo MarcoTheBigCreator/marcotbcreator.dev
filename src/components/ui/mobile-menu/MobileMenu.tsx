@@ -32,7 +32,7 @@ export const MobileMenu = () => {
             <span className="ml-3 text-xl">{item.name}</span>
           </Link>
         ))}
-        <Link href="/resumes/cv-harvard-en.pdf" target="_blank" download>
+        <Link href="https://drive.google.com/uc?export=download&id=1pOki3L2ewRbi2l7fKzHhpJq5h8Or8CZb">
           <button className="flex items-center mt-10 p-2 hover:bg-violet-700 rounded transition-all">
             <span className="ml-3 text-xl">Resume</span>
           </button>
