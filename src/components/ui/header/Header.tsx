@@ -10,7 +10,7 @@ const words = `Software Engineering graduated from the Polytechnic University of
 
 export const Header = () => {
   return (
-    <div className="h-[40rem] md:h-[45rem] lg:[50rem] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.03] relative overflow-hidden">
+    <div className="h-[40rem] md:h-[45rem] lg:[50rem] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.05] relative">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="rgb(109, 40, 217)"

@@ -30,6 +30,21 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* Styles for scrollbar */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply rounded-md bg-transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply rounded-md bg-gradient-to-t from-violet-800 to-violet-500;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

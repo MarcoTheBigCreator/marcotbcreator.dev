@@ -22,7 +22,7 @@ export const Navbar = () => {
   const [isResumeOnHover, setIsResumeOnHover] = useState(false);
 
   return (
-    <nav className="grid grid-cols-1 lg:grid-cols-7 gap-4 backdrop-blur-3xl fixed top-0 left-0 right-0 z-50 bg-black opacity-85 p-2 center w-full items-center">
+    <nav className="grid grid-cols-1 lg:grid-cols-7 gap-4 backdrop-blur-3xl fixed top-0 left-0 right-0 z-50 bg-black opacity-95 p-2 center w-full items-center">
       {/* Mobile Menu */}
       <div className="lg:hidden justify-start transition-all">
         {isSideMenuOpen ? (
