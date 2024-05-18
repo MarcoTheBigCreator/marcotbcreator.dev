@@ -7,15 +7,15 @@ import { navItems } from '../ui-data/nav-items';
 import { languages } from '../ui-data/languages';
 import { LaguageButton } from '@/components';
 
+const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);
+
+if (isSideMenuOpen) {
+  document.body.style.overflow = 'hidden';
+} else {
+  document.body.style.overflow = 'auto';
+}
+
 export const MobileMenu = () => {
-  const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);
-
-  if (isSideMenuOpen) {
-    document.body.style.overflow = 'hidden';
-  } else {
-    document.body.style.overflow = 'auto';
-  }
-
   return (
     <div className="w-full h-full lg:hidden">
       {/* Sidemenu */}
