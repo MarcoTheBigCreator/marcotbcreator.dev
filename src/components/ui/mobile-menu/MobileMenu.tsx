@@ -6,16 +6,15 @@ import clsx from 'clsx';
 import { navItems } from '../ui-data/nav-items';
 import { languages } from '../ui-data/languages';
 import { LaguageButton } from '@/components';
-
-const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);
-
-if (isSideMenuOpen) {
-  document.body.style.overflow = 'hidden';
-} else {
-  document.body.style.overflow = 'auto';
-}
+import { useEffect } from 'react';
 
 export const MobileMenu = () => {
+  const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);
+
+  useEffect(() => {
+    document.body.style.overflow = isSideMenuOpen ? 'hidden' : 'auto';
+  }, [isSideMenuOpen]);
+
   return (
     <div className="w-full h-full lg:hidden">
       {/* Sidemenu */}
