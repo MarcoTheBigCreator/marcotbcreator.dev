@@ -9,8 +9,11 @@ import { LaguageButton } from '@/components';
 
 export const MobileMenu = () => {
   const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);
+
   if (isSideMenuOpen) {
     document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = 'auto';
   }
 
   return (
