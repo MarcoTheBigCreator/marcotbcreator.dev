@@ -124,7 +124,9 @@ export const About = () => {
       </aside>
       <section className="w-full md:w-11/12 bg-zinc-950 border-[1px] border-white/10 rounded-3xl px-10 py-6">
         <h1 className="text-3xl font-bold text-white mb-2">Bio</h1>
-        <h2 className="text-2xl mb-1">Marco Antonio Rodriguez Arreola</h2>
+        <h2 className="text-2xl mb-1 text-white">
+          Marco Antonio Rodriguez Arreola
+        </h2>
         <h3 className="text-xl font-medium text-violet-500 mb-1">
           Software <span className="text-violet-600 ">Engineering</span>
         </h3>
@@ -152,7 +154,7 @@ export const About = () => {
       </section>
       <aside className="w-full md:w-11/12 bg-zinc-950 border-[1px] border-white/10 rounded-3xl px-10 py-6">
         <section className="w-full flex flex-col mb-4">
-          <h2 className="text-lg font-bold mb-2">HardSkills</h2>
+          <h2 className="text-lg font-bold mb-2 text-white">HardSkills</h2>
           <div className="flex flex-wrap gap-2">
             {skills.map((skill) => (
               <Image
@@ -169,10 +171,12 @@ export const About = () => {
         </section>
 
         <article className="flex flex-col">
-          <h2 className="text-lg font-bold mb-2">Softskills</h2>
-          👨‍👩‍👦‍ Trabajo en equipo 🤔 Res de problemas 💪 Auto motivación 🖼
-          Creatividad ⏰ Responsabilidad 🔊 Comunicación 💛 Empatía 🤝 Res de
-          conflictos
+          <h2 className="text-lg font-bold mb-2 text-white">Softskills</h2>
+          <p>
+            👨‍👩‍👦‍ Trabajo en equipo 🤔 Res de problemas 💪 Auto motivación 🖼
+            Creatividad ⏰ Responsabilidad 🔊 Comunicación 💛 Empatía 🤝 Res de
+            conflictos
+          </p>
         </article>
       </aside>
     </div>
