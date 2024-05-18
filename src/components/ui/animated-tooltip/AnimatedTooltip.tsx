@@ -74,6 +74,7 @@ export const AnimatedTooltip = ({
             height={350}
             width={230}
             quality={100}
+            priority={false}
             src={item.image}
             alt={item.name}
             placeholder="empty"
