@@ -4,7 +4,7 @@ import { TextGenerateEffect } from '@/components';
 
 export const Header = () => {
   return (
-    <div className="h-[40rem] md:h-[50rem] xl:h-[55rem] w-full rounded-md flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.07] relative">
+    <div className="h-[40rem] md:h-[50rem] xl:h-[55rem] w-full flex md:items-center md:justify-center bg-black/[0.96] antialiased bg-grid-white/[0.07] relative">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="rgb(109, 40, 217)"
