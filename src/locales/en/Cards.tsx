@@ -11,7 +11,7 @@ export const Highlight = ({
   return (
     <span
       className={cn(
-        'font-bold bg-violet-700 text-white px-1 py-0.5 rounded-lg',
+        'font-semibold bg-violet-700 text-white px-1 py-0.5 rounded-2xl',
         className
       )}
     >
@@ -26,38 +26,51 @@ export const CARDS = [
     name: 'Project Management',
     content: (
       <p>
-        Software project management through the{' '}
-        <Highlight>use of agile methodologies</Highlight> , specialized
-        software, and soft skills{' '}
-        <Highlight>to achieve optimal performance</Highlight> with the work
-        team.
+        Software project management with a blend of{' '}
+        <Highlight>agile methodologies</Highlight>, specialized tools, and
+        essential soft skills. Ensuring optimal{' '}
+        <Highlight>team performance</Highlight> and{' '}
+        <Highlight>project success</Highlight> through efficient and adaptive
+        practices.
       </p>
     ),
   },
   {
     id: 1,
-    name: 'Elon Musk',
-    designation: 'Senior Shitposter',
+    name: 'Web Development',
     content: (
       <p>
-        I dont like this Twitter thing,{' '}
-        <Highlight>deleting it right away</Highlight> because yolo. Instead, I
-        would like to call it <Highlight>X.com</Highlight> so that it can easily
-        be confused with adult sites.
+        Specialize in creating modern, responsive, and{' '}
+        <Highlight>visually stunning</Highlight>
+        websites by leveraging the <Highlight>latest technologies</Highlight>,
+        frameworks, and industry standards. Delivering{' '}
+        <Highlight>exceptional results</Highlight>.
       </p>
     ),
   },
   {
     id: 2,
-    name: 'Tyler Durden',
-    designation: 'Manager Project Mayhem',
+    name: 'Databases',
     content: (
       <p>
-        The first rule of
-        <Highlight>Fight Club</Highlight> is that you do not talk about fight
-        club. The second rule of
-        <Highlight>Fight club</Highlight> is that you DO NOT TALK about fight
-        club.
+        Extensive expertise in creating, diagramming, maintaining, and
+        optimizing <Highlight>databases</Highlight>. Additionally, I have
+        experience in <Highlight>server-side</Highlight> and
+        <Highlight>backend development</Highlight>, ensuring robust and
+        efficient solutions for your needs.
+      </p>
+    ),
+  },
+  {
+    id: 3,
+    name: 'UI/UX Design',
+    content: (
+      <p>
+        Proficient in creating <Highlight>user-friendly</Highlight> and
+        <Highlight>intuitive</Highlight> interfaces that enhance the user
+        experience. I focus on creating <Highlight>engaging</Highlight> and
+        <Highlight>responsive</Highlight> designs that are both visually
+        appealing and functional.
       </p>
     ),
   },

@@ -6,3 +6,5 @@ export const bioInfo = {
   age: '22',
   interests: ['Physical training', 'Music', 'Videogames', 'New Technologies'],
 };
+
+export const interestTitle = 'Interests';

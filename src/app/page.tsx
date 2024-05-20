@@ -5,7 +5,6 @@ export default function Home() {
     <>
       <Header />
       <About />
-      <About />
     </>
   );
 }
