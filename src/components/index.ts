@@ -9,4 +9,4 @@ export * from './ui/text-generate-effect/TextGenerateEffect';
 export * from './ui/animated-tooltip/AnimatedTooltip';
 export * from './about/About';
 export * from './about/Bio';
-// export * from './about/ExpertiseCards';
+export * from './about/Timeline';

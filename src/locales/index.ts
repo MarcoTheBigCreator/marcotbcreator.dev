@@ -5,3 +5,4 @@ export * from './skills';
 export * from './en/soft-skills';
 export * from './en/HeaderInfo';
 export * from './en/bio-info';
+export * from './en/timeline';
