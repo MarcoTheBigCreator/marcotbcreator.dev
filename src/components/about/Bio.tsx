@@ -3,7 +3,7 @@ import { bioInfo } from '@/locales';
 export const Bio = () => {
   return (
     <>
-      <h1 className="text-3xl font-bold text-white mb-3">Bio</h1>
+      <h1 className="text-3xl font-bold text-white mb-3 mt-3">Bio</h1>
       <h2 className="text-2xl mb-1 text-white">{bioInfo.name}</h2>
       <h3 className="text-xl font-medium text-violet-500 mb-2">
         {bioInfo.profession.split('-', 1)}{' '}
@@ -23,7 +23,7 @@ export const Bio = () => {
         })}
         <li>
           <b>Interests:</b>
-          <div className="grid grid-cols-1 xl:grid-cols-2 gap-1 text-white ml-1 mt-1">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-1 text-white ml-1 mt-1">
             {bioInfo.interests.map((interest) => (
               <p key={interest}>- {interest}</p>
             ))}

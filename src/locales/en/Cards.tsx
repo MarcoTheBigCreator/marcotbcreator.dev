@@ -11,7 +11,7 @@ export const Highlight = ({
   return (
     <span
       className={cn(
-        'font-bold bg-violet-700 text-white px-1 py-0.5',
+        'font-bold bg-violet-700 text-white px-1 py-0.5 rounded-lg',
         className
       )}
     >
@@ -23,12 +23,14 @@ export const Highlight = ({
 export const CARDS = [
   {
     id: 0,
-    name: 'Manu Arora',
-    designation: 'Senior Software Engineer',
+    name: 'Project Management',
     content: (
       <p>
-        These cards are amazing, <Highlight>I want to use them</Highlight> in my
-        project. Framer motion is a godsend ngl tbh fam 🙏
+        Software project management through the{' '}
+        <Highlight>use of agile methodologies</Highlight> , specialized
+        software, and soft skills{' '}
+        <Highlight>to achieve optimal performance</Highlight> with the work
+        team.
       </p>
     ),
   },
