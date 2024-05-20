@@ -18,6 +18,8 @@ const config: Config = {
     extend: {
       screens: {
         lg: '940px',
+        xl: '1698px',
+        '2xl': '1920px',
       },
       colors: {
         primary: {

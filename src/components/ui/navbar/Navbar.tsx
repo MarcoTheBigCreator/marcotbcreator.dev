@@ -10,9 +10,8 @@ import {
 } from 'react-icons/io5';
 import { LaguageButton } from '../laguange-button/LaguageButton';
 import { useUIStore } from '@/store';
-import { navItems } from '../ui-data/nav-items';
-import { languages } from '../ui-data/languages';
 import { useState } from 'react';
+import { languages, navItems } from '@/locales';
 
 export const Navbar = () => {
   const openMenu = useUIStore((state) => state.openSideMenu);

@@ -3,10 +3,9 @@
 import Link from 'next/link';
 import { useUIStore } from '@/store';
 import clsx from 'clsx';
-import { navItems } from '../ui-data/nav-items';
-import { languages } from '../ui-data/languages';
 import { LaguageButton } from '@/components';
 import { useEffect } from 'react';
+import { languages, navItems } from '@/locales';
 
 export const MobileMenu = () => {
   const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);

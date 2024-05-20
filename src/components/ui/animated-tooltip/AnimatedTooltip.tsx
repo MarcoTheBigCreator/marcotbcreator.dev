@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, useTransform, useMotionValue, useSpring } from 'framer-motion';
 
 export const AnimatedTooltip = ({
@@ -9,8 +9,12 @@ export const AnimatedTooltip = ({
   items: {
     id: number;
     name: string;
-    designation: string;
-    image: string;
+    designation?: string;
+    path: string;
+    width?: number;
+    height?: number;
+    priority?: boolean;
+    className?: string;
   }[];
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
@@ -35,7 +39,7 @@ export const AnimatedTooltip = ({
     <>
       {items.map((item) => (
         <div
-          className="-mr-4  relative group"
+          className="relative group"
           key={item.name}
           onMouseEnter={() => setHoveredIndex(item.id)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -63,22 +67,27 @@ export const AnimatedTooltip = ({
             >
               <div className="absolute inset-x-10 z-30 w-[20%] -bottom-px bg-gradient-to-r from-transparent via-cyan-500 to-transparent h-px " />
               <div className="absolute left-10 w-[40%] z-30 -bottom-px bg-gradient-to-r from-transparent via-violet-700 to-transparent h-px " />
-              <div className="font-bold text-white relative z-30 text-base">
+              <div className="font-light text-white relative z-30 text-base">
                 {item.name}
               </div>
-              <div className="text-white text-medium">{item.designation}</div>
+              {item.designation && (
+                <div className="text-white text-medium">{item.designation}</div>
+              )}
             </motion.div>
           )}
           <Image
             onMouseMove={handleMouseMove}
-            height={350}
-            width={230}
-            quality={100}
-            priority={false}
-            src={item.image}
+            height={item.width || 30}
+            width={item.height || 30}
+            priority={item.priority || false}
+            src={item.path}
             alt={item.name}
             placeholder="empty"
-            className="object-cover !m-0 !p-0 object-top rounded-2xl h-80 w-64 border-2 group-hover:scale-105 group-hover:z-30 border-violet-950  relative transition duration-500"
+            className={`${
+              item.className
+                ? item.className
+                : 'object-cover !m-0 !p-0 object-top rounded-2xl h-80 w-64 border-2 group-hover:scale-105 group-hover:z-30 border-violet-950  relative transition duration-500'
+            }`}
           />
         </div>
       ))}
