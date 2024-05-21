@@ -1,3 +1,8 @@
+'use client';
+
+import { useUIStore } from '@/store';
+import { useEffect } from 'react';
+
 interface Props {
   icon?: React.ReactNode;
   text: string;
@@ -6,6 +11,23 @@ interface Props {
 export const LaguageButton = ({ icon, text }: Props) => {
   return (
     <button className="pt-3 h-12 w-12 flex align-middle justify-center shadow-[0_5px_15px_1px_rgb(140,0,255,55%)] hover:shadow-[0_6px_20px_rgba(140,0,255,30%)] hover:bg-violet-800 bg-violet-700 rounded-full text-white font-semibold lg:font-medium transition duration-200 ease-linear">
+      {icon && <span className="mr-1">{icon}</span>}
+      {text}
+    </button>
+  );
+};
+
+export const LaguageButtonMobile = ({ icon, text }: Props) => {
+  const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);
+
+  useEffect(() => {
+    document.body.style.overflow = isSideMenuOpen ? 'hidden' : 'auto';
+  }, [isSideMenuOpen]);
+  return (
+    <button
+      className="pt-3 h-12 w-12 flex align-middle justify-center shadow-[0_5px_15px_1px_rgb(140,0,255,55%)] hover:shadow-[0_6px_20px_rgba(140,0,255,30%)] hover:bg-violet-800 bg-violet-700 rounded-full text-white font-semibold lg:font-medium transition duration-200 ease-linear"
+      onClick={() => useUIStore.setState({ isSideMenuOpen: false })}
+    >
       {icon && <span className="mr-1">{icon}</span>}
       {text}
     </button>

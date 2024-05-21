@@ -27,3 +27,4 @@ export const items = [
     path: 'https://res.cloudinary.com/dmlpgks2h/image/upload/v1716271056/Portfolio/leiyedeiyhngns2mikna.png',
   },
 ];
+export const portfolioTitle = 'Portfolio';

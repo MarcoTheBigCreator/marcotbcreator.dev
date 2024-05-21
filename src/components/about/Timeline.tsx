@@ -11,7 +11,7 @@ interface Props {
 export const Timeline = ({ timelineTitle, info }: Props) => {
   return (
     <div className="w-full max-w-3xl">
-      <h2 className="text-3xl font-bold mb-3 mt-3 text-white drop-shadow-text">
+      <h2 className="text-4xl font-bold mb-3 mt-3 text-white drop-shadow-text">
         {timelineTitle}
       </h2>
 
@@ -24,7 +24,7 @@ export const Timeline = ({ timelineTitle, info }: Props) => {
             <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-neutral-100 bg-violet-700 rounded-full">
               {item.date}
             </time>
-            <div className="text-lg font-medium text-violet-500">
+            <div className="text-lg font-medium text-violet-400/90">
               {item.place}
             </div>
           </div>

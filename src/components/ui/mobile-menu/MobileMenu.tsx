@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useUIStore } from '@/store';
 import clsx from 'clsx';
-import { LaguageButton } from '@/components';
+import { LaguageButtonMobile } from '@/components';
 import { useEffect } from 'react';
 import { languages, navItems } from '@/locales';
 
@@ -29,21 +29,24 @@ export const MobileMenu = () => {
             key={item.name}
             href={item.href}
             className="flex items-center mt-10 p-2 hover:bg-violet-700 rounded transition-all ml-3 text-xl font-semibold text-twhite"
+            onClick={() => useUIStore.setState({ isSideMenuOpen: false })}
           >
             {item.name}
           </Link>
         ))}
-        <Link href="https://res.cloudinary.com/dmlpgks2h/image/upload//fl_attachment:cv-en//v1715931123/Portfolio/cv-en.pdf?_s=public-apps">
-          <button className="flex items-center mt-10 p-2 hover:bg-violet-700 rounded transition-all ml-3 text-xl font-semibold text-white">
-            Resume
-          </button>
+        <Link
+          href="https://res.cloudinary.com/dmlpgks2h/image/upload//fl_attachment:cv-en//v1715931123/Portfolio/cv-en.pdf?_s=public-apps"
+          className="flex items-center mt-10 p-2 hover:bg-violet-700 rounded transition-all ml-3 text-xl font-semibold text-white"
+          onClick={() => useUIStore.setState({ isSideMenuOpen: false })}
+        >
+          Resume
         </Link>
         <div className="w-full h-px bg-gray-200 my-5" />
 
         {/* Language */}
         <div className="p-4 pl-3 pb-24 flex gap-3">
           {languages.map((lang) => (
-            <LaguageButton key={lang.name} text={lang.name} />
+            <LaguageButtonMobile key={lang.name} text={lang.name} />
           ))}
         </div>
       </nav>

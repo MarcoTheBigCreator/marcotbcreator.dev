@@ -8,9 +8,12 @@ import { Timeline } from './Timeline';
 export const About = () => {
   return (
     <>
-      <div className="w-full h-full xl:h-[32rem] bg-black/[0.96] bg-grid-white/[0.07] antialiased grid grid-rows-3 lg:grid-rows-1 space-y-6 lg:grid-cols-3 lg:space-y-0 md:place-items-center px-10 ">
+      <div
+        className="w-full h-full xl:h-[40rem] bg-black/[0.96] bg-grid-white/[0.07] antialiased grid grid-rows-3 lg:grid-rows-1 space-y-6 lg:grid-cols-3 lg:space-y-0 md:place-items-center px-10 pt-24 "
+        id="about"
+      >
         {/* Bio component*/}
-        <section className="w-full h-auto lg:h-full md:w-11/12 xl:h-5/6 bg-neutral-900 border-[1px] border-white/20 rounded-3xl px-10 py-6">
+        <section className="w-full h-auto lg:h-full md:w-11/12 xl:h-5/6 bg-neutral-900 border-[1px] border-white/20 rounded-3xl px-12 py-6">
           <Bio />
         </section>
 
@@ -20,7 +23,7 @@ export const About = () => {
         </aside>
 
         {/* Skills & SoftSkills component */}
-        <aside className="w-full h-auto lg:h-full md:w-11/12 xl:h-5/6 bg-neutral-900 border-[1px] border-white/20 rounded-3xl px-10 py-6">
+        <aside className="w-full h-auto lg:h-full md:w-11/12 xl:h-5/6 bg-neutral-900 border-[1px] border-white/20 rounded-3xl px-12 py-6">
           <section className="w-full flex flex-col mb-6">
             <Skills />
           </section>
@@ -31,7 +34,7 @@ export const About = () => {
       </div>
 
       {/* Education and Experience components */}
-      <div className="w-full bg-black/[0.96] bg-grid-white/[0.07] antialiased grid grid-cols-1 space-y-6 lg:space-x-6  lg:space-y-0 2xl:space-x-0 lg:grid-cols-2 md:place-items-center p-10 pt-60 ">
+      <div className="w-full bg-black/[0.96] bg-grid-white/[0.07] antialiased grid grid-cols-1 space-y-6 lg:space-x-6  lg:space-y-0 2xl:space-x-0 lg:grid-cols-2 md:place-items-center p-10 pt-40 ">
         <section className="bg-neutral-900 border-[1px] border-white/20 rounded-3xl px-8 py-7 justify-center">
           <Timeline timelineTitle={education.title} info={education.info} />
         </section>

@@ -1,7 +1,10 @@
 export * from './ui/navbar/Navbar';
 export { Logo } from './logo/Logo';
 export { Button } from './ui/button/Button';
-export { LaguageButton } from './ui/laguange-button/LaguageButton';
+export {
+  LaguageButton,
+  LaguageButtonMobile,
+} from './ui/laguange-button/LaguageButton';
 export * from './ui/spotlight-effect/Spotlight';
 export * from './ui/header/Header';
 export * from './ui/type-writer-effect/TypeWriterEffect';
