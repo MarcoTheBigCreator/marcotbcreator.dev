@@ -16,6 +16,9 @@ const config: Config = {
   darkMode: 'class',
   theme: {
     extend: {
+      dropShadow: {
+        text: '0 2px 20px rgba(255, 255, 255, 0.45)',
+      },
       screens: {
         lg: '940px',
         xl: '1698px',

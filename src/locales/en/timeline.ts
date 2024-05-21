@@ -6,7 +6,7 @@ export const education = {
       title: `Bachelor\'s Degree in Software Engineering`,
       place: 'Polytechnic University of Durango',
       description:
-        'Graduated with strong standards in software and web development, working with various technologies. Additionally, have developed exceptional skills in communication, presentation, and engagement with real-world companies.',
+        'Graduated with strong standards in software and web development, working with various technologies. Additionally, have developed exceptional skills in communication, presentation, and engagement with real-world companies. Being part of the Bilingual International and Sustainable (BIS) program, providing a high level of proficiency in English (B2-C1).',
     },
     {
       date: '2017 - 2020',
@@ -20,7 +20,7 @@ export const education = {
       title: `Middle School Certificate`,
       place: 'EST 67 "José Santos Valdés"',
       description:
-        'During their time in middle school, participated in a computer workshop with an emphasis on robotics. As part of this program, took part in numerous VEX IQ tournaments, including two national competitions, and qualified for several world championships.',
+        'Participated in a computer workshop with an emphasis on robotics. As part of this program, I took part in numerous VEX IQ tournaments, including two national competitions, and qualified for several world championships.',
     },
   ],
 };
@@ -33,7 +33,7 @@ export const experience = {
       title: 'Front-end Developer',
       place: 'Talentum Space',
       description:
-        'Worked on the Gekocards project using Next.js with TypeScript to generate AI-driven images for unique event invitations. Tasks included form creation with Formik and Yup, managing cookies, implementing drag-and-drop image functionality, and ensuring UI/UX and responsiveness. During the professional internship at Talentum, contributed by creating components, screens, and connecting endpoints for a new educational platform. The platform helps Mexicans prepare for job interviews abroad using React, Sass, JavaScript, and Postman for endpoint testing.',
+        'Worked on the Gekocards project using Next.js with TypeScript to generate AI-driven images for unique event invitations. Tasks included form creation with Formik and Yup, managing cookies, implementing drag-and-drop image functionality, and ensuring UI/UX and responsiveness. During the professional internship at Talentum, I contributed by creating components, screens, and connecting endpoints for a new educational platform. The platform helps Mexicans prepare for job interviews abroad using React, Sass, JavaScript, and Postman for endpoint testing.',
     },
     {
       date: '2022 - 2023',

@@ -36,7 +36,7 @@ export const CardStack = ({
         newArray.unshift(newArray.pop()!); // move the last element to the front
         return newArray;
       });
-    }, 5000);
+    }, 6000);
   };
 
   return (
@@ -55,10 +55,12 @@ export const CardStack = ({
               zIndex: cards.length - index, //  decrease z-index for the cards that are behind
             }}
           >
-            <h1 className="text-3xl font-bold text-white mb-3">Expertise</h1>
+            <h1 className="text-3xl font-bold text-white drop-shadow-text mb-3">
+              Expertise
+            </h1>
             <div className="font-normal text-white">{card.content}</div>
             <div>
-              <p className="font-semibold text-2xl mt-4 text-white">
+              <p className="font-semibold text-2xl mt-4 text-violet-400 drop-shadow-purple">
                 {card.name}
               </p>
             </div>

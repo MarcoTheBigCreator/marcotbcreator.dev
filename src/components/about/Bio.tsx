@@ -3,7 +3,9 @@ import { bioInfo, interestTitle } from '@/locales';
 export const Bio = () => {
   return (
     <>
-      <h1 className="text-3xl font-bold text-white mb-3 mt-3">Bio</h1>
+      <h1 className="text-3xl font-bold text-white drop-shadow-text mb-3 mt-3">
+        Bio
+      </h1>
       <h2 className="text-2xl mb-1 text-white">{bioInfo.name}</h2>
       <h3 className="text-xl font-medium text-violet-400 mb-2">
         {bioInfo.profession.split('-', 1)}{' '}

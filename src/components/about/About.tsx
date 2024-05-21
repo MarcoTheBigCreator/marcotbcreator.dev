@@ -29,11 +29,13 @@ export const About = () => {
           </article>
         </aside>
       </div>
-      <div className="w-full bg-black/[0.96] bg-grid-white/[0.07] antialiased grid grid-cols-1 space-y-6 lg:space-y-0 lg:grid-cols-2 md:place-items-center p-10 ">
-        <section className="relative max-h-screen bg-neutral-900 border-[1px] border-white/20 rounded-3xl px-8 py-6 flex flex-col justify-center">
+
+      {/* Education and Experience components */}
+      <div className="w-full bg-black/[0.96] bg-grid-white/[0.07] antialiased grid grid-cols-1 space-y-6 lg:space-x-6  lg:space-y-0 2xl:space-x-0 lg:grid-cols-2 md:place-items-center p-10 pt-60 ">
+        <section className="bg-neutral-900 border-[1px] border-white/20 rounded-3xl px-8 py-7 justify-center">
           <Timeline timelineTitle={education.title} info={education.info} />
         </section>
-        <aside className="relative max-h-screen bg-neutral-900 border-[1px] border-white/20 rounded-3xl px-8 py-6 flex flex-col justify-center">
+        <aside className="bg-neutral-900 border-[1px] border-white/20 rounded-3xl px-8 py-6 justify-center">
           <Timeline timelineTitle={experience.title} info={experience.info} />
         </aside>
       </div>
