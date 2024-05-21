@@ -10,3 +10,6 @@ export * from './ui/animated-tooltip/AnimatedTooltip';
 export * from './about/About';
 export * from './about/Bio';
 export * from './about/Timeline';
+export * from './ui/bento-grid/BentoGrid';
+export * from './portafolio/Portfolio';
+export * from './portafolio/PortfolioImageGrid';
