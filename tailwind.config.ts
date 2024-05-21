@@ -18,6 +18,7 @@ const config: Config = {
     extend: {
       dropShadow: {
         text: '0 2px 20px rgba(255, 255, 255, 0.45)',
+        purple: '1px 4px 25px rgba(140, 0, 255, 0.80)',
       },
       screens: {
         lg: '940px',
