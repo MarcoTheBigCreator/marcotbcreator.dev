@@ -55,7 +55,7 @@ export const CARDS = [
       <p>
         Extensive expertise in creating, diagramming, maintaining, and
         optimizing <Highlight>databases</Highlight>. Additionally, I have
-        experience in <Highlight>server-side</Highlight> and
+        experience in <Highlight>server-side</Highlight> and{' '}
         <Highlight>backend development</Highlight>, ensuring robust and
         efficient solutions for your needs.
       </p>
@@ -66,9 +66,9 @@ export const CARDS = [
     name: 'UI/UX Design',
     content: (
       <p>
-        Proficient in creating <Highlight>user-friendly</Highlight> and
+        Proficient in creating <Highlight>user-friendly</Highlight> and{' '}
         <Highlight>intuitive</Highlight> interfaces that enhance the user
-        experience. I focus on creating <Highlight>engaging</Highlight> and
+        experience. I focus on creating <Highlight>engaging</Highlight> and{' '}
         <Highlight>responsive</Highlight> designs that are both visually
         appealing and functional.
       </p>
