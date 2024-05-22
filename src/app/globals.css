@@ -77,4 +77,11 @@ body {
     black 60%,
     transparent
   );
+  mask: linear-gradient(
+    to right,
+    transparent,
+    black 30%,
+    black 60%,
+    transparent
+  );
 }
