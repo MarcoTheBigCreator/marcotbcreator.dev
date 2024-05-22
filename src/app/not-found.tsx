@@ -25,8 +25,8 @@ export default function NotFoundPage() {
             Page not found
           </h1>
           <p className="mt-4 text-zinc-400">
-            The page you are looking for doesn't exist. Here are some helpful
-            links:
+            {`The page you are looking for doesn\'t exist. Here are some helpful
+            links:`}
           </p>
 
           <div className="flex items-center justify-center w-full mt-6 gap-x-3 shrink-0 sm:w-auto">
