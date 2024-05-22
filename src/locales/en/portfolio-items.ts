@@ -1,7 +1,7 @@
 export const items = [
   {
     title: 'Teslo Shop',
-    description: 'Explore the birth of groundbreaking ideas and inventions.',
+    description: `An eCommerce platform inspired by Tesla's online store, developed on a Next.js course.`,
     path: 'https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268305/Portfolio/bp0nypegjlbg2mksieuj.png',
   },
   {
@@ -18,7 +18,8 @@ export const items = [
   },
   {
     title: 'Crummy Music Discord Bot',
-    description: 'Discord music bot is interactive and customizable.',
+    description:
+      'A user-friendly Discord Music Bot music playback in your servers. Easily deployable on Heroku for quick setup and enjoyment.',
     path: 'https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268305/Portfolio/o1ui7jly1i1ct1kvsucw.png',
   },
   {
