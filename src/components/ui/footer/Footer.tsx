@@ -19,6 +19,7 @@ export const Footer = () => {
           </Link>
           <Link
             href="mailto:marcotbcreator@gmail.com"
+            aria-label="Email me at"
             className="text-lg font-light on hover:text-violet-400 hover:underline transition duration-200 ease-linear"
           >
             marcotbcreator@gmail.com
@@ -27,16 +28,30 @@ export const Footer = () => {
 
         {/* Social media */}
         <aside className="flex justify-center space-x-1">
-          <Link href={''} className="p-4">
+          <Link
+            href={'https://github.com/MarcoTheBigCreator'}
+            target="_blank"
+            aria-label="GitHub"
+            className="p-4"
+          >
             <IoLogoGithub
               size={30}
               className="text-white hover:text-purple-600 transition duration-200 ease-linear"
             />
           </Link>
-          <button className="p-3 flex align-middle justify-cente bg-white hover:bg-violet-600 rounded-full drop-shadow-text hover:drop-shadow-purple transition duration-200 ease-linear">
+          <Link
+            href={'/'}
+            aria-label="Logo of MarcoTheBigCreator to go to the home page"
+            className="p-3 flex align-middle justify-cente bg-white hover:bg-violet-600 rounded-full drop-shadow-text hover:drop-shadow-purple transition duration-200 ease-linear"
+          >
             <Logo width={40} height={40} color="black" />
-          </button>
-          <Link href={''} className="p-4">
+          </Link>
+          <Link
+            href={'https://www.linkedin.com/in/marcotbcreator/'}
+            target="_blank"
+            aria-label="LinkedIn"
+            className="p-4"
+          >
             <TfiLinkedin
               size={25}
               className="text-white hover:text-purple-600 transition duration-200 ease-linear"
