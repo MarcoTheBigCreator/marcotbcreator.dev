@@ -8,14 +8,15 @@ import { TfiLinkedin } from 'react-icons/tfi';
 export const Footer = () => {
   return (
     <div className="dashes">
-      <footer className="grid grid-cols-3 gap-4 bg-black px-20 py-6 text-white center w-full items-center">
+      <footer className="grid grid-cols-1 lg:grid-cols-3 gap-4 bg-black px-20 py-6 text-white center w-full items-center">
         {/* Name and logo */}
-        <section className="space-y-2">
-          <h2
+        <section className="hidden lg:inline-grid space-y-2">
+          <Link
+            href={'/'}
             className={`${titleFont.className} text-2xl mb-2 font-semibold text-white drop-shadow-purple hover:text-violet-600 transition duration-200 ease-linear`}
           >
             MarcoTheBigCreator
-          </h2>
+          </Link>
           <Link
             href="mailto:marcotbcreator@gmail.com"
             className="text-lg font-light on hover:text-violet-400 hover:underline transition duration-200 ease-linear"
@@ -44,7 +45,7 @@ export const Footer = () => {
         </aside>
 
         {/* Navigation */}
-        <section className="flex justify-end ">
+        <section className="flex justify-center ">
           {navItems.map((item) => (
             <Link
               key={item.name}
