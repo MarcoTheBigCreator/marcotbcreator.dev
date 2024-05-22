@@ -23,14 +23,14 @@ export const About = () => {
         </aside>
 
         {/* Skills & SoftSkills component */}
-        <aside className="w-full h-auto lg:h-full md:w-11/12 xl:h-5/6 bg-neutral-900 border-[1px] border-white/20 rounded-3xl px-12 py-6">
+        <section className="w-full h-auto lg:h-full md:w-11/12 xl:h-5/6 bg-neutral-900 border-[1px] border-white/20 rounded-3xl px-12 py-6">
           <section className="w-full flex flex-col mb-6">
             <Skills />
           </section>
           <article className="flex flex-col">
             <SoftSkills />
           </article>
-        </aside>
+        </section>
       </div>
 
       {/* Education and Experience components */}

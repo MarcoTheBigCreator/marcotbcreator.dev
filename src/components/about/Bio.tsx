@@ -13,12 +13,13 @@ export const Bio = () => {
           {bioInfo.profession.split('-', 2).pop()}
         </span>
       </h3>
-      <ul className="list-disc ml-5 text-violet-400/90 font-normal text-base space-y-1">
+      <ul className="list-disc ml-5 text-violet-400/90 font-normal text-base space-y-1 capitalize">
         {Object.entries(bioInfo).map(([key, value]) => {
           if (key === 'interests') return;
+          if (key === 'profession') return;
           return (
             <li key={key}>
-              <b>{key[0].toUpperCase() + key.slice(1)}:</b>{' '}
+              <b>{key.replace(/_/g, ' ')}:</b>{' '}
               <span className="text-white">{value}</span>
             </li>
           );

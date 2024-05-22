@@ -46,8 +46,11 @@ export const Navbar = () => {
       </div>
 
       {/* Brand */}
-      <div className="hidden lg:flex col-span-2 justify-center ">
-        <Link href="#" className="flex text-lg font-semibold gap-2 text-white">
+      <div className="hidden lg:flex col-span-2 justify-center">
+        <Link
+          href="#"
+          className="flex text-lg font-semibold gap-2 text-white hover:text-violet-600 transition duration-200 ease-linear"
+        >
           <Logo width={30} height={30} color="white" />
           MarcoTheBigCreator
         </Link>

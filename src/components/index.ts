@@ -16,3 +16,4 @@ export * from './about/Timeline';
 export * from './ui/bento-grid/BentoGrid';
 export * from './portafolio/Portfolio';
 export * from './portafolio/PortfolioImageGrid';
+export * from './ui/footer/Footer';

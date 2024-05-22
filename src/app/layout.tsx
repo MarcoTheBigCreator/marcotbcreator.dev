@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { Navbar } from '@/components';
+import { Footer, Navbar } from '@/components';
 import { MobileMenu } from '@/components/ui/mobile-menu/MobileMenu';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
@@ -24,6 +24,7 @@ export default function RootLayout({
         <Navbar />
         <MobileMenu />
         {children}
+        <Footer />
         <Analytics />
         <SpeedInsights />
       </body>
