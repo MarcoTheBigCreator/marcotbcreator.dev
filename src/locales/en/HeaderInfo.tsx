@@ -1,4 +1,5 @@
 import { TypeWriterEffect } from '@/components';
+import { titleFont } from '@/config/fonts';
 
 export function HeaderTitle() {
   const words = [
@@ -14,7 +15,7 @@ export function HeaderTitle() {
   ];
   return (
     <>
-      <TypeWriterEffect words={words} />
+      <TypeWriterEffect words={words} className={`${titleFont.className}`} />
     </>
   );
 }

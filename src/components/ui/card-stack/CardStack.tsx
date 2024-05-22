@@ -1,6 +1,7 @@
 'use client';
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
+import { titleFont } from '@/config/fonts';
 
 let interval: any;
 
@@ -55,12 +56,16 @@ export const CardStack = ({
               zIndex: cards.length - index, //  decrease z-index for the cards that are behind
             }}
           >
-            <h1 className="text-4xl font-bold text-white drop-shadow-text mb-3">
+            <h1
+              className={`${titleFont.className} text-4xl font-bold text-white drop-shadow-text mb-3`}
+            >
               Expertise
             </h1>
             <div className="font-normal text-white">{card.content}</div>
             <div>
-              <p className="font-semibold text-3xl mt-4 text-violet-400 drop-shadow-purple">
+              <p
+                className={`${titleFont.className} font-semibold text-3xl mt-4 text-violet-400 drop-shadow-purple`}
+              >
                 {card.name}
               </p>
             </div>

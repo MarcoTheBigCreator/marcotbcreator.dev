@@ -12,6 +12,7 @@ import { LaguageButton } from '../laguange-button/LaguageButton';
 import { useUIStore } from '@/store';
 import { useState } from 'react';
 import { languages, navItems } from '@/locales';
+import { titleFont } from '@/config/fonts';
 
 export const Navbar = () => {
   const openMenu = useUIStore((state) => state.openSideMenu);
@@ -49,9 +50,9 @@ export const Navbar = () => {
       <div className="hidden lg:flex col-span-2 justify-center">
         <Link
           href="#"
-          className="flex text-lg font-semibold gap-2 text-white hover:text-violet-600 transition duration-200 ease-linear"
+          className={`${titleFont.className} flex text-lg font-semibold gap-2 text-white hover:text-violet-600 transition duration-200 ease-linear`}
         >
-          <Logo width={30} height={30} color="white" />
+          <Logo width={25} height={25} color="white" />
           MarcoTheBigCreator
         </Link>
       </div>

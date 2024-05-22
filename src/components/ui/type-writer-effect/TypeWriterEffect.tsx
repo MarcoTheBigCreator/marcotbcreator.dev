@@ -1,5 +1,6 @@
 'use client';
 
+import { titleFont } from '@/config/fonts';
 import { cn } from '@/utils/cn';
 import { motion, stagger, useAnimate, useInView } from 'framer-motion';
 import { useEffect } from 'react';
@@ -55,7 +56,7 @@ export const TypeWriterEffect = ({
                   initial={{}}
                   key={`char-${index}`}
                   className={cn(
-                    `dark:text-white text-black opacity-0 hidden`,
+                    `${titleFont.className}text-red-500 opacity-0 hidden`,
                     word.className
                   )}
                 >
@@ -126,7 +127,7 @@ export const TypewriterEffectSmooth = ({
               {word.text.map((char, index) => (
                 <span
                   key={`char-${index}`}
-                  className={cn(`dark:text-white text-black `, word.className)}
+                  className={cn(`text-red `, word.className)}
                 >
                   {char}
                 </span>

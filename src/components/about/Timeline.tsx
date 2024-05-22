@@ -1,3 +1,5 @@
+import { titleFont } from '@/config/fonts';
+
 interface Props {
   timelineTitle: string;
   info: {
@@ -11,7 +13,9 @@ interface Props {
 export const Timeline = ({ timelineTitle, info }: Props) => {
   return (
     <div className="w-full max-w-3xl">
-      <h2 className="text-4xl font-bold mb-3 mt-3 text-white drop-shadow-text">
+      <h2
+        className={`${titleFont.className} text-4xl font-bold mb-3 mt-3 text-white drop-shadow-text`}
+      >
         {timelineTitle}
       </h2>
 

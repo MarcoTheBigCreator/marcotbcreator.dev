@@ -1,6 +1,7 @@
 import { items, portfolioTitle } from '@/locales';
 import { BentoGrid, BentoGridItem } from '../ui/bento-grid/BentoGrid';
 import { PortfolioImageGrid } from './PortfolioImageGrid';
+import { titleFont } from '@/config/fonts';
 
 export function Portfolio() {
   return (
@@ -8,7 +9,9 @@ export function Portfolio() {
       className="w-full bg-black/[0.96] bg-grid-white/[0.07] antialiased place-items-center px-10 pb-36 pt-20 lg:pt-40"
       id="portfolio"
     >
-      <h2 className="text-5xl font-bold mb-7 mt-4 text-white drop-shadow-text justify-center flex">
+      <h2
+        className={`${titleFont.className} text-5xl font-bold mb-7 mt-4 text-white drop-shadow-text justify-center flex`}
+      >
         {portfolioTitle}
       </h2>
       <BentoGrid className="px-0 md:px-4">

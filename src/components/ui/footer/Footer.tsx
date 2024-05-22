@@ -1,4 +1,5 @@
 import { Logo } from '@/components';
+import { titleFont } from '@/config/fonts';
 import { navItems } from '@/locales';
 import Link from 'next/link';
 import { IoLogoGithub } from 'react-icons/io5';
@@ -10,7 +11,9 @@ export const Footer = () => {
       <footer className="grid grid-cols-3 gap-4 bg-black px-20 py-6 text-white center w-full items-center">
         {/* Name and logo */}
         <section className="space-y-2">
-          <h2 className="text-xl font-semibold text-white drop-shadow-purple hover:text-violet-600 transition duration-200 ease-linear">
+          <h2
+            className={`${titleFont.className} text-2xl mb-2 font-semibold text-white drop-shadow-purple hover:text-violet-600 transition duration-200 ease-linear`}
+          >
             MarcoTheBigCreator
           </h2>
           <Link
