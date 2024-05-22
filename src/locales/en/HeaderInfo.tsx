@@ -15,7 +15,10 @@ export function HeaderTitle() {
   ];
   return (
     <>
-      <TypeWriterEffect words={words} className={`${titleFont.className}`} />
+      <TypeWriterEffect
+        words={words}
+        className={`${titleFont.className} text-white`}
+      />
     </>
   );
 }
