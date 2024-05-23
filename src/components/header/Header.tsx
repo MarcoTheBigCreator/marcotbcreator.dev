@@ -1,6 +1,6 @@
-import { description, HeaderTitle } from '@/locales';
-import { Spotlight } from '../spotlight-effect/Spotlight';
-import { TextGenerateEffect } from '@/components';
+import { description } from '@/locales';
+import { Spotlight } from '../ui/spotlight-effect/Spotlight';
+import { HeaderTitle, TextGenerateEffect } from '@/components';
 
 export const Header = () => {
   return (
