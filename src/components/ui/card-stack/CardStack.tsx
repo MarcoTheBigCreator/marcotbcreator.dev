@@ -1,4 +1,5 @@
 'use client';
+
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { titleFont } from '@/config/fonts';
@@ -30,14 +31,26 @@ export const CardStack = ({
 
     return () => clearInterval(interval);
   }, []);
+
   const startFlipping = () => {
     interval = setInterval(() => {
       setCards((prevCards: Card[]) => {
-        const newArray = [...prevCards]; // create a copy of the array
-        newArray.unshift(newArray.pop()!); // move the last element to the front
+        const newArray = [...prevCards];
+        newArray.unshift(newArray.pop()!);
         return newArray;
       });
     }, 6000);
+  };
+
+  const flipCardOnClick = (index: number) => {
+    clearInterval(interval);
+    setCards((prevCards: Card[]) => {
+      const newArray = [...prevCards];
+      const card = newArray.splice(index, 1)[0];
+      newArray.push(card);
+      return newArray;
+    });
+    startFlipping();
   };
 
   return (
@@ -55,6 +68,7 @@ export const CardStack = ({
               scale: 1 - index * SCALE_FACTOR, // decrease scale for cards that are behind
               zIndex: cards.length - index, //  decrease z-index for the cards that are behind
             }}
+            onClick={() => flipCardOnClick(index)}
           >
             <h1
               className={`${titleFont.className} text-4xl font-bold text-white drop-shadow-text mb-3`}

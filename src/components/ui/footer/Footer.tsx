@@ -42,7 +42,7 @@ export const Footer = () => {
           <Link
             href={'/'}
             aria-label="Logo of MarcoTheBigCreator to go to the home page"
-            className="p-3 flex align-middle justify-cente bg-white hover:bg-violet-600 rounded-full drop-shadow-text hover:drop-shadow-purple transition duration-200 ease-linear"
+            className="p-3 flex align-middle justify-center bg-white hover:bg-violet-600 rounded-full drop-shadow-text hover:drop-shadow-purple transition duration-200 ease-linear"
           >
             <Logo width={40} height={40} color="black" />
           </Link>
@@ -60,7 +60,7 @@ export const Footer = () => {
         </aside>
 
         {/* Navigation */}
-        <section className="flex justify-center ">
+        <section className="flex justify-center lg:justify-end ">
           {navItems.map((item) => (
             <Link
               key={item.name}

@@ -18,6 +18,7 @@ export const Bio = () => {
       </h3>
       <ul className="list-disc ml-5 text-violet-400/90 font-normal text-base space-y-1 capitalize">
         {Object.entries(bioInfo).map(([key, value]) => {
+          if (key === 'name') return;
           if (key === 'interests') return;
           if (key === 'profession') return;
           return (

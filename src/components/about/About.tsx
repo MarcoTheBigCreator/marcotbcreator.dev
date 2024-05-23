@@ -13,7 +13,7 @@ export const About = () => {
         id="about"
       >
         {/* Bio component*/}
-        <section className="w-full h-auto lg:h-full md:w-11/12 xl:h-5/6 bg-neutral-900 border-[1px] border-white/20 rounded-3xl px-12 py-6">
+        <section className="w-full h-auto lg:h-full md:w-11/12 xl:h-5/6 bg-neutral-900 border-[1px] border-white/20 rounded-3xl p-6">
           <Bio />
         </section>
 
@@ -23,7 +23,7 @@ export const About = () => {
         </aside>
 
         {/* Skills & SoftSkills component */}
-        <section className="w-full h-auto lg:h-full md:w-11/12 xl:h-5/6 bg-neutral-900 border-[1px] border-white/20 rounded-3xl px-12 py-6">
+        <section className="w-full h-auto lg:h-full md:w-11/12 xl:h-5/6 bg-neutral-900 border-[1px] border-white/20 rounded-3xl p-6">
           <section className="w-full flex flex-col mb-6">
             <Skills />
           </section>
@@ -34,11 +34,11 @@ export const About = () => {
       </div>
 
       {/* Education and Experience components */}
-      <div className="w-full bg-black/[0.96] bg-grid-white/[0.07] antialiased grid grid-cols-1 space-y-6 lg:space-x-6  lg:space-y-0 2xl:space-x-0 lg:grid-cols-2 md:place-items-center p-10 pt-40 ">
-        <section className="bg-neutral-900 border-[1px] border-white/20 rounded-3xl px-8 py-7 justify-center">
+      <div className="w-full bg-black/[0.96] bg-grid-white/[0.07] antialiased grid grid-cols-1 space-y-6 lg:space-x-6  lg:space-y-0 2xl:space-x-0 lg:grid-cols-2 md:place-items-center p-10 xl:px-0 pt-40 ">
+        <section className="bg-neutral-900 border-[1px] border-white/20 rounded-3xl p-6">
           <Timeline timelineTitle={education.title} info={education.info} />
         </section>
-        <aside className="bg-neutral-900 border-[1px] border-white/20 rounded-3xl px-8 py-6 justify-center">
+        <aside className="bg-neutral-900 border-[1px] border-white/20 rounded-3xl p-6">
           <Timeline timelineTitle={experience.title} info={experience.info} />
         </aside>
       </div>
