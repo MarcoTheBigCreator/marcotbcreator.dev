@@ -17,10 +17,12 @@ export const CardStack = ({
   items,
   offset,
   scaleFactor,
+  title,
 }: {
   items: Card[];
   offset?: number;
   scaleFactor?: number;
+  title: string;
 }) => {
   const CARD_OFFSET = offset || 10;
   const SCALE_FACTOR = scaleFactor || 0.06;
@@ -73,7 +75,7 @@ export const CardStack = ({
             <h1
               className={`${titleFont.className} text-4xl font-bold text-white drop-shadow-text mb-3`}
             >
-              Expertise
+              {title}
             </h1>
             <div className="font-normal text-white">{card.content}</div>
             <div>

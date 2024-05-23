@@ -5,9 +5,10 @@ import { useUIStore } from '@/store';
 import clsx from 'clsx';
 import { LaguageButtonMobile } from '@/components';
 import { useEffect } from 'react';
-import { languages, navItems } from '@/locales';
+import { languages } from '@/locales';
+import { navItemsProps } from '@/interfaces/navInterface';
 
-export const MobileMenu = () => {
+export const MobileMenu = ({ navItems }: navItemsProps) => {
   const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);
 
   useEffect(() => {
@@ -39,7 +40,7 @@ export const MobileMenu = () => {
           className="flex items-center mt-10 p-2 hover:bg-violet-700 rounded transition-all ml-3 text-xl font-semibold text-white"
           onClick={() => useUIStore.setState({ isSideMenuOpen: false })}
         >
-          Resume
+          CV
         </Link>
         <div className="w-full h-px bg-gray-200 my-5" />
 

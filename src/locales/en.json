@@ -1,0 +1,156 @@
+{
+  "titles": {
+    "interestTitle": "Interests",
+    "expertiseTitle": "Expertise",
+    "skillsTitle": "Skills",
+    "softSkillsTitle": "Soft Skills",
+    "portfolioTitle": "Portfolio"
+  },
+
+  "navItems": [
+    {
+      "name": "About",
+      "href": "#about"
+    },
+    {
+      "name": "Portfolio",
+      "href": "#portfolio"
+    }
+  ],
+
+  "headerInfo": {
+    "words": [
+      {
+        "text": "Hi,"
+      },
+      {
+        "text": "I'm"
+      },
+      {
+        "text": "Marco"
+      }
+    ],
+    "description": "Software Engineering graduated from the Polytechnic University of Durango. Tech enthusiast committed to growth. Skilled in front-end development, project leadership, and agile methodologies. A problem solver with clear communication and quick adaptability."
+  },
+
+  "bioInfo": {
+    "name": "Marco Antonio Rodriguez Arreola",
+    "profession": "Software-Engineer",
+    "from": "Mexico",
+    "lives_in": "Durango",
+    "age": "22",
+    "interests": [
+      "Physical training",
+      "Music",
+      "Videogames",
+      "New Technologies"
+    ]
+  },
+
+  "cards": [
+    {
+      "id": 0,
+      "name": "Project Management",
+      "content": "Software project management with a blend of *agile methodologies*, specialized tools, and essential soft skills. Ensuring optimal *team performance* and *project success* through efficient and adaptive practices."
+    },
+    {
+      "id": 1,
+      "name": "Web Development",
+      "content": "Specialize in creating modern, responsive, and *visually stunning* websites by leveraging the *latest technologies*, frameworks, and industry standards. Delivering *exceptional results*."
+    },
+    {
+      "id": 2,
+      "name": "Databases",
+      "content": "Extensive expertise in creating, diagramming, maintaining, and optimizing *databases*. Additionally, I have experience in *server-side* and *backend development*, ensuring robust and efficient solutions for your needs."
+    },
+    {
+      "id": 3,
+      "name": "UI/UX Design",
+      "content": "Proficient in creating *user-friendly* and *intuitive* interfaces that enhance the user experience. I focus on creating *engaging* and *responsive* designs that are both visually appealing and functional."
+    }
+  ],
+
+  "softSkills": [
+    { "name": "Leadership" },
+    { "name": "Team Management" },
+    { "name": "Emotional Intelligence" },
+    { "name": "Problem-solving skills" },
+    { "name": "Communication" },
+    { "name": "Creativity" },
+    { "name": "Responsability" },
+    { "name": "Empathy" }
+  ],
+
+  "timeline": {
+    "education": {
+      "title": "Education",
+      "info": [
+        {
+          "date": "2020 - 2024",
+          "title": "Bachelor's Degree in Software Engineering",
+          "place": "Polytechnic University of Durango",
+          "description": "Graduated with strong standards in software and web development, working with various technologies. Additionally, have developed exceptional skills in communication, presentation, and engagement with real-world companies. Being part of the Bilingual International and Sustainable (BIS) program, providing a high level of proficiency in English (B2-C1)."
+        },
+        {
+          "date": "2017 - 2020",
+          "title": "Technician in Support and Maintenance of Computer Equipment",
+          "place": "CBTis 110",
+          "description": "Have acquired extensive knowledge in computer repair, providing support, and client management. Additionally, possesing a solid understanding of networking fundamentals."
+        },
+        {
+          "date": "2014 - 2017",
+          "title": "Middle School Certificate",
+          "place": "EST 67 \"José Santos Valdés\"",
+          "description": "Participated in a computer workshop with an emphasis on robotics. As part of this program, I took part in numerous VEX IQ tournaments, including two national competitions, and qualified for several world championships."
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experience",
+      "info": [
+        {
+          "date": "2023 - 2024",
+          "title": "Front-end Developer",
+          "place": "Talentum Space",
+          "description": "Worked on the Gekocards project using Next.js with TypeScript to generate AI-driven images for unique event invitations. Tasks included form creation with Formik and Yup, managing cookies, implementing drag-and-drop image functionality, and ensuring UI/UX and responsiveness. During the professional internship at Talentum, I contributed by creating components, screens, and connecting endpoints for a new educational platform. The platform helps Mexicans prepare for job interviews abroad using React, Sass, JavaScript, and Postman for endpoint testing."
+        },
+        {
+          "date": "2022 - 2023",
+          "title": "Front-end Developer & Project Management",
+          "place": "Work Nest Durango",
+          "description": "Completed two internships at a proud Mexican company. During the first internship, participated in the refactoring of the 'CAJA' system, used by municipalities in Mexico for various processes. Activities included training with the Angular Framework and the 'CAJA' system, maintaining constant communication with the team, and contributing ideas and suggestions. Redesigned system views to improve responsiveness, UI/UX, and aesthetics, and refactored supporting modules. In the second internship, managed administrative tasks such as organizing documentation, creating test templates and artifacts, and facilitating developer meetings to track progress."
+        }
+      ]
+    }
+  },
+
+  "portfolioItems": {
+    "items": [
+      {
+        "title": "Teslo Shop",
+        "description": "An eCommerce platform inspired by Tesla's online store, developed on a Next.js course.",
+        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268305/Portfolio/bp0nypegjlbg2mksieuj.png"
+      },
+      {
+        "title": "[OLD] MTBC | Portfolio",
+        "description": "This was one my first projects, my own portfolio built with HTML, CSS enhance with Bootstrap and JavaScript.",
+        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268305/Portfolio/pdsavuh4dxohvbqhjzbl.png"
+      },
+      {
+        "title": "[NEW] MTBC | Portfolio",
+        "description": "Built with Next.js and Tailwind CSS. Looking forward to a new minimal design, better performance, SEO optimization and maintainability.",
+        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268304/Portfolio/xtyrtmbbmdckey25ek1l.png"
+      },
+      {
+        "title": "Crummy Music Discord Bot",
+        "description": "A user-friendly Discord Music Bot music playback in your servers. Easily deployable on Heroku for quick setup and enjoyment.",
+        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268305/Portfolio/o1ui7jly1i1ct1kvsucw.png"
+      },
+      {
+        "title": "Puppy's Pet",
+        "description": "Development of an e-commerce prototype for 'LAGE' students project using Wix.",
+        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716271056/Portfolio/leiyedeiyhngns2mikna.png"
+      }
+    ]
+  }
+}

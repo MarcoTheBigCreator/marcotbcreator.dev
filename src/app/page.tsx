@@ -1,11 +1,5 @@
-import { About, Portfolio, Header } from '@/components';
+import { redirect } from 'next/navigation';
 
-export default function Home() {
-  return (
-    <>
-      <Header />
-      <About />
-      <Portfolio />
-    </>
-  );
+export default function RootPage() {
+  redirect('/en');
 }

@@ -11,10 +11,11 @@ import {
 import { LaguageButton } from '../laguange-button/LaguageButton';
 import { useUIStore } from '@/store';
 import { useState } from 'react';
-import { languages, navItems } from '@/locales';
+import { languages } from '@/locales';
 import { titleFont } from '@/config/fonts';
+import { navItemsProps } from '@/interfaces/navInterface';
 
-export const Navbar = () => {
+export const Navbar = ({ navItems }: navItemsProps) => {
   const openMenu = useUIStore((state) => state.openSideMenu);
   const closeMenu = useUIStore((state) => state.closeSideMenu);
   const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);
@@ -78,7 +79,7 @@ export const Navbar = () => {
           ) : (
             <IoDownloadOutline size={20} className="mr-1" />
           )}
-          Resume
+          CV
         </Link>
       </div>
       {/* Resume Button */}

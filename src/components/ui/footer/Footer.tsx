@@ -1,11 +1,11 @@
 import { Logo } from '@/components';
 import { titleFont } from '@/config/fonts';
-import { navItems } from '@/locales';
+import { navItemsProps } from '@/interfaces/navInterface';
 import Link from 'next/link';
 import { IoLogoGithub } from 'react-icons/io5';
 import { TfiLinkedin } from 'react-icons/tfi';
 
-export const Footer = () => {
+export const Footer = ({ navItems }: navItemsProps) => {
   return (
     <div className="dashes">
       <footer className="grid grid-cols-1 lg:grid-cols-3 gap-4 bg-black px-20 py-6 text-white center w-full items-center">

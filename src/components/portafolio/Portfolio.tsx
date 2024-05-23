@@ -1,9 +1,23 @@
-import { items, portfolioTitle } from '@/locales';
 import { BentoGrid, BentoGridItem } from '../ui/bento-grid/BentoGrid';
 import { PortfolioImageGrid } from './PortfolioImageGrid';
 import { titleFont } from '@/config/fonts';
+import { useTranslations } from 'next-intl';
+
+export interface portfolioItemsProps {
+  portfolioItems: portfolioItem[];
+}
+
+export interface portfolioItem {
+  title: string;
+  description: string;
+  path: string;
+}
 
 export function Portfolio() {
+  const t = useTranslations();
+  const items = t.raw('portfolioItems.items');
+  const portfolioTitle = t('titles.portfolioTitle');
+
   return (
     <div
       className="w-full bg-black/[0.96] bg-grid-white/[0.07] antialiased place-items-center px-10 pb-36 pt-20 lg:pt-40"
@@ -15,7 +29,7 @@ export function Portfolio() {
         {portfolioTitle}
       </h2>
       <BentoGrid className="px-0 md:px-4">
-        {items.map((item, i) => (
+        {items.map((item: portfolioItem, i: number) => (
           <BentoGridItem
             key={i}
             title={item.title}
