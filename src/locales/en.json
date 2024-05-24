@@ -39,7 +39,7 @@
     "name": "Marco Antonio Rodriguez Arreola",
     "profession": "Software-Engineer",
     "from": "Mexico",
-    "lives_in": "Durango",
+    "live_in": "Durango",
     "age": "22",
     "interests": [
       "Physical training",
@@ -47,6 +47,15 @@
       "Videogames",
       "New Technologies"
     ]
+  },
+
+  "bioTitles": {
+    "nameTitle": "Name",
+    "professionTitle": "Profession",
+    "fromTitle": "From",
+    "live_inTitle": "Live in",
+    "ageTitle": "Age",
+    "interestsTitle": "Interests"
   },
 
   "cards": [

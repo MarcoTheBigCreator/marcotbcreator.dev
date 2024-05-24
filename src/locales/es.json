@@ -26,7 +26,7 @@
         "text": "Hola,"
       },
       {
-        "text": "Soy"
+        "text": "soy"
       },
       {
         "text": "Marco"
@@ -36,10 +36,10 @@
   },
 
   "bioInfo": {
-    "name": "Marco Antonio Rodriguez Arreola",
-    "profession": "Ingeniero de Software",
+    "name": "Marco Antonio Rodríguez Arreola",
+    "profession": "Ingeniero-de Software",
     "from": "México",
-    "lives_in": "Durango",
+    "live_in": "Durango",
     "age": "22",
     "interests": [
       "Entrenamiento físico",
@@ -47,6 +47,15 @@
       "Videojuegos",
       "Nuevas Tecnologías"
     ]
+  },
+
+  "bioTitles": {
+    "nameTitle": "Nombre",
+    "professionTitle": "Profesión",
+    "fromTitle": "De",
+    "live_inTitle": "Vivo en",
+    "ageTitle": "Edad",
+    "interestsTitle": "Intereses"
   },
 
   "cards": [
