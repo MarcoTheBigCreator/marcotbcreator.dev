@@ -1,0 +1,158 @@
+{
+  "titles": {
+    "interestTitle": "Intereses",
+    "expertiseTitle": "Experiencia",
+    "skillsTitle": "Habilidades",
+    "softSkillsTitle": "Habilidades Blandas",
+    "portfolioTitle": "Portafolio"
+  },
+
+  "navItems": [
+    {
+      "name": "Acerca de",
+      "href": "#about"
+    },
+    {
+      "name": "Portafolio",
+      "href": "#portfolio"
+    }
+  ],
+
+  "cvLink": "https://res-console.cloudinary.com/dmlpgks2h/media_explorer_thumbnails/b0866b50d2549ccdff24a5cdf00d55eb/download",
+
+  "headerInfo": {
+    "words": [
+      {
+        "text": "Hola,"
+      },
+      {
+        "text": "Soy"
+      },
+      {
+        "text": "Marco"
+      }
+    ],
+    "description": "Graduado en Ingeniería de Software por la Universidad Politécnica de Durango. Entusiasta de la tecnología comprometido con el crecimiento. Hábil en desarrollo front-end, liderazgo de proyectos y metodologías ágiles. Un solucionador de problemas con comunicación clara y rápida adaptabilidad."
+  },
+
+  "bioInfo": {
+    "name": "Marco Antonio Rodriguez Arreola",
+    "profession": "Ingeniero de Software",
+    "from": "México",
+    "lives_in": "Durango",
+    "age": "22",
+    "interests": [
+      "Entrenamiento físico",
+      "Música",
+      "Videojuegos",
+      "Nuevas Tecnologías"
+    ]
+  },
+
+  "cards": [
+    {
+      "id": 0,
+      "name": "Gestión de Proyectos",
+      "content": "Gestión de proyectos de software con una combinación de *metodologías ágiles*, herramientas especializadas y habilidades blandas esenciales. Asegurando el *rendimiento óptimo del equipo* y el *éxito del proyecto* mediante prácticas eficientes y adaptativas."
+    },
+    {
+      "id": 1,
+      "name": "Desarrollo Web",
+      "content": "Especializado en crear sitios web modernos, responsivos y *visualmente impresionantes* utilizando las *últimas tecnologías*, marcos de trabajo y estándares de la industria. Entregando *resultados excepcionales*."
+    },
+    {
+      "id": 2,
+      "name": "Bases de Datos",
+      "content": "Amplia experiencia en la creación, diagramación, mantenimiento y optimización de *bases de datos*. Además, tengo experiencia en *desarrollo del lado del servidor* y *backend*, asegurando soluciones robustas y eficientes para tus necesidades."
+    },
+    {
+      "id": 3,
+      "name": "Diseño UI/UX",
+      "content": "Competente en la creación de interfaces *amigables para el usuario* e *intuitivas* que mejoran la experiencia del usuario. Me enfoco en crear diseños *atractivos* y *responsivos* que sean tanto visualmente atractivos como funcionales."
+    }
+  ],
+
+  "softSkills": [
+    { "name": "Liderazgo" },
+    { "name": "Gestión de Equipos" },
+    { "name": "Inteligencia Emocional" },
+    { "name": "Habilidades para resolver problemas" },
+    { "name": "Comunicación" },
+    { "name": "Creatividad" },
+    { "name": "Responsabilidad" },
+    { "name": "Empatía" }
+  ],
+
+  "timeline": {
+    "education": {
+      "title": "Educación",
+      "info": [
+        {
+          "date": "2020 - 2024",
+          "title": "Licenciatura en Ingeniería de Software",
+          "place": "Universidad Politécnica de Durango",
+          "description": "Graduado con altos estándares en desarrollo de software y web, trabajando con diversas tecnologías. Además, he desarrollado habilidades excepcionales en comunicación, presentación e interacción con empresas del mundo real. Formando parte del programa Bilingüe Internacional y Sustentable (BIS), que proporciona un alto nivel de competencia en inglés (B2-C1)."
+        },
+        {
+          "date": "2017 - 2020",
+          "title": "Técnico en Soporte y Mantenimiento de Equipo de Cómputo",
+          "place": "CBTis 110",
+          "description": "He adquirido amplios conocimientos en reparación de computadoras, proporcionando soporte y gestión de clientes. Además, poseo un sólido entendimiento de los fundamentos de redes."
+        },
+        {
+          "date": "2014 - 2017",
+          "title": "Certificado de Educación Secundaria",
+          "place": "EST 67 \"José Santos Valdés\"",
+          "description": "Participé en un taller de computación con énfasis en robótica. Como parte de este programa, participé en numerosos torneos de VEX IQ, incluidos dos nacionales, y clasifiqué para varios campeonatos mundiales."
+        }
+      ]
+    },
+    "experience": {
+      "title": "Experiencia",
+      "info": [
+        {
+          "date": "2023 - 2024",
+          "title": "Desarrollador Front-end",
+          "place": "Talentum Space",
+          "description": "Trabajé en el proyecto Gekocards usando Next.js con TypeScript para generar imágenes impulsadas por IA para invitaciones únicas a eventos. Las tareas incluían la creación de formularios con Formik y Yup, gestión de cookies, implementación de funcionalidad de arrastrar y soltar imágenes, y aseguramiento de la UI/UX y la capacidad de respuesta. Durante la pasantía profesional en Talentum, contribuí creando componentes, pantallas y conectando puntos finales para una nueva plataforma educativa. La plataforma ayuda a los mexicanos a prepararse para entrevistas de trabajo en el extranjero usando React, Sass, JavaScript y Postman para pruebas de puntos finales."
+        },
+        {
+          "date": "2022 - 2023",
+          "title": "Desarrollador Front-end y Gestión de Proyectos",
+          "place": "Work Nest Durango",
+          "description": "Completé dos pasantías en una orgullosa empresa mexicana. Durante la primera pasantía, participé en la refactorización del sistema 'CAJA', utilizado por los municipios en México para varios procesos. Las actividades incluyeron capacitación con el marco Angular y el sistema 'CAJA', manteniendo comunicación constante con el equipo y aportando ideas y sugerencias. Rediseñé las vistas del sistema para mejorar la capacidad de respuesta, UI/UX y estética, y refactoricé módulos de apoyo. En la segunda pasantía, gestioné tareas administrativas como organizar documentación, crear plantillas de prueba y artefactos, y facilitar reuniones de desarrolladores para rastrear el progreso."
+        }
+      ]
+    }
+  },
+
+  "portfolioItems": {
+    "items": [
+      {
+        "title": "Teslo Shop",
+        "description": "Una plataforma de comercio electrónico inspirada en la tienda en línea de Tesla, desarrollada en un curso de Next.js.",
+        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268305/Portfolio/bp0nypegjlbg2mksieuj.png"
+      },
+      {
+        "title": "[ANTIGUO] MTBC | Portafolio",
+        "description": "Este fue uno de mis primeros proyectos, mi propio portafolio construido con HTML, CSS mejorado con Bootstrap y JavaScript.",
+        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268305/Portfolio/pdsavuh4dxohvbqhjzbl.png"
+      },
+      {
+        "title": "[NUEVO] MTBC | Portafolio",
+        "description": "Construido con Next.js y Tailwind CSS. Buscando un nuevo diseño minimalista, mejor rendimiento, optimización SEO y mantenibilidad.",
+        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268304/Portfolio/xtyrtmbbmdckey25ek1l.png"
+      },
+      {
+        "title": "Crummy Music Discord Bot",
+        "description": "Un bot de música para Discord fácil de usar que reproduce música en tus servidores. Fácilmente desplegable en Heroku para una configuración rápida y disfrute.",
+        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268305/Portfolio/o1ui7jly1i1ct1kvsucw.png"
+      },
+      {
+        "title": "Puppy's Pet",
+        "description": "Desarrollo de un prototipo de comercio electrónico para el proyecto estudiantil 'LAGE' usando Wix.",
+        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716271056/Portfolio/leiyedeiyhngns2mikna.png"
+      }
+    ]
+  }
+}

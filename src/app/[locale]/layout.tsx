@@ -18,9 +18,10 @@ export const metadata: Metadata = {
     'Software Engineering graduated from the Polytechnic University of Durango. Tech enthusiast committed to growth. Skilled in front-end development, project leadership, and agile methodologies. A problem solver with clear communication and quick adaptability.',
   openGraph: {
     title: 'Marco Rodriguez',
-    description: "Emmanuel Bayona's portfolio",
+    description:
+      'Software Engineering graduated from the Polytechnic University of Durango. Tech enthusiast committed to growth. Skilled in front-end development, project leadership, and agile methodologies. A problem solver with clear communication and quick adaptability.',
     url: 'https://marcotbcreator.vercel.app/',
-    siteName: 'Emmanuel Bayona',
+    siteName: 'Marco Rodriguez',
     locale: 'en',
     type: 'website',
     images: [
@@ -58,14 +59,15 @@ export default function RootLayout({
 }: Readonly<RootLayoutProps>) {
   const t = useTranslations();
   const navItems = t.raw('navItems');
+  const cvLink = t('cvLink');
 
   return (
     <html lang={locale} className="min-h-screen pt-16 dark">
       <body className={poppins.className}>
-        <Navbar navItems={navItems} />
-        <MobileMenu navItems={navItems} />
+        <Navbar navItems={navItems} href={cvLink} />
+        <MobileMenu navItems={navItems} href={cvLink} />
         {children}
-        <Footer navItems={navItems} />
+        <Footer navItems={navItems} href={cvLink} />
         <Analytics />
         <SpeedInsights />
       </body>

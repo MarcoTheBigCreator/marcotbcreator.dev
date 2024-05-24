@@ -1,35 +1,41 @@
 'use client';
 
 import { useUIStore } from '@/store';
+import Link from 'next/link';
 import { useEffect } from 'react';
 
 interface Props {
   icon?: React.ReactNode;
   text: string;
+  href: string;
 }
 
-export const LaguageButton = ({ icon, text }: Props) => {
+export const LaguageButton = ({ icon, text, href }: Props) => {
   return (
-    <button className="pt-3 h-12 w-12 flex align-middle justify-center shadow-[0_5px_15px_1px_rgb(140,0,255,55%)] hover:shadow-[0_6px_20px_rgba(140,0,255,30%)] hover:bg-violet-900 bg-violet-700 rounded-full text-white font-semibold lg:font-medium transition duration-200 ease-linear">
+    <Link
+      href={href}
+      className="pt-3 h-12 w-12 flex align-middle justify-center shadow-[0_5px_15px_1px_rgb(140,0,255,55%)] hover:shadow-[0_6px_20px_rgba(140,0,255,30%)] hover:bg-violet-900 bg-violet-700 rounded-full text-white font-semibold lg:font-medium transition duration-200 ease-linear"
+    >
       {icon && <span className="mr-1">{icon}</span>}
       {text}
-    </button>
+    </Link>
   );
 };
 
-export const LaguageButtonMobile = ({ icon, text }: Props) => {
+export const LaguageButtonMobile = ({ icon, text, href }: Props) => {
   const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);
 
   useEffect(() => {
     document.body.style.overflow = isSideMenuOpen ? 'hidden' : 'auto';
   }, [isSideMenuOpen]);
   return (
-    <button
+    <Link
+      href={href}
       className="pt-3 h-12 w-12 flex align-middle justify-center shadow-[0_5px_15px_1px_rgb(140,0,255,55%)] hover:shadow-[0_6px_20px_rgba(140,0,255,30%)] hover:bg-violet-900 bg-violet-700 rounded-full text-white font-semibold lg:font-medium transition duration-200 ease-linear"
       onClick={() => useUIStore.setState({ isSideMenuOpen: false })}
     >
       {icon && <span className="mr-1">{icon}</span>}
       {text}
-    </button>
+    </Link>
   );
 };

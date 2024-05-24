@@ -8,7 +8,7 @@ import { useEffect } from 'react';
 import { languages } from '@/locales';
 import { navItemsProps } from '@/interfaces/navInterface';
 
-export const MobileMenu = ({ navItems }: navItemsProps) => {
+export const MobileMenu = ({ navItems, href }: navItemsProps) => {
   const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);
 
   useEffect(() => {
@@ -36,7 +36,7 @@ export const MobileMenu = ({ navItems }: navItemsProps) => {
           </Link>
         ))}
         <Link
-          href="https://res.cloudinary.com/dmlpgks2h/image/upload//fl_attachment:cv-en//v1715931123/Portfolio/cv-en.pdf?_s=public-apps"
+          href={href}
           className="flex items-center mt-10 p-2 hover:bg-violet-700 rounded transition-all ml-3 text-xl font-semibold text-white"
           onClick={() => useUIStore.setState({ isSideMenuOpen: false })}
         >
@@ -46,8 +46,12 @@ export const MobileMenu = ({ navItems }: navItemsProps) => {
 
         {/* Language */}
         <div className="p-4 pl-3 pb-24 flex gap-3">
-          {languages.map((lang) => (
-            <LaguageButtonMobile key={lang.name} text={lang.name} />
+          {languages.map((language) => (
+            <LaguageButtonMobile
+              key={language.name}
+              text={language.name}
+              href={language.href}
+            />
           ))}
         </div>
       </nav>

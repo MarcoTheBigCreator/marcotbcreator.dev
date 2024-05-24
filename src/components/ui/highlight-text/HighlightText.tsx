@@ -9,6 +9,7 @@ interface Props {
 interface Card {
   id: number;
   name: string;
+  designations?: string;
   content: string;
 }
 

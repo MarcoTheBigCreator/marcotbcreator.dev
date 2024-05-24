@@ -15,7 +15,7 @@ import { languages } from '@/locales';
 import { titleFont } from '@/config/fonts';
 import { navItemsProps } from '@/interfaces/navInterface';
 
-export const Navbar = ({ navItems }: navItemsProps) => {
+export const Navbar = ({ navItems, href }: navItemsProps) => {
   const openMenu = useUIStore((state) => state.openSideMenu);
   const closeMenu = useUIStore((state) => state.closeSideMenu);
   const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);
@@ -69,7 +69,7 @@ export const Navbar = ({ navItems }: navItemsProps) => {
           </Link>
         ))}
         <Link
-          href="https://res.cloudinary.com/dmlpgks2h/image/upload//fl_attachment:cv-en//v1715931123/Portfolio/cv-en.pdf?_s=public-apps"
+          href={href}
           className="m-2 p-2 flex align-middle justify-center hover:shadow-[0_6px_20px_rgba(140,0,255,55%)] hover:bg-violet-700 rounded-full text-white font-medium transition duration-200 ease-linear"
           onMouseEnter={() => setIsResumeOnHover(true)}
           onMouseLeave={() => setIsResumeOnHover(false)}
@@ -85,7 +85,11 @@ export const Navbar = ({ navItems }: navItemsProps) => {
       {/* Resume Button */}
       <div className="hidden lg:flex col-span-2 gap-4 justify-center">
         {languages.map((language) => (
-          <LaguageButton key={language.name} text={language.name} />
+          <LaguageButton
+            key={language.name}
+            text={language.name}
+            href={language.href}
+          />
         ))}
       </div>
     </nav>
