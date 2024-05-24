@@ -53,7 +53,7 @@ export const metadata: Metadata = {
   ],
 };
 
-export default function RootLayout({
+export default function LocaleLayout({
   children,
   params: { locale },
 }: Readonly<RootLayoutProps>) {
