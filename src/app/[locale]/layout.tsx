@@ -32,6 +32,10 @@ export const metadata: Metadata = {
   },
   keywords: [
     'Marco Rodriguez',
+    'marcotbcreator',
+    'creator',
+    'the creator',
+    'big creator',
     'Portfolio',
     'Software Engineer',
     'Frontend Developer',
