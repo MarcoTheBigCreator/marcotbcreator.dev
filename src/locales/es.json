@@ -140,27 +140,32 @@
       {
         "title": "Teslo Shop",
         "description": "Una plataforma de comercio electrónico inspirada en la tienda en línea de Tesla, desarrollada en un curso de Next.js.",
-        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268305/Portfolio/bp0nypegjlbg2mksieuj.png"
+        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268305/Portfolio/bp0nypegjlbg2mksieuj.png",
+        "slug": "teslo-shop"
       },
       {
         "title": "[ANTIGUO] MTBC | Portafolio",
         "description": "Este fue uno de mis primeros proyectos, mi propio portafolio construido con HTML, CSS mejorado con Bootstrap y JavaScript.",
-        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268305/Portfolio/pdsavuh4dxohvbqhjzbl.png"
+        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268305/Portfolio/pdsavuh4dxohvbqhjzbl.png",
+        "slug": "mtbc-portfolio"
       },
       {
         "title": "[NUEVO] MTBC | Portafolio",
         "description": "Construido con Next.js y Tailwind CSS. Buscando un nuevo diseño minimalista, mejor rendimiento, optimización SEO y mantenibilidad.",
-        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268304/Portfolio/xtyrtmbbmdckey25ek1l.png"
+        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268304/Portfolio/xtyrtmbbmdckey25ek1l.png",
+        "slug": "mtbc-portfolio-v2"
       },
       {
         "title": "Crummy Music Discord Bot",
         "description": "Un bot de música para Discord fácil de usar que reproduce música en tus servidores. Fácilmente desplegable en Heroku para una configuración rápida y disfrute.",
-        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268305/Portfolio/o1ui7jly1i1ct1kvsucw.png"
+        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268305/Portfolio/o1ui7jly1i1ct1kvsucw.png",
+        "slug": "crummy-music-discord-bot"
       },
       {
         "title": "Puppy's Pet",
         "description": "Desarrollo de un prototipo de comercio electrónico para el proyecto estudiantil 'LAGE' usando Wix.",
-        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716271056/Portfolio/leiyedeiyhngns2mikna.png"
+        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716271056/Portfolio/leiyedeiyhngns2mikna.png",
+        "slug": "puppys-pet"
       }
     ]
   }

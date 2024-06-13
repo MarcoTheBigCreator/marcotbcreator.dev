@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { BentoGrid, BentoGridItem } from '../ui/bento-grid/BentoGrid';
 import { PortfolioImageGrid } from './PortfolioImageGrid';
 import { titleFont } from '@/config/fonts';
@@ -11,6 +12,7 @@ export interface portfolioItem {
   title: string;
   description: string;
   path: string;
+  slug: string;
 }
 
 export function Portfolio() {
@@ -30,16 +32,25 @@ export function Portfolio() {
       </h2>
       <BentoGrid className="px-0 md:px-4">
         {items.map((item: portfolioItem, i: number) => (
-          <BentoGridItem
+          <Link
+            href={`/project/${item.slug}`}
             key={i}
-            title={item.title}
-            description={item.description}
-            header={<PortfolioImageGrid path={item.path} title={item.title} />}
-            //   icon={item.icon}
-            className={
-              i === 3 || i === 6 ? 'col-span-1 md:col-span-2 lg:col-span-1' : ''
-            }
-          />
+            className="hover:scale-105 ease-linear duration-200"
+          >
+            <BentoGridItem
+              title={item.title}
+              description={item.description}
+              header={
+                <PortfolioImageGrid path={item.path} title={item.title} />
+              }
+              //   icon={item.icon}
+              className={
+                i === 3 || i === 6
+                  ? 'col-span-1 md:col-span-2 lg:col-span-1'
+                  : ''
+              }
+            />
+          </Link>
         ))}
       </BentoGrid>
     </div>
