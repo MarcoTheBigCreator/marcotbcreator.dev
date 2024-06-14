@@ -6,7 +6,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 3,
@@ -24,7 +24,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 5,
@@ -42,7 +42,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 7,
@@ -60,7 +60,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 8,
@@ -69,7 +69,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 9,
@@ -78,7 +78,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 10,
@@ -87,7 +87,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 11,
@@ -96,7 +96,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 12,
@@ -105,7 +105,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 13,
@@ -114,7 +114,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 14,
@@ -123,7 +123,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 15,
@@ -132,7 +132,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 16,
@@ -141,7 +141,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 17,
@@ -150,7 +150,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 18,
@@ -159,7 +159,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 19,
@@ -168,7 +168,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 20,
@@ -177,7 +177,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 21,
@@ -186,7 +186,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 22,
@@ -195,7 +195,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 23,
@@ -204,7 +204,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 24,
@@ -213,7 +213,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 25,
@@ -222,7 +222,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 26,
@@ -231,7 +231,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 27,
@@ -240,7 +240,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 28,
@@ -249,7 +249,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 29,
@@ -258,7 +258,7 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
   {
     id: 30,
@@ -267,6 +267,6 @@ export const skills = [
     width: 30,
     height: 30,
     priority: false,
-    className: 'inline-block',
+    imageClassName: 'inline-block',
   },
 ];

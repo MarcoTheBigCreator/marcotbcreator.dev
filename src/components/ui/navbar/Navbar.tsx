@@ -50,7 +50,7 @@ export const Navbar = ({ navItems, href }: navItemsProps) => {
       {/* Brand */}
       <div className="hidden lg:flex col-span-2 justify-center">
         <Link
-          href="/"
+          href="#header"
           className={`${titleFont.className} flex text-lg font-semibold gap-2 text-white hover:text-violet-600 transition duration-200 ease-linear`}
         >
           <Logo width={25} height={25} color="white" />

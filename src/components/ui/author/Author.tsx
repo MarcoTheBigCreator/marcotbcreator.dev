@@ -33,8 +33,8 @@ export const Author = ({
           },
         ]}
       >
-        <div className="grid grid-rows-4 grid-flow-col ">
-          <span className="">{name}</span>
+        <div className="grid grid-rows-2 grid-flow-col ">
+          <span className="text-sm ">{name}</span>
           <span className="text-sm">{date}</span>
         </div>
       </AnimatedTooltip>

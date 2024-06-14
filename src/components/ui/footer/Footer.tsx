@@ -20,7 +20,7 @@ export const Footer = ({ navItems }: navItemsProps) => {
           <Link
             href="mailto:marcotbcreator@gmail.com"
             aria-label="Email me at"
-            className="text-lg font-light on hover:text-violet-400 hover:underline transition duration-200 ease-linear"
+            className="text-lg font-light on hover:text-violet-600 hover:underline transition duration-200 ease-linear"
           >
             marcotbcreator@gmail.com
           </Link>
@@ -40,7 +40,7 @@ export const Footer = ({ navItems }: navItemsProps) => {
             />
           </Link>
           <Link
-            href={'/'}
+            href={'#header'}
             aria-label="Logo of MarcoTheBigCreator to go to the home page"
             className="p-3 flex align-middle justify-center bg-white hover:bg-violet-600 rounded-full drop-shadow-text hover:drop-shadow-purple transition duration-200 ease-linear"
           >
@@ -65,7 +65,7 @@ export const Footer = ({ navItems }: navItemsProps) => {
             <Link
               key={item.name}
               href={item.href}
-              className="m-2 px-5 p-2 flex align-middle justify-center hover:shadow-[0_6px_20px_rgba(140,0,255,55%)] hover:bg-violet-700 rounded-full text-white font-medium transition duration-200 ease-linear"
+              className="m-2 px-5 p-2 flex align-middle justify-center hover:shadow-[0_6px_20px_rgba(140,0,255,55%)] hover:bg-violet-600 rounded-full text-white font-medium transition duration-200 ease-linear"
             >
               {item.name}
             </Link>

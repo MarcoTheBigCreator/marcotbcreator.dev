@@ -1,8 +1,12 @@
 import { Author, Spotlight } from '@/components';
+import { poppins, titleFont } from '@/config/fonts';
 import { formatDateUS, generateBlogMetadata, isSlugAllowed } from '@/utils';
 import { Metadata, ResolvingMetadata } from 'next';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
+import { IoArrowBack } from 'react-icons/io5';
 
 interface Props {
   params: { slug: string };
@@ -54,11 +58,25 @@ export default function Blog({ params }: Props) {
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="rgb(109, 40, 217)"
       />
-      <div className="lg:max-w-5xl bg-neutral-900 border-[1px] border-white/20 rounded-3xl mx-4 p-3 lg:p-6 relative z-10 w-full mt-16">
-        <h1 className="className={`${titleFont.className} text-xl font-bold text-white drop-shadow-text mb-3">
+      <div className="lg:max-w-5xl bg-neutral-900 border-[1px] border-white/20 rounded-2xl lg:rounded-3xl mx-4 pt-4 p-2 lg:p-6 relative z-10 w-full my-16">
+        <div className="mb-4">
+          <Link
+            href="/"
+            className="hover:text-violet-500 transition duration-200 ease-linear flex"
+          >
+            <IoArrowBack size={29} />
+            <span className="mt-1 ml-1 hidden lg:block">Regresar</span>
+          </Link>
+        </div>
+        {/* title */}
+        <h1
+          className={`${titleFont.className} text-4xl font-bold text-white drop-shadow-text mb-3 ml-1`}
+        >
           {BlogData.title}
         </h1>
-        <div>
+
+        {/* author */}
+        <div className="ml-2 mt-4">
           <Author
             id={1}
             src={BlogData.authorImage}
@@ -68,26 +86,25 @@ export default function Blog({ params }: Props) {
             date={formatDateUS(BlogData.lastUpdateDate)}
           />
         </div>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ab ipsa
-          accusamus et odio molestiae maxime, numquam neque quisquam itaque sed
-          dolores aliquam ad libero suscipit! Quas in officia blanditiis?
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ab ipsa
-          accusamus et odio molestiae maxime, numquam neque quisquam itaque sed
-          dolores aliquam ad libero suscipit! Quas in officia blanditiis?
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ab ipsa
-          accusamus et odio molestiae maxime, numquam neque quisquam itaque sed
-          dolores aliquam ad libero suscipit! Quas in officia blanditiis?
-        </h1>
-        <h1>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ab ipsa
-          accusamus et odio molestiae maxime, numquam neque quisquam itaque sed
-          dolores aliquam ad libero suscipit! Quas in officia blanditiis?
-        </h1>
+
+        {/* blog image */}
+        <div>
+          <Image
+            src={BlogData.projectImage}
+            alt={`${BlogData.title} - Project Image`}
+            width={1920}
+            height={1080}
+            quality={100}
+            className="rounded-2xl mt-5 max-h-[550px] w-full object-cover"
+          />
+        </div>
+
+        {/* description */}
+        <div className="mt-6 md:mt-8">
+          <pre className={`${poppins.className} text-balance text-gray-300`}>
+            {BlogData.description}
+          </pre>
+        </div>
       </div>
     </div>
   );
