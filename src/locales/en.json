@@ -168,5 +168,19 @@
         "slug": "puppys-pet"
       }
     ]
+  },
+  "portfolioBlog": {
+    "teslo-shop": {
+      "title": "Teslo Shop",
+      "summary": "An eCommerce platform inspired by Tesla's online store, developed on a Next.js course.",
+      "author": "Marco Antonio Rodriguez",
+      "authorImage": "https://avatars.githubusercontent.com/u/e?email=marcotbcreator@gmail.com",
+      "authorGithub": "https://github.com/MarcoTheBigCreator",
+      "lastUpdateDate": "2024-06-13",
+      "projectImage": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1718305713/Portfolio/y2ryai4ewwmtwjmwlsiv.png",
+      "description": "This is an e-commerce functional prototype.\n\nI took a NextJs course to enhance my programming skills and knowledge about the technology. NextJs recently introduced significant changes with the new “App Router” version, and this project utilizes version 14 of Next. This allowed me to manage the backend through server actions.\n\nThe project also includes AuthJs for authentication verification and integrates a payment platform with PayPal. For testing purposes, the payment functionality is in sandbox mode. To simulate a payment, use this test account: [ojavio@gmail.com](mailto:ojavio@gmail.com) with the password: 12345678.\n\nFor improved security, all data is verified with the database. Even if a user tries to alter the data, it is retrieved from the backend. For payments, we obtain the status from PayPal APIs. We then save the order status and transaction ID in our database for extra transaction security.\n\nThe database is created and managed through a Prisma schema. This was my first time using this ORM for a PostgreSQL Database. It's a great technology due to the ease of creating tables and relations needed for an e-commerce platform. It also enhances type security to prevent errors when data is being created or modified. As mentioned earlier, the backend is made through server actions, which were easily implemented thanks to Prisma.\n\nThe website also includes Admin sections where users and products can be modified or deleted, making it more complete and scalable.\n\nOther technologies used include Zustand for easy global state management. During development, the database was hosted in a Docker container. The styles were implemented using Tailwind CSS.\n\nThis project was a significant learning experience. I gained a lot of knowledge about NextJs and its features, such as side rendering, server actions, and options to create dynamic metadata for optimal SEO. These features make this React Framework a good choice for projects like this.",
+      "technologies": "tech:link,tech2:link,",
+      "links": "link,link,"
+    }
   }
 }

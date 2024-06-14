@@ -168,5 +168,19 @@
         "slug": "puppys-pet"
       }
     ]
+  },
+  "portfolioBlog": {
+    "teslo-shop": {
+      "title": "Teslo Shop",
+      "summary": "An eCommerce platform inspired by Tesla's online store, developed on a Next.js course.",
+      "author": "Marco Antonio Rodriguez",
+      "authorImage": "https://avatars.githubusercontent.com/u/e?email=marcotbcreator@gmail.com",
+      "authorGithub": "https://github.com/MarcoTheBigCreator",
+      "lastUpdateDate": "2024-06-13",
+      "projectImage": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1718305713/Portfolio/y2ryai4ewwmtwjmwlsiv.png",
+      "description": "Este es un prototipo funcional de comercio electrónico.\n\nTomé un curso de NextJs para mejorar mis habilidades de programación y conocimientos sobre la tecnología. NextJs introdujo recientemente cambios significativos con la nueva versión \"App Router\", y este proyecto utiliza la versión 14 de Next. Esto me permitió gestionar el backend a través de acciones del servidor.\n\nEl proyecto también incluye AuthJs para la verificación de la autenticación e integra una plataforma de pago con PayPal. Para propósitos de prueba, la funcionalidad de pago está en modo sandbox. Para simular un pago, utilice esta cuenta de prueba: [ojavio@gmail.com](mailto:ojavio@gmail.com) con la contraseña: 12345678.\n\nPara mejorar la seguridad, todos los datos se verifican con la base de datos. Incluso si un usuario intenta alterar los datos, se recuperan del backend. Para los pagos, obtenemos el estado de las API de PayPal. A continuación, guardamos el estado del pedido y el ID de la transacción en nuestra base de datos para mayor seguridad de la transacción.\n\nLa base de datos se crea y gestiona a través de un esquema Prisma. Esta fue mi primera vez usando este ORM para una base de datos PostgreSQL. Es una gran tecnología debido a la facilidad de creación de tablas y relaciones necesarias para una plataforma de comercio electrónico. También mejora la seguridad de tipo para evitar errores cuando los datos están siendo creados o modificados. Como se mencionó anteriormente, el backend se realiza a través de acciones del servidor, que fueron fácilmente implementadas gracias a Prisma.\n\nEl sitio web también incluye secciones de administración donde se pueden modificar o eliminar usuarios y productos, lo que lo hace más completo y escalable.\n\nOtras tecnologías utilizadas incluyen Zustand para facilitar la gestión global de estados. Durante el desarrollo, la base de datos se alojó en un contenedor Docker. Los estilos se implementaron utilizando Tailwind CSS.\n\nEste proyecto fue una experiencia de aprendizaje significativa. Obtuve mucho conocimiento sobre NextJs y sus características, como el renderizado lateral, las acciones del servidor y las opciones para crear metadatos dinámicos para un SEO óptimo. Estas características hacen de este framework React una buena opción para proyectos como este.",
+      "technologies": "tech:link,tech2:link,",
+      "links": "link,link,"
+    }
   }
 }

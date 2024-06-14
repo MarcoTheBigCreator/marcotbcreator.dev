@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function NotFound() {
   return (
     <section className="bg-black/[0.96] bg-grid-white/[0.07] ">
-      <div className="container flex items-center min-h-screen px-6 mx-auto">
+      <div className="container flex items-center min-h-[75vh] px-6 mx-auto">
         <div className="flex flex-col items-center max-w-sm mx-auto text-center">
           <p className="p-3 text-sm font-medium text-white rounded-full bg-violet-700 drop-shadow-purple">
             <svg

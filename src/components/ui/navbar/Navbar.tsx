@@ -13,7 +13,7 @@ import { useUIStore } from '@/store';
 import { useState } from 'react';
 import { languages } from '@/locales';
 import { titleFont } from '@/config/fonts';
-import { navItemsProps } from '@/interfaces/navInterface';
+import { navItemsProps } from '@/interfaces';
 
 export const Navbar = ({ navItems, href }: navItemsProps) => {
   const openMenu = useUIStore((state) => state.openSideMenu);

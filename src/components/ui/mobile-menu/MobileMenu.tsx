@@ -6,7 +6,7 @@ import clsx from 'clsx';
 import { LaguageButtonMobile } from '@/components';
 import { useEffect } from 'react';
 import { languages } from '@/locales';
-import { navItemsProps } from '@/interfaces/navInterface';
+import { navItemsProps } from '@/interfaces';
 
 export const MobileMenu = ({ navItems, href }: navItemsProps) => {
   const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);

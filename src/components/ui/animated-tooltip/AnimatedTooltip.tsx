@@ -5,6 +5,7 @@ import { motion, useTransform, useMotionValue, useSpring } from 'framer-motion';
 
 export const AnimatedTooltip = ({
   items,
+  children,
 }: {
   items: {
     id: number;
@@ -14,8 +15,10 @@ export const AnimatedTooltip = ({
     width?: number;
     height?: number;
     priority?: boolean;
+    imageClassName?: string;
     className?: string;
   }[];
+  children?: React.ReactNode;
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
   const springConfig = { stiffness: 100, damping: 5 };
@@ -39,7 +42,7 @@ export const AnimatedTooltip = ({
     <>
       {items.map((item) => (
         <div
-          className="relative group"
+          className={`group relative ${item.className}`}
           key={item.name}
           onMouseEnter={() => setHoveredIndex(item.id)}
           onMouseLeave={() => setHoveredIndex(null)}
@@ -84,11 +87,14 @@ export const AnimatedTooltip = ({
             alt={item.name}
             placeholder="empty"
             className={`${
-              item.className
-                ? item.className
+              item.imageClassName
+                ? item.imageClassName
                 : 'object-cover !m-0 !p-0 object-top rounded-2xl h-80 w-64 border-2 group-hover:scale-105 group-hover:z-30 border-violet-950  relative transition duration-500'
             }`}
           />
+
+          {/* Children  */}
+          {children}
         </div>
       ))}
     </>
