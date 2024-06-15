@@ -1,4 +1,4 @@
-import { Author, Spotlight } from '@/components';
+import { Author, BlogLinksList, Spotlight } from '@/components';
 import { poppins, titleFont } from '@/config/fonts';
 import { generateBlogMetadata, isSlugAllowed } from '@/utils';
 import { Metadata, ResolvingMetadata } from 'next';
@@ -59,7 +59,7 @@ export default function Blog({ params }: Props) {
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="rgb(109, 40, 217)"
       />
-      <div className="lg:max-w-5xl bg-neutral-900 border-[1px] border-white/20 rounded-2xl lg:rounded-3xl mx-4 pt-4 p-2 lg:p-6 relative z-10 w-full my-16">
+      <div className="lg:max-w-5xl bg-neutral-900 border-[1px] border-white/20 rounded-2xl lg:rounded-3xl mx-4 pt-4 p-2 pb-4 lg:p-12 relative z-10 w-full my-16">
         <div className="mb-4">
           <Link
             href="/"
@@ -98,6 +98,24 @@ export default function Blog({ params }: Props) {
             quality={100}
             className="rounded-2xl mt-5 max-h-[550px] w-full object-cover"
           />
+        </div>
+
+        {/* Links */}
+        <div className="mt-6 md:mt-8">
+          {/* Tecnologies */}
+          <div>
+            <BlogLinksList
+              technologies={BlogData.technologies}
+              title="Technologies"
+            />
+          </div>
+
+          <hr className="my-3" />
+
+          {/* Links */}
+          <div>
+            <BlogLinksList technologies={BlogData.links} title="Links" />
+          </div>
         </div>
 
         {/* description */}

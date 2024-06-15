@@ -3,6 +3,7 @@ export * from './about/Bio';
 export * from './about/Education';
 export * from './about/Experience';
 export * from './about/Expertise';
+export * from './blog/BlogLinksList';
 export * from './header/Header';
 export * from './header/HeaderTitle';
 export * from './logo/Logo';
