@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { AnimatedTooltip } from '../animated-tooltip/AnimatedTooltip';
+import { FormattedDate } from '../formatted-date/FormattedDate';
 
 interface AvatarProps {
   id: number;
@@ -35,7 +36,7 @@ export const Author = ({
       >
         <div className="grid grid-rows-2 grid-flow-col ">
           <span className="text-sm ">{name}</span>
-          <span className="text-sm">{date}</span>
+          <FormattedDate date={date} />
         </div>
       </AnimatedTooltip>
     </Link>

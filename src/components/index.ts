@@ -13,6 +13,7 @@ export * from './ui/animated-tooltip/AnimatedTooltip';
 export * from './ui/bento-grid/BentoGrid';
 export * from './ui/button/Button';
 export * from './ui/footer/Footer';
+export * from './ui/formatted-date/FormattedDate';
 export * from './ui/highlight-text/HighlightText';
 export * from './ui/laguange-button/LaguageButton';
 export * from './ui/navbar/Navbar';

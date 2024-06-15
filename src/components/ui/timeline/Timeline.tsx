@@ -12,7 +12,7 @@ interface Props {
 
 export const Timeline = ({ timelineTitle, info }: Props) => {
   return (
-    <div className="w-full max-w-3xl lg:min-h-[1500px] slg:min-h-[900px] xl:min-h-[700px]">
+    <div className="w-full max-w-3xl lg:min-h-[1500px] slg:min-h-[1050px] xl:min-h-[770px]">
       <h2
         className={`${titleFont.className} text-4xl font-bold mb-3 mt-3 text-white drop-shadow-text`}
       >

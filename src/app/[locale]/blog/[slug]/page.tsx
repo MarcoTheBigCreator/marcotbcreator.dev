@@ -1,6 +1,6 @@
 import { Author, Spotlight } from '@/components';
 import { poppins, titleFont } from '@/config/fonts';
-import { formatDateUS, generateBlogMetadata, isSlugAllowed } from '@/utils';
+import { generateBlogMetadata, isSlugAllowed } from '@/utils';
 import { Metadata, ResolvingMetadata } from 'next';
 import { useTranslations } from 'next-intl';
 import Image from 'next/image';
@@ -41,6 +41,7 @@ export default function Blog({ params }: Props) {
   const t = useTranslations(`portfolioBlog.${slug}`);
 
   const BlogData = {
+    back: t('back'),
     title: t('title'),
     author: t('author'),
     authorImage: t('authorImage'),
@@ -65,7 +66,7 @@ export default function Blog({ params }: Props) {
             className="hover:text-violet-500 transition duration-200 ease-linear flex"
           >
             <IoArrowBack size={29} />
-            <span className="mt-1 ml-1 hidden lg:block">Regresar</span>
+            <span className="mt-1 ml-1 hidden lg:block">{BlogData.back}</span>
           </Link>
         </div>
         {/* title */}
@@ -83,7 +84,7 @@ export default function Blog({ params }: Props) {
             tooltipMessage="Check out my GitHub"
             name={BlogData.author}
             href={BlogData.authorGithub}
-            date={formatDateUS(BlogData.lastUpdateDate)}
+            date={BlogData.lastUpdateDate}
           />
         </div>
 

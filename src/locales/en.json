@@ -171,6 +171,7 @@
   },
   "portfolioBlog": {
     "teslo-shop": {
+      "back": "Back to home",
       "title": "Teslo Shop",
       "summary": "An eCommerce platform inspired by Tesla's online store, developed on a Next.js course.",
       "author": "Marco Antonio Rodriguez",
