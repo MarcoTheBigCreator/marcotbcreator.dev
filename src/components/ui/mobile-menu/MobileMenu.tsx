@@ -7,6 +7,7 @@ import { LanguageButtonMobile } from '@/components';
 import { useEffect } from 'react';
 import { languages } from '@/locales';
 import { navItemsProps } from '@/interfaces';
+import { usePathname, useRouter } from 'next/navigation';
 
 export const MobileMenu = ({ navItems, href }: navItemsProps) => {
   const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);
@@ -14,6 +15,22 @@ export const MobileMenu = ({ navItems, href }: navItemsProps) => {
   useEffect(() => {
     document.body.style.overflow = isSideMenuOpen ? 'hidden' : 'auto';
   }, [isSideMenuOpen]);
+
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const handleNavigation = (itemHref: string) => {
+    const isOnMainPage = pathname === '/en' || pathname === '/es';
+    if (isOnMainPage) {
+      // Si estás en la página principal, navega directamente al ID de la sección
+      router.push(itemHref);
+    } else {
+      // Si estás en una página de proyecto, redirige a la página principal con el ID de la sección
+      const newUrl = `/${pathname.split('/')[0]}${itemHref}`;
+      router.push(newUrl.startsWith('//') ? `/${itemHref}` : newUrl);
+    }
+    useUIStore.setState({ isSideMenuOpen: false });
+  };
 
   return (
     <div className="w-full h-full lg:hidden">
@@ -26,14 +43,13 @@ export const MobileMenu = ({ navItems, href }: navItemsProps) => {
       >
         {/* Menu */}
         {navItems.map((item) => (
-          <Link
+          <button
             key={item.name}
-            href={item.href}
-            className="flex items-center mt-10 p-2 hover:bg-violet-700 rounded transition-all ml-3 text-xl font-semibold text-twhite"
-            onClick={() => useUIStore.setState({ isSideMenuOpen: false })}
+            onClick={() => handleNavigation(item.href)}
+            className="flex items-center mt-10 p-2 hover:bg-violet-700 rounded transition-all ml-3 text-xl font-semibold text-white"
           >
             {item.name}
-          </Link>
+          </button>
         ))}
         <Link
           href={href}

@@ -1,11 +1,29 @@
+'use client';
+
 import { Logo } from '@/components';
 import { titleFont } from '@/config/fonts';
 import { navItemsProps } from '@/interfaces/navInterface';
 import Link from 'next/link';
 import { IoLogoGithub } from 'react-icons/io5';
 import { TfiLinkedin } from 'react-icons/tfi';
+import { usePathname, useRouter } from 'next/navigation';
 
 export const Footer = ({ navItems }: navItemsProps) => {
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const handleNavigation = (itemHref: string) => {
+    const isOnMainPage = pathname === '/en' || pathname === '/es';
+    if (isOnMainPage) {
+      // Si estás en la página principal, navega directamente al ID de la sección
+      router.push(itemHref);
+    } else {
+      // Si estás en una página de proyecto, redirige a la página principal con el ID de la sección
+      const newUrl = `/${pathname.split('/')[0]}${itemHref}`;
+      router.push(newUrl.startsWith('//') ? `/${itemHref}` : newUrl);
+    }
+  };
+
   return (
     <div className="dashes">
       <footer className="grid grid-cols-1 lg:grid-cols-3 gap-4 bg-black px-20 py-6 text-white center w-full items-center">
@@ -39,13 +57,13 @@ export const Footer = ({ navItems }: navItemsProps) => {
               className="text-white hover:text-purple-600 transition duration-200 ease-linear"
             />
           </Link>
-          <Link
-            href={'#header'}
+          <button
+            onClick={() => handleNavigation('#header')}
             aria-label="Logo of MarcoTheBigCreator to go to the home page"
             className="p-3 flex align-middle justify-center bg-white hover:bg-violet-600 rounded-full drop-shadow-text hover:drop-shadow-purple transition duration-200 ease-linear"
           >
             <Logo width={40} height={40} color="black" />
-          </Link>
+          </button>
           <Link
             href={'https://www.linkedin.com/in/marcotbcreator/'}
             target="_blank"
@@ -62,13 +80,13 @@ export const Footer = ({ navItems }: navItemsProps) => {
         {/* Navigation */}
         <section className="flex justify-center lg:justify-end ">
           {navItems.map((item) => (
-            <Link
+            <button
               key={item.name}
-              href={item.href}
+              onClick={() => handleNavigation(item.href)}
               className="m-2 px-5 p-2 flex align-middle justify-center hover:shadow-[0_6px_20px_rgba(140,0,255,55%)] hover:bg-violet-600 rounded-full text-white font-medium transition duration-200 ease-linear"
             >
               {item.name}
-            </Link>
+            </button>
           ))}
         </section>
       </footer>

@@ -14,6 +14,7 @@ import { useState } from 'react';
 import { languages } from '@/locales';
 import { titleFont } from '@/config/fonts';
 import { navItemsProps } from '@/interfaces';
+import { usePathname, useRouter } from 'next/navigation';
 
 export const Navbar = ({ navItems, href }: navItemsProps) => {
   const openMenu = useUIStore((state) => state.openSideMenu);
@@ -21,6 +22,21 @@ export const Navbar = ({ navItems, href }: navItemsProps) => {
   const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);
 
   const [isResumeOnHover, setIsResumeOnHover] = useState(false);
+
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const handleNavigation = (itemHref: string) => {
+    const isOnMainPage = pathname === '/en' || pathname === '/es';
+    if (isOnMainPage) {
+      // Si estás en la página principal, navega directamente al ID de la sección
+      router.push(itemHref);
+    } else {
+      // Si estás en una página de proyecto, redirige a la página principal con el ID de la sección
+      const newUrl = `/${pathname.split('/')[0]}${itemHref}`;
+      router.push(newUrl.startsWith('//') ? `/${itemHref}` : newUrl);
+    }
+  };
 
   return (
     <nav className="grid grid-cols-1 lg:grid-cols-7 gap-4 backdrop-blur-3xl fixed top-0 left-0 right-0 z-50 bg-black opacity-95 p-2 center w-full items-center">
@@ -57,16 +73,17 @@ export const Navbar = ({ navItems, href }: navItemsProps) => {
           MarcoTheBigCreator
         </Link>
       </div>
+
       {/* Navigation */}
       <div className="hidden lg:flex col-span-3 justify-center">
         {navItems.map((item) => (
-          <Link
+          <button
             key={item.name}
-            href={item.href}
+            onClick={() => handleNavigation(item.href)}
             className="m-2 px-5 p-2 flex align-middle justify-center hover:shadow-[0_6px_20px_rgba(140,0,255,55%)] hover:bg-violet-700 rounded-full text-white font-medium transition duration-200 ease-linear"
           >
             {item.name}
-          </Link>
+          </button>
         ))}
         <Link
           href={href}
@@ -82,6 +99,7 @@ export const Navbar = ({ navItems, href }: navItemsProps) => {
           CV
         </Link>
       </div>
+
       {/* Resume Button */}
       <div className="hidden lg:flex col-span-2 gap-4 justify-center">
         {languages.map((language) => (
