@@ -110,13 +110,15 @@ export default function Blog({ params }: Props) {
             />
           </div>
 
-          <hr className="my-3" />
+          <br />
 
           {/* Links */}
-          <div>
+          <div className="my-3">
             <BlogLinksList technologies={BlogData.links} title="Links" />
           </div>
         </div>
+
+        <div className="dashes-bright mt-6 md:mt-8" />
 
         {/* description */}
         <div className="mt-6 md:mt-8">
