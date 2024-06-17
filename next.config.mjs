@@ -17,6 +17,10 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'skillicons.dev',
       },
+      {
+        protocol: 'https',
+        hostname: 'avatars.githubusercontent.com',
+      },
     ],
   },
 };

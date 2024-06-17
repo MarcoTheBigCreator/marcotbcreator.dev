@@ -1,9 +1,8 @@
 'use client';
 
-import { useUIStore } from '@/store';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 import { useEffect } from 'react';
+import { useUIStore } from '@/store';
+import { useRouter, usePathname } from 'next/navigation';
 
 interface Props {
   icon?: React.ReactNode;
@@ -11,11 +10,18 @@ interface Props {
   href: string;
 }
 
-export const LaguageButton = ({ icon, text, href }: Props) => {
+export const LanguageButton = ({ icon, text, href }: Props) => {
   const router = useRouter();
+  const pathname = usePathname();
 
   const onHandleLocale = (href: string) => {
-    router.replace(href);
+    const currentPath = pathname;
+    const newUrl = `${href}${
+      currentPath.startsWith('/en') || currentPath.startsWith('/es')
+        ? currentPath.substring(3)
+        : currentPath
+    }`;
+    router.replace(newUrl);
   };
 
   return (
@@ -29,8 +35,9 @@ export const LaguageButton = ({ icon, text, href }: Props) => {
   );
 };
 
-export const LaguageButtonMobile = ({ icon, text, href }: Props) => {
+export const LanguageButtonMobile = ({ icon, text, href }: Props) => {
   const router = useRouter();
+  const pathname = usePathname();
 
   const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);
 
@@ -39,9 +46,16 @@ export const LaguageButtonMobile = ({ icon, text, href }: Props) => {
   }, [isSideMenuOpen]);
 
   const onHandleLocaleMobile = (href: string) => {
+    const currentPath = pathname;
+    const newUrl = `${href}${
+      currentPath.startsWith('/en') || currentPath.startsWith('/es')
+        ? currentPath.substring(3)
+        : currentPath
+    }`;
     useUIStore.setState({ isSideMenuOpen: false });
-    router.replace(href);
+    router.replace(newUrl);
   };
+
   return (
     <button
       onClick={() => onHandleLocaleMobile(href)}

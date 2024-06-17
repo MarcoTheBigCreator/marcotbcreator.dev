@@ -33,7 +33,7 @@ export function Portfolio() {
       <BentoGrid className="px-0 md:px-4">
         {items.map((item: portfolioItem, i: number) => (
           <Link
-            href={`/project/${item.slug}`}
+            href={`/blog/${item.slug}`}
             key={i}
             className="hover:scale-105 ease-linear duration-200"
           >

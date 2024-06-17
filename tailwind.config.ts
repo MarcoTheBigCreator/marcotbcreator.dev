@@ -1,11 +1,11 @@
+import type { Config } from 'tailwindcss';
+
 const svgToDataUri = require('mini-svg-data-uri');
 
 const colors = require('tailwindcss/colors');
 const {
   default: flattenColorPalette,
 } = require('tailwindcss/lib/util/flattenColorPalette');
-
-import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
@@ -22,6 +22,7 @@ const config: Config = {
       },
       screens: {
         lg: '940px',
+        'slg': '1300px',
         xl: '1698px',
         '2xl': '1920px',
       },
