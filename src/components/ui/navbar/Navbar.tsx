@@ -8,7 +8,7 @@ import {
   IoDownloadOutline,
   IoReorderTwoOutline,
 } from 'react-icons/io5';
-import { LaguageButton } from '../laguange-button/LaguageButton';
+import { LanguageButton } from '../laguange-button/LaguageButton';
 import { useUIStore } from '@/store';
 import { useState } from 'react';
 import { languages } from '@/locales';
@@ -85,7 +85,7 @@ export const Navbar = ({ navItems, href }: navItemsProps) => {
       {/* Resume Button */}
       <div className="hidden lg:flex col-span-2 gap-4 justify-center">
         {languages.map((language) => (
-          <LaguageButton
+          <LanguageButton
             key={language.name}
             text={language.name}
             href={language.href}

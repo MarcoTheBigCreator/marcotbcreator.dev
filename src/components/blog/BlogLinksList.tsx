@@ -22,19 +22,18 @@ export const BlogLinksList = ({ technologies, title }: Props) => {
       >
         {title}
       </h3>
-      <div className="flex flex-wrap gap-2 ml-1 text-gray-300">
+      <div className="flex flex-wrap gap-1 ml-1 text-gray-300">
         {techList.map((tech, index) => (
-          <>
+          <div key={tech.name}>
             <Link
               href={tech.link}
-              key={tech.name}
               target="_blank"
               className="font-light hover:underline transition duration-200 ease-linear"
             >
               {tech.name}
             </Link>
-            {index !== techList.length - 1 && '-'}
-          </>
+            {index !== techList.length - 1 && ' -'}
+          </div>
         ))}
       </div>
     </>

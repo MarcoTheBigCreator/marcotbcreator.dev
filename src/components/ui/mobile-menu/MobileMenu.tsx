@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { useUIStore } from '@/store';
 import clsx from 'clsx';
-import { LaguageButtonMobile } from '@/components';
+import { LanguageButtonMobile } from '@/components';
 import { useEffect } from 'react';
 import { languages } from '@/locales';
 import { navItemsProps } from '@/interfaces';
@@ -47,7 +47,7 @@ export const MobileMenu = ({ navItems, href }: navItemsProps) => {
         {/* Language */}
         <div className="p-4 pl-3 pb-24 flex gap-3">
           {languages.map((language) => (
-            <LaguageButtonMobile
+            <LanguageButtonMobile
               key={language.name}
               text={language.name}
               href={language.href}
