@@ -11,6 +11,7 @@ export * from './portafolio/Portfolio';
 export * from './portafolio/PortfolioImageGrid';
 export * from './ui/author/Author';
 export * from './ui/animated-tooltip/AnimatedTooltip';
+export * from './ui/back-button/BackButton';
 export * from './ui/bento-grid/BentoGrid';
 export * from './ui/button/Button';
 export * from './ui/footer/Footer';

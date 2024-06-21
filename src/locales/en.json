@@ -4,7 +4,8 @@
     "expertiseTitle": "Expertise",
     "skillsTitle": "Skills",
     "softSkillsTitle": "Soft Skills",
-    "portfolioTitle": "Portfolio"
+    "portfolioTitle": "Portfolio",
+    "back": "Back"
   },
 
   "navItems": [
@@ -32,14 +33,14 @@
         "text": "Marco"
       }
     ],
-    "description": "Software Engineering graduated from the Polytechnic University of Durango. Tech enthusiast committed to growth. Skilled in front-end development, project leadership, and agile methodologies. A problem solver with clear communication and quick adaptability."
+    "description": "Graduated in Software Engineering from the Polytechnic University of Durango. A tech enthusiast committed to growth. Skilled in front-end development, project leadership, and agile methodologies. Excellent at solving problems with clear communication and quick adaptability."
   },
 
   "bioInfo": {
     "name": "Marco Antonio Rodriguez Arreola",
     "profession": "Software-Engineer",
-    "from": "Mexico",
-    "live_in": "Durango",
+    "from": "Durango, Mexico",
+    "live_in": "Durango, Mexico",
     "age": "22",
     "interests": [
       "Physical training",
@@ -62,12 +63,12 @@
     {
       "id": 0,
       "name": "Project Management",
-      "content": "Software project management with a blend of *agile methodologies*, specialized tools, and essential soft skills. Ensuring optimal *team performance* and *project success* through efficient and adaptive practices."
+      "content": "In Software project management with a blend of *agile methodologies*, specialized tools, and essential soft skills. Ensuring optimal *team performance* and *project success* through efficient and adaptive practices."
     },
     {
       "id": 1,
       "name": "Web Development",
-      "content": "Specialize in creating modern, responsive, and *visually stunning* websites by leveraging the *latest technologies*, frameworks, and industry standards. Delivering *exceptional results*."
+      "content": "In creating modern, responsive, and *visually stunning* websites by leveraging the *latest technologies*, frameworks, and industry standards. Delivering *exceptional results*."
     },
     {
       "id": 2,
@@ -77,7 +78,7 @@
     {
       "id": 3,
       "name": "UI/UX Design",
-      "content": "Proficient in creating *user-friendly* and *intuitive* interfaces that enhance the user experience. I focus on creating *engaging* and *responsive* designs that are both visually appealing and functional."
+      "content": "In creating *user-friendly* and *intuitive* interfaces that enhance the user experience. I focus on creating *engaging* and *responsive* designs that are both visually appealing and functional."
     }
   ],
 
@@ -144,16 +145,10 @@
         "slug": "teslo-shop"
       },
       {
-        "title": "[OLD] MTBC | Portfolio",
-        "description": "One my first projects, my own portfolio built with HTML, CSS enhance with Bootstrap and JavaScript.",
+        "title": "MTBC | Portfolio",
+        "description": "One my first projects, my own portfolio built with HTML, CSS enhance with Bootstrap.",
         "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268305/Portfolio/pdsavuh4dxohvbqhjzbl.png",
-        "slug": "old-mtbc-portfolio"
-      },
-      {
-        "title": "[NEW] MTBC | Portfolio",
-        "description": "Built with Next.js and Tailwind CSS. Looking forward to a new minimal design, better performance, SEO optimization and maintainability.",
-        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268304/Portfolio/xtyrtmbbmdckey25ek1l.png",
-        "slug": "new-mtbc-portfolio"
+        "slug": "mtbc-portfolio"
       },
       {
         "title": "Crummy Music Discord Bot",
@@ -171,7 +166,6 @@
   },
   "portfolioBlog": {
     "teslo-shop": {
-      "back": "Back to home",
       "title": "Teslo Shop",
       "summary": "An eCommerce platform inspired by Tesla's online store, developed on a Next.js course.",
       "author": "Marco Antonio Rodriguez",
@@ -182,6 +176,18 @@
       "description": "This is an e-commerce functional prototype deployed on Vercel.\n\nI took a NextJs course to enhance my programming skills and knowledge about the technology. NextJs recently introduced significant changes with the new “App Router” version, and this project utilizes version 14 of Next. This allowed me to manage the backend through server actions.\n\nThe project also includes AuthJs for authentication verification and integrates a payment platform with PayPal. For testing purposes, the payment functionality is in sandbox mode. To simulate a payment, use this test account: [ojavio@gmail.com](mailto:ojavio@gmail.com) with the password: 12345678.\n\nFor improved security, all data is verified with the database. Even if a user tries to alter the data, it is retrieved from the backend. For payments, we obtain the status from PayPal APIs. We then save the order status and transaction ID in our database for extra transaction security.\n\nThe database is created and managed through a Prisma schema. This was my first time using this ORM for a PostgreSQL Database. It's a great technology due to the ease of creating tables and relations needed for an e-commerce platform. It also enhances type security to prevent errors when data is being created or modified. As mentioned earlier, the backend is made through server actions, which were easily implemented thanks to Prisma.\n\nThe website also includes Admin sections where users and products can be modified or deleted, making it more complete and scalable.\n\nOther technologies used include Zustand for easy global state management. During development, the database was hosted in a Docker container. The styles were implemented using Tailwind CSS.\n\nThis project was a significant learning experience. I gained a lot of knowledge about NextJs and its features, such as side rendering, server actions, and options to create dynamic metadata for optimal SEO. These features make this React Framework a good choice for projects like this.",
       "technologies": "Vercel;https://vercel.com/,Next.js;https://nextjs.org/,Auth.js;https://authjs.dev/,PayPal;https://www.paypal.com/,Prisma;https://www.prisma.io/,PostgreSQL;https://www.postgresql.org/,Zustand;https://zustand-demo.pmnd.rs/,Docker;https://www.docker.com/,Tailwind CSS;https://tailwindcss.com/",
       "links": "page;https://marcotbcreator-teslo-shop.vercel.app/,repo;https://github.com/MarcoTheBigCreator/teslo-shop"
+    },
+    "mtbc-portfolio": {
+      "title": "MTBC | Portfolio",
+      "summary": "One my first projects, my own portfolio built with HTML, CSS enhance with Bootstrap.",
+      "author": "Marco Antonio Rodriguez",
+      "authorImage": "https://avatars.githubusercontent.com/u/e?email=marcotbcreator@gmail.com",
+      "authorGithub": "https://github.com/MarcoTheBigCreator",
+      "lastUpdateDate": "2024-06-20",
+      "projectImage": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1718305713/Portfolio/egomi2se47b2jzzwxf7z.png",
+      "description": "One of my first web projects.\n\nNowadays, every professional searching for an opportunity needs to highlight their skills. That's why I created my portfolio to stand out to future enterprises or recruiters. It started as a class project. Initially, it was made using PHP to show data dynamically from a MySQL database. I could access an admin menu where I could edit or add more information in some areas.\n\nHowever, the service that allowed me to host the PHP project was somewhat expensive. So, I decided to convert everything into a static HTML file to host it on a Github page. I forgot to mention that the styling was made using Bootstrap and some CSS, of course. This worked for a long time, but having all the information in one file made it harder to read and edit. I also noticed many areas for optimization after working with other projects and people who taught me principles about separating content into different components and making my code readable and reusable.\n\nThat's why I decided in 2024 to revamp my Portfolio (the one you're viewing right now), fixing all the issues of the first version.\n\nI chose to showcase this simple project to demonstrate my evolution in logic, clean code, and component division. I also incorporated new technologies and libraries that allowed me to improve SEO, speed optimization, and features like internationalization, styling and responsive design\n\nAnyway, this first version could be easily used by anyone who is starting in this world and wants to practice some skills and have a first portfolio.",
+      "technologies": "PHP;https://www.php.net/,MySQL;https://www.mysql.com/,GitHub Pages;https://pages.github.com/,Bootstrap;https://getbootstrap.com/,CSS;https://developer.mozilla.org/en-US/docs/Web/CSS",
+      "links": "page;https://marcothebigcreator.github.io/mtbc-old-portfolio/,repo;https://github.com/MarcoTheBigCreator/mtbc-old-portfolio,new portfolio repo;https://github.com/MarcoTheBigCreator/marcotbcreator.dev"
     }
   }
 }

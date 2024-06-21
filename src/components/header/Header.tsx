@@ -18,7 +18,7 @@ export const Header = () => {
         <HeaderTitle />
         <TextGenerateEffect
           words={description('description')}
-          className="mt-4 pl-2 lg:pl-0 font-normal text-light text-neutral-300 text-start  md:text-center mx-auto"
+          className="mt-4 pl-2 lg:pl-0 font-normal text-light text-gray-300 text-start  md:text-center mx-auto"
         />
       </div>
     </div>

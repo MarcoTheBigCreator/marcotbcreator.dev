@@ -4,7 +4,8 @@
     "expertiseTitle": "Experiencia",
     "skillsTitle": "Habilidades",
     "softSkillsTitle": "Habilidades Blandas",
-    "portfolioTitle": "Portafolio"
+    "portfolioTitle": "Portafolio",
+    "back": "Regresar"
   },
 
   "navItems": [
@@ -32,14 +33,14 @@
         "text": "Marco"
       }
     ],
-    "description": "Graduado en Ingeniería de Software por la Universidad Politécnica de Durango. Entusiasta de la tecnología comprometido con el crecimiento. Hábil en desarrollo front-end, liderazgo de proyectos y metodologías ágiles. Un solucionador de problemas con comunicación clara y rápida adaptabilidad."
+    "description": "Graduado en Ingeniería de Software por la Universidad Politécnica de Durango. Entusiasta de la tecnología comprometido con el crecimiento. Hábil en desarrollo front-end, liderazgo de proyectos y metodologías ágiles. Excelente en la resolución de problemas con comunicación clara y rápida adaptabilidad."
   },
 
   "bioInfo": {
     "name": "Marco Antonio Rodríguez Arreola",
     "profession": "Ingeniero-de Software",
-    "from": "México",
-    "live_in": "Durango",
+    "from": "Durango, México",
+    "live_in": "Durango, México",
     "age": "22",
     "interests": [
       "Entrenamiento físico",
@@ -62,22 +63,22 @@
     {
       "id": 0,
       "name": "Gestión de Proyectos",
-      "content": "Gestión de proyectos de software con una combinación de *metodologías ágiles*, herramientas especializadas y habilidades blandas esenciales. Asegurando el *rendimiento óptimo del equipo* y el *éxito del proyecto* mediante prácticas eficientes y adaptativas."
+      "content": "En gestión de proyectos de software con una mezcla de *metodologías ágiles*, herramientas especializadas y habilidades blandas esenciales. Garantizando el *rendimiento óptimo del equipo* y el *éxito del proyecto* mediante prácticas eficientes y adaptables."
     },
     {
       "id": 1,
       "name": "Desarrollo Web",
-      "content": "Especializado en crear sitios web modernos, responsivos y *visualmente impresionantes* utilizando las *últimas tecnologías*, marcos de trabajo y estándares de la industria. Entregando *resultados excepcionales*."
+      "content": "En la creación de sitios web modernos, con capacidad de respuesta y *visualmente impresionantes* aprovechando las *últimas tecnologías*, marcos de trabajo y estándares del sector. Entregando *resultados excepcionales*."
     },
     {
       "id": 2,
       "name": "Bases de Datos",
-      "content": "Amplia experiencia en la creación, diagramación, mantenimiento y optimización de *bases de datos*. Además, tengo experiencia en *desarrollo del lado del servidor* y *backend*, asegurando soluciones robustas y eficientes para tus necesidades."
+      "content": "Amplia experiencia en la creación, diagramación, mantenimiento y optimización de *bases de datos*. Además, tengo experiencia en *server-side* y *backend development*, asegurando soluciones robustas y eficientes para sus necesidades."
     },
     {
       "id": 3,
       "name": "Diseño UI/UX",
-      "content": "Competente en la creación de interfaces *amigables para el usuario* e *intuitivas* que mejoran la experiencia del usuario. Me enfoco en crear diseños *atractivos* y *responsivos* que sean tanto visualmente atractivos como funcionales."
+      "content": "En crear interfaces *amigables* e *intuitivas* que mejoren la experiencia del usuario. Me enfoco en crear diseños *engaging* y *responsive* que sean tanto visualmente atractivos como funcionales."
     }
   ],
 
@@ -85,7 +86,7 @@
     { "name": "Liderazgo" },
     { "name": "Gestión de Equipos" },
     { "name": "Inteligencia Emocional" },
-    { "name": "Habilidades para resolver problemas" },
+    { "name": "Resolución de problemas" },
     { "name": "Comunicación" },
     { "name": "Creatividad" },
     { "name": "Responsabilidad" },
@@ -123,13 +124,13 @@
           "date": "2023 - 2024",
           "title": "Desarrollador Front-end",
           "place": "Talentum Space",
-          "description": "Trabajé en el proyecto Gekocards usando Next.js con TypeScript para generar imágenes impulsadas por IA para invitaciones únicas a eventos. Las tareas incluían la creación de formularios con Formik y Yup, gestión de cookies, implementación de funcionalidad de arrastrar y soltar imágenes, y aseguramiento de la UI/UX y la capacidad de respuesta. Durante la pasantía profesional en Talentum, contribuí creando componentes, pantallas y conectando puntos finales para una nueva plataforma educativa. La plataforma ayuda a los mexicanos a prepararse para entrevistas de trabajo en el extranjero usando React, Sass, JavaScript y Postman para pruebas de puntos finales."
+          "description": "Trabajé en el proyecto Gekocards usando Next.js con TypeScript para generar imágenes basadas en IA para invitaciones a eventos únicos. Las tareas incluyeron la creación de formularios con Formik y Yup, la gestión de cookies, la implementación de la funcionalidad de arrastrar y soltar imágenes, y asegurar la UI/UX y la capacidad de respuesta. Durante las prácticas profesionales en Talentum, contribuí creando componentes, pantallas y puntos finales de conexión para una nueva plataforma educativa. La plataforma ayuda a los mexicanos a prepararse para entrevistas de trabajo en el extranjero usando React, Sass, JavaScript y Postman para pruebas de endpoints."
         },
         {
           "date": "2022 - 2023",
           "title": "Desarrollador Front-end y Gestión de Proyectos",
           "place": "Work Nest Durango",
-          "description": "Completé dos pasantías en una orgullosa empresa mexicana. Durante la primera pasantía, participé en la refactorización del sistema 'CAJA', utilizado por los municipios en México para varios procesos. Las actividades incluyeron capacitación con el marco Angular y el sistema 'CAJA', manteniendo comunicación constante con el equipo y aportando ideas y sugerencias. Rediseñé las vistas del sistema para mejorar la capacidad de respuesta, UI/UX y estética, y refactoricé módulos de apoyo. En la segunda pasantía, gestioné tareas administrativas como organizar documentación, crear plantillas de prueba y artefactos, y facilitar reuniones de desarrolladores para rastrear el progreso."
+          "description": "Participé dos estancias en una orgullosa empresa mexicana. Durante la primera pasantía, participé en la refactorización del sistema 'CAJA', utilizado por municipios en México para diversos procesos. Las actividades incluyeron entrenamiento con el Framework Angular y el sistema 'CAJA', manteniendo comunicación constante con el equipo, y contribuyendo con ideas y sugerencias. Rediseñé las vistas del sistema para mejorar la capacidad de respuesta, la UI/UX y la estética, y refactoricé los módulos de soporte. En el segundo periodo de prácticas, gestioné tareas administrativas como la organización de la documentación, la creación de plantillas de prueba y artefactos, y la facilitación de reuniones de desarrolladores para realizar un seguimiento del progreso."
         }
       ]
     }
@@ -144,16 +145,10 @@
         "slug": "teslo-shop"
       },
       {
-        "title": "[ANTIGUO] MTBC | Portafolio",
-        "description": "Este fue uno de mis primeros proyectos, mi propio portafolio construido con HTML, CSS mejorado con Bootstrap y JavaScript.",
+        "title": "MTBC | Portafolio",
+        "description": "Este fue uno de mis primeros proyectos, mi propio portafolio construido con HTML, CSS mejorado con Bootstrap.",
         "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268305/Portfolio/pdsavuh4dxohvbqhjzbl.png",
         "slug": "mtbc-portfolio"
-      },
-      {
-        "title": "[NUEVO] MTBC | Portafolio",
-        "description": "Construido con Next.js y Tailwind CSS. Buscando un nuevo diseño minimalista, mejor rendimiento, optimización SEO y mantenibilidad.",
-        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268304/Portfolio/xtyrtmbbmdckey25ek1l.png",
-        "slug": "mtbc-portfolio-v2"
       },
       {
         "title": "Crummy Music Discord Bot",
@@ -171,7 +166,6 @@
   },
   "portfolioBlog": {
     "teslo-shop": {
-      "back": "Regresar al inicio",
       "title": "Teslo Shop",
       "summary": "An eCommerce platform inspired by Tesla's online store, developed on a Next.js course.",
       "author": "Marco Antonio Rodríguez",
@@ -182,6 +176,18 @@
       "description": "Este es un prototipo funcional de comercio electrónico desplegado en Vercel.\n\nTomé un curso de NextJs para mejorar mis habilidades de programación y conocimientos sobre la tecnología. NextJs introdujo recientemente cambios significativos con la nueva versión \"App Router\", y este proyecto utiliza la versión 14 de Next. Esto me permitió gestionar el backend a través de acciones del servidor.\n\nEl proyecto también incluye AuthJs para la verificación de la autenticación e integra una plataforma de pago con PayPal. Para propósitos de prueba, la funcionalidad de pago está en modo sandbox. Para simular un pago, utilice esta cuenta de prueba: [ojavio@gmail.com](mailto:ojavio@gmail.com) con la contraseña: 12345678.\n\nPara mejorar la seguridad, todos los datos se verifican con la base de datos. Incluso si un usuario intenta alterar los datos, se recuperan del backend. Para los pagos, obtenemos el estado de las API de PayPal. A continuación, guardamos el estado del pedido y el ID de la transacción en nuestra base de datos para mayor seguridad de la transacción.\n\nLa base de datos se crea y gestiona a través de un esquema Prisma. Esta fue mi primera vez usando este ORM para una base de datos PostgreSQL. Es una gran tecnología debido a la facilidad de creación de tablas y relaciones necesarias para una plataforma de comercio electrónico. También mejora la seguridad de tipo para evitar errores cuando los datos están siendo creados o modificados. Como se mencionó anteriormente, el backend se realiza a través de acciones del servidor, que fueron fácilmente implementadas gracias a Prisma.\n\nEl sitio web también incluye secciones de administración donde se pueden modificar o eliminar usuarios y productos, lo que lo hace más completo y escalable.\n\nOtras tecnologías utilizadas incluyen Zustand para facilitar la gestión global de estados. Durante el desarrollo, la base de datos se alojó en un contenedor Docker. Los estilos se implementaron utilizando Tailwind CSS.\n\nEste proyecto fue una experiencia de aprendizaje significativa. Obtuve mucho conocimiento sobre NextJs y sus características, como el renderizado lateral, las acciones del servidor y las opciones para crear metadatos dinámicos para un SEO óptimo. Estas características hacen de este framework React una buena opción para proyectos como este.",
       "technologies": "Vercel;https://vercel.com/,Next.js;https://nextjs.org/,Auth.js;https://authjs.dev/,PayPal;https://www.paypal.com/,Prisma;https://www.prisma.io/,PostgreSQL;https://www.postgresql.org/,Zustand;https://zustand-demo.pmnd.rs/,Docker;https://www.docker.com/,Tailwind CSS;https://tailwindcss.com/",
       "links": "page;https://marcotbcreator-teslo-shop.vercel.app/,repo;https://github.com/MarcoTheBigCreator/teslo-shop"
+    },
+    "mtbc-portfolio": {
+      "title": "MTBC | Portfolio",
+      "summary": "Este fue uno de mis primeros proyectos, mi propio portafolio construido con HTML, CSS mejorado con Bootstrap.",
+      "author": "Marco Antonio Rodríguez",
+      "authorImage": "https://avatars.githubusercontent.com/u/e?email=marcotbcreator@gmail.com",
+      "authorGithub": "https://github.com/MarcoTheBigCreator",
+      "lastUpdateDate": "2024-06-20",
+      "projectImage": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1718305713/Portfolio/egomi2se47b2jzzwxf7z.png",
+      "description": "Uno de mis primeros proyectos web.\n\nHoy en día, todo profesional en busca de una oportunidad necesita destacar sus habilidades. Por eso creé mi portafolio para destacar ante futuras empresas o reclutadores. Empezó como un proyecto de clase. Inicialmente, se hizo usando PHP para mostrar datos dinámicamente desde una base de datos MySQL. Podía acceder a un menú de administración donde podía editar o añadir más información en algunas áreas.\n\nSin embargo, el servicio que me permitía alojar el proyecto PHP era algo caro. Así que decidí convertirlo todo en un archivo HTML estático para alojarlo en una página de Github. Olvidé mencionar que el estilo se hizo usando Bootstrap y algo de CSS, por supuesto. Esto funcionó durante mucho tiempo, pero tener toda la información en un solo archivo hizo que fuera más difícil de leer y editar. También me di cuenta de muchas áreas de optimización después de trabajar con otros proyectos y personas que me enseñaron principios acerca de separar el contenido en diferentes componentes y hacer mi código legible y reutilizable.\n\nPor eso decidí en 2024 renovar mi Portfolio (el que estás viendo ahora mismo), arreglando todos los problemas de la primera versión.\n\nElegí mostrar este sencillo proyecto para demostrar mi evolución en lógica, código limpio y división de componentes. También incorporé nuevas tecnologías y librerías que me permitieron mejorar el SEO, la optimización de la velocidad, y características como la internacionalización, el styling y el responsive design.\n\nDe todas formas, esta primera versión podría ser utilizada fácilmente por cualquiera que esté empezando en este mundo y quiera practicar algunas habilidades y tener un primer portfolio.",
+      "technologies": "PHP;https://www.php.net/,MySQL;https://www.mysql.com/,GitHub Pages;https://pages.github.com/,Bootstrap;https://getbootstrap.com/,CSS;https://developer.mozilla.org/en-US/docs/Web/CSS",
+      "links": "page;https://marcothebigcreator.github.io/mtbc-old-portfolio/,repo;https://github.com/MarcoTheBigCreator/mtbc-old-portfolio,new portfolio repo;https://github.com/MarcoTheBigCreator/marcotbcreator.dev"
     }
   }
 }
