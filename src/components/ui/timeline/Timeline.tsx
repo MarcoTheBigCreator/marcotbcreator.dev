@@ -28,11 +28,11 @@ export const Timeline = ({ timelineTitle, info }: Props) => {
             <time className="sm:absolute left-0 translate-y-0.5 inline-flex items-center justify-center text-xs font-semibold uppercase w-20 h-6 mb-3 sm:mb-0 text-neutral-100 bg-violet-700 rounded-full">
               {item.date}
             </time>
-            <div className="text-lg font-medium text-violet-400/90">
+            <div className="text-lg font-medium text-violet-400/90 drop-shadow-purple">
               {item.place}
             </div>
           </div>
-          <div className="text-white">{item.description}</div>
+          <div className="text-gray-300">{item.description}</div>
         </div>
       ))}
     </div>

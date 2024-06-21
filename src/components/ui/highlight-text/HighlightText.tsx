@@ -17,7 +17,7 @@ export const HighlightText = ({ children, className }: Props) => {
   return (
     <span
       className={cn(
-        'font-semibold bg-violet-700 text-white px-1 py-0.5 rounded-2xl',
+        'font-semibold bg-violet-700 text-gray-300 px-1 py-0.5 rounded-2xl',
         className
       )}
     >

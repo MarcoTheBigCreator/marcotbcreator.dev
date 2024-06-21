@@ -4,7 +4,8 @@
     "expertiseTitle": "Expertise",
     "skillsTitle": "Skills",
     "softSkillsTitle": "Soft Skills",
-    "portfolioTitle": "Portfolio"
+    "portfolioTitle": "Portfolio",
+    "back": "Back"
   },
 
   "navItems": [
@@ -32,14 +33,14 @@
         "text": "Marco"
       }
     ],
-    "description": "Software Engineering graduated from the Polytechnic University of Durango. Tech enthusiast committed to growth. Skilled in front-end development, project leadership, and agile methodologies. A problem solver with clear communication and quick adaptability."
+    "description": "Graduated in Software Engineering from the Polytechnic University of Durango. A tech enthusiast committed to growth. Skilled in front-end development, project leadership, and agile methodologies. Excellent at solving problems with clear communication and quick adaptability."
   },
 
   "bioInfo": {
     "name": "Marco Antonio Rodriguez Arreola",
     "profession": "Software-Engineer",
-    "from": "Mexico",
-    "live_in": "Durango",
+    "from": "Durango, Mexico",
+    "live_in": "Durango, Mexico",
     "age": "22",
     "interests": [
       "Physical training",
@@ -62,12 +63,12 @@
     {
       "id": 0,
       "name": "Project Management",
-      "content": "Software project management with a blend of *agile methodologies*, specialized tools, and essential soft skills. Ensuring optimal *team performance* and *project success* through efficient and adaptive practices."
+      "content": "In Software project management with a blend of *agile methodologies*, specialized tools, and essential soft skills. Ensuring optimal *team performance* and *project success* through efficient and adaptive practices."
     },
     {
       "id": 1,
       "name": "Web Development",
-      "content": "Specialize in creating modern, responsive, and *visually stunning* websites by leveraging the *latest technologies*, frameworks, and industry standards. Delivering *exceptional results*."
+      "content": "In creating modern, responsive, and *visually stunning* websites by leveraging the *latest technologies*, frameworks, and industry standards. Delivering *exceptional results*."
     },
     {
       "id": 2,
@@ -77,7 +78,7 @@
     {
       "id": 3,
       "name": "UI/UX Design",
-      "content": "Proficient in creating *user-friendly* and *intuitive* interfaces that enhance the user experience. I focus on creating *engaging* and *responsive* designs that are both visually appealing and functional."
+      "content": "In creating *user-friendly* and *intuitive* interfaces that enhance the user experience. I focus on creating *engaging* and *responsive* designs that are both visually appealing and functional."
     }
   ],
 
@@ -150,12 +151,6 @@
         "slug": "old-mtbc-portfolio"
       },
       {
-        "title": "[NEW] MTBC | Portfolio",
-        "description": "Built with Next.js and Tailwind CSS. Looking forward to a new minimal design, better performance, SEO optimization and maintainability.",
-        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268304/Portfolio/xtyrtmbbmdckey25ek1l.png",
-        "slug": "new-mtbc-portfolio"
-      },
-      {
         "title": "Crummy Music Discord Bot",
         "description": "A user-friendly Discord Music Bot music playback in your servers. Easily deployable on Heroku for quick setup and enjoyment.",
         "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268305/Portfolio/o1ui7jly1i1ct1kvsucw.png",
@@ -171,7 +166,6 @@
   },
   "portfolioBlog": {
     "teslo-shop": {
-      "back": "Back to home",
       "title": "Teslo Shop",
       "summary": "An eCommerce platform inspired by Tesla's online store, developed on a Next.js course.",
       "author": "Marco Antonio Rodriguez",
@@ -182,6 +176,14 @@
       "description": "This is an e-commerce functional prototype deployed on Vercel.\n\nI took a NextJs course to enhance my programming skills and knowledge about the technology. NextJs recently introduced significant changes with the new “App Router” version, and this project utilizes version 14 of Next. This allowed me to manage the backend through server actions.\n\nThe project also includes AuthJs for authentication verification and integrates a payment platform with PayPal. For testing purposes, the payment functionality is in sandbox mode. To simulate a payment, use this test account: [ojavio@gmail.com](mailto:ojavio@gmail.com) with the password: 12345678.\n\nFor improved security, all data is verified with the database. Even if a user tries to alter the data, it is retrieved from the backend. For payments, we obtain the status from PayPal APIs. We then save the order status and transaction ID in our database for extra transaction security.\n\nThe database is created and managed through a Prisma schema. This was my first time using this ORM for a PostgreSQL Database. It's a great technology due to the ease of creating tables and relations needed for an e-commerce platform. It also enhances type security to prevent errors when data is being created or modified. As mentioned earlier, the backend is made through server actions, which were easily implemented thanks to Prisma.\n\nThe website also includes Admin sections where users and products can be modified or deleted, making it more complete and scalable.\n\nOther technologies used include Zustand for easy global state management. During development, the database was hosted in a Docker container. The styles were implemented using Tailwind CSS.\n\nThis project was a significant learning experience. I gained a lot of knowledge about NextJs and its features, such as side rendering, server actions, and options to create dynamic metadata for optimal SEO. These features make this React Framework a good choice for projects like this.",
       "technologies": "Vercel;https://vercel.com/,Next.js;https://nextjs.org/,Auth.js;https://authjs.dev/,PayPal;https://www.paypal.com/,Prisma;https://www.prisma.io/,PostgreSQL;https://www.postgresql.org/,Zustand;https://zustand-demo.pmnd.rs/,Docker;https://www.docker.com/,Tailwind CSS;https://tailwindcss.com/",
       "links": "page;https://marcotbcreator-teslo-shop.vercel.app/,repo;https://github.com/MarcoTheBigCreator/teslo-shop"
+    },
+    "old-mtbc-portfolio": {
+      "title": "[OLD] MTBC | Portfolio",
+      "summary": "One my first projects, my own portfolio built with HTML, CSS enhance with Bootstrap and JavaScript.",
+      "author": "Marco Antonio Rodriguez",
+      "authorImage": "https://avatars.githubusercontent.com/u/e?email=marcotbcreator@gmail.com",
+      "authorGithub": "https://github.com/MarcoTheBigCreator",
+      "lastUpdateDate": "2024-06-13"
     }
   }
 }

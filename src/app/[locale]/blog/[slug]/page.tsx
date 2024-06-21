@@ -1,12 +1,10 @@
-import { Author, BlogLinksList, Spotlight } from '@/components';
+import { Metadata, ResolvingMetadata } from 'next';
+import { notFound } from 'next/navigation';
+import Image from 'next/image';
+import { useTranslations } from 'next-intl';
+import { Author, BackButton, BlogLinksList, Spotlight } from '@/components';
 import { poppins, titleFont } from '@/config/fonts';
 import { generateBlogMetadata, isSlugAllowed } from '@/utils';
-import { Metadata, ResolvingMetadata } from 'next';
-import { useTranslations } from 'next-intl';
-import Image from 'next/image';
-import Link from 'next/link';
-import { notFound } from 'next/navigation';
-import { IoArrowBack } from 'react-icons/io5';
 
 interface Props {
   params: { slug: string };
@@ -40,8 +38,9 @@ export default function Blog({ params }: Props) {
 
   const t = useTranslations(`portfolioBlog.${slug}`);
 
+  const backButtonMessage = useTranslations('titles');
+
   const BlogData = {
-    back: t('back'),
     title: t('title'),
     author: t('author'),
     authorImage: t('authorImage'),
@@ -61,13 +60,7 @@ export default function Blog({ params }: Props) {
       />
       <div className="lg:max-w-5xl bg-neutral-900 border-[1px] border-white/20 rounded-2xl lg:rounded-3xl mx-4 pt-4 p-2 pb-4 lg:p-12 relative z-10 w-full my-16">
         <div className="mb-4">
-          <Link
-            href="/"
-            className="hover:text-violet-500 transition duration-200 ease-linear flex"
-          >
-            <IoArrowBack size={29} />
-            <span className="mt-1 ml-1 hidden lg:block">{BlogData.back}</span>
-          </Link>
+          <BackButton path="/#portfolio" message={backButtonMessage('back')} />
         </div>
         {/* title */}
         <h1

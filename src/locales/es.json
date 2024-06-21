@@ -4,7 +4,8 @@
     "expertiseTitle": "Experiencia",
     "skillsTitle": "Habilidades",
     "softSkillsTitle": "Habilidades Blandas",
-    "portfolioTitle": "Portafolio"
+    "portfolioTitle": "Portafolio",
+    "back": "Regresar"
   },
 
   "navItems": [
@@ -32,14 +33,14 @@
         "text": "Marco"
       }
     ],
-    "description": "Graduado en Ingeniería de Software por la Universidad Politécnica de Durango. Entusiasta de la tecnología comprometido con el crecimiento. Hábil en desarrollo front-end, liderazgo de proyectos y metodologías ágiles. Un solucionador de problemas con comunicación clara y rápida adaptabilidad."
+    "description": "Graduado en Ingeniería de Software por la Universidad Politécnica de Durango. Entusiasta de la tecnología comprometido con el crecimiento. Hábil en desarrollo front-end, liderazgo de proyectos y metodologías ágiles. Excelente en la resolución de problemas con comunicación clara y rápida adaptabilidad."
   },
 
   "bioInfo": {
     "name": "Marco Antonio Rodríguez Arreola",
     "profession": "Ingeniero-de Software",
-    "from": "México",
-    "live_in": "Durango",
+    "from": "Durango, México",
+    "live_in": "Durango, México",
     "age": "22",
     "interests": [
       "Entrenamiento físico",
@@ -62,22 +63,22 @@
     {
       "id": 0,
       "name": "Gestión de Proyectos",
-      "content": "Gestión de proyectos de software con una combinación de *metodologías ágiles*, herramientas especializadas y habilidades blandas esenciales. Asegurando el *rendimiento óptimo del equipo* y el *éxito del proyecto* mediante prácticas eficientes y adaptativas."
+      "content": "En gestión de proyectos de software con una mezcla de *metodologías ágiles*, herramientas especializadas y habilidades blandas esenciales. Garantizando el *rendimiento óptimo del equipo* y el *éxito del proyecto* mediante prácticas eficientes y adaptables."
     },
     {
       "id": 1,
       "name": "Desarrollo Web",
-      "content": "Especializado en crear sitios web modernos, responsivos y *visualmente impresionantes* utilizando las *últimas tecnologías*, marcos de trabajo y estándares de la industria. Entregando *resultados excepcionales*."
+      "content": "En la creación de sitios web modernos, con capacidad de respuesta y *visualmente impresionantes* aprovechando las *últimas tecnologías*, marcos de trabajo y estándares del sector. Entregando *resultados excepcionales*."
     },
     {
       "id": 2,
       "name": "Bases de Datos",
-      "content": "Amplia experiencia en la creación, diagramación, mantenimiento y optimización de *bases de datos*. Además, tengo experiencia en *desarrollo del lado del servidor* y *backend*, asegurando soluciones robustas y eficientes para tus necesidades."
+      "content": "Amplia experiencia en la creación, diagramación, mantenimiento y optimización de *bases de datos*. Además, tengo experiencia en *server-side* y *backend development*, asegurando soluciones robustas y eficientes para sus necesidades."
     },
     {
       "id": 3,
       "name": "Diseño UI/UX",
-      "content": "Competente en la creación de interfaces *amigables para el usuario* e *intuitivas* que mejoran la experiencia del usuario. Me enfoco en crear diseños *atractivos* y *responsivos* que sean tanto visualmente atractivos como funcionales."
+      "content": "En crear interfaces *amigables* e *intuitivas* que mejoren la experiencia del usuario. Me enfoco en crear diseños *engaging* y *responsive* que sean tanto visualmente atractivos como funcionales."
     }
   ],
 
@@ -85,7 +86,7 @@
     { "name": "Liderazgo" },
     { "name": "Gestión de Equipos" },
     { "name": "Inteligencia Emocional" },
-    { "name": "Habilidades para resolver problemas" },
+    { "name": "Resolución de problemas" },
     { "name": "Comunicación" },
     { "name": "Creatividad" },
     { "name": "Responsabilidad" },
@@ -123,13 +124,13 @@
           "date": "2023 - 2024",
           "title": "Desarrollador Front-end",
           "place": "Talentum Space",
-          "description": "Trabajé en el proyecto Gekocards usando Next.js con TypeScript para generar imágenes impulsadas por IA para invitaciones únicas a eventos. Las tareas incluían la creación de formularios con Formik y Yup, gestión de cookies, implementación de funcionalidad de arrastrar y soltar imágenes, y aseguramiento de la UI/UX y la capacidad de respuesta. Durante la pasantía profesional en Talentum, contribuí creando componentes, pantallas y conectando puntos finales para una nueva plataforma educativa. La plataforma ayuda a los mexicanos a prepararse para entrevistas de trabajo en el extranjero usando React, Sass, JavaScript y Postman para pruebas de puntos finales."
+          "description": "Trabajé en el proyecto Gekocards usando Next.js con TypeScript para generar imágenes basadas en IA para invitaciones a eventos únicos. Las tareas incluyeron la creación de formularios con Formik y Yup, la gestión de cookies, la implementación de la funcionalidad de arrastrar y soltar imágenes, y asegurar la UI/UX y la capacidad de respuesta. Durante las prácticas profesionales en Talentum, contribuí creando componentes, pantallas y puntos finales de conexión para una nueva plataforma educativa. La plataforma ayuda a los mexicanos a prepararse para entrevistas de trabajo en el extranjero usando React, Sass, JavaScript y Postman para pruebas de endpoints."
         },
         {
           "date": "2022 - 2023",
           "title": "Desarrollador Front-end y Gestión de Proyectos",
           "place": "Work Nest Durango",
-          "description": "Completé dos pasantías en una orgullosa empresa mexicana. Durante la primera pasantía, participé en la refactorización del sistema 'CAJA', utilizado por los municipios en México para varios procesos. Las actividades incluyeron capacitación con el marco Angular y el sistema 'CAJA', manteniendo comunicación constante con el equipo y aportando ideas y sugerencias. Rediseñé las vistas del sistema para mejorar la capacidad de respuesta, UI/UX y estética, y refactoricé módulos de apoyo. En la segunda pasantía, gestioné tareas administrativas como organizar documentación, crear plantillas de prueba y artefactos, y facilitar reuniones de desarrolladores para rastrear el progreso."
+          "description": "Participé dos estancias en una orgullosa empresa mexicana. Durante la primera pasantía, participé en la refactorización del sistema 'CAJA', utilizado por municipios en México para diversos procesos. Las actividades incluyeron entrenamiento con el Framework Angular y el sistema 'CAJA', manteniendo comunicación constante con el equipo, y contribuyendo con ideas y sugerencias. Rediseñé las vistas del sistema para mejorar la capacidad de respuesta, la UI/UX y la estética, y refactoricé los módulos de soporte. En el segundo periodo de prácticas, gestioné tareas administrativas como la organización de la documentación, la creación de plantillas de prueba y artefactos, y la facilitación de reuniones de desarrolladores para realizar un seguimiento del progreso."
         }
       ]
     }
@@ -150,12 +151,6 @@
         "slug": "mtbc-portfolio"
       },
       {
-        "title": "[NUEVO] MTBC | Portafolio",
-        "description": "Construido con Next.js y Tailwind CSS. Buscando un nuevo diseño minimalista, mejor rendimiento, optimización SEO y mantenibilidad.",
-        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268304/Portfolio/xtyrtmbbmdckey25ek1l.png",
-        "slug": "mtbc-portfolio-v2"
-      },
-      {
         "title": "Crummy Music Discord Bot",
         "description": "Un bot de música para Discord fácil de usar que reproduce música en tus servidores. Fácilmente desplegable en Heroku para una configuración rápida y disfrute.",
         "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268305/Portfolio/o1ui7jly1i1ct1kvsucw.png",
@@ -171,7 +166,6 @@
   },
   "portfolioBlog": {
     "teslo-shop": {
-      "back": "Regresar al inicio",
       "title": "Teslo Shop",
       "summary": "An eCommerce platform inspired by Tesla's online store, developed on a Next.js course.",
       "author": "Marco Antonio Rodríguez",

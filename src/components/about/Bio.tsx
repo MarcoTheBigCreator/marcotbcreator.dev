@@ -45,10 +45,10 @@ export const Bio = () => {
       >
         Bio
       </h1>
-      <h2 className="text-2xl mb-1 text-white">{bioInfo.name}</h2>
+      <h2 className="text-2xl mb-1 text-gray-300">{bioInfo.name}</h2>
       <h3 className="text-xl font-medium text-violet-400 mb-2">
         {bioInfo.profession.split('-', 1)}{' '}
-        <span className="text-white">
+        <span className="text-gray-300">
           {bioInfo.profession.split('-', 2).pop()}
         </span>
       </h3>
@@ -60,7 +60,7 @@ export const Bio = () => {
           return (
             <li key={key}>
               <b>{title ? title.replace(/_/g, ' ') : ''}:</b>{' '}
-              <span className="text-white">
+              <span className="text-gray-300">
                 {bioInfo[key as keyof BioInfo]}
               </span>
             </li>
@@ -68,7 +68,7 @@ export const Bio = () => {
         })}
         <li>
           <b>{interestTitle('interestTitle')}:</b>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-1 text-white ml-1 mt-1">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-1 text-gray-300 ml-1 mt-1">
             {t.raw('interests').map((interest: string, index: number) => (
               <p key={index}>- {interest}</p>
             ))}

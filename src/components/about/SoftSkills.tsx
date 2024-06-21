@@ -15,7 +15,7 @@ export const SoftSkills = () => {
       >
         {t('titles.softSkillsTitle')}
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-2 ml-1">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 lg:grid-cols-2 gap-2 ml-1 text-gray-300">
         {softSkills.map((softSkill: SoftSkill) => (
           <p key={softSkill.name}>- {softSkill.name}</p>
         ))}

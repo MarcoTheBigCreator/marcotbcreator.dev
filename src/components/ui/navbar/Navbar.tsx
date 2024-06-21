@@ -29,10 +29,8 @@ export const Navbar = ({ navItems, href }: navItemsProps) => {
   const handleNavigation = (itemHref: string) => {
     const isOnMainPage = pathname === '/en' || pathname === '/es';
     if (isOnMainPage) {
-      // Si estás en la página principal, navega directamente al ID de la sección
       router.push(itemHref);
     } else {
-      // Si estás en una página de proyecto, redirige a la página principal con el ID de la sección
       const newUrl = `/${pathname.split('/')[0]}${itemHref}`;
       router.push(newUrl.startsWith('//') ? `/${itemHref}` : newUrl);
     }
