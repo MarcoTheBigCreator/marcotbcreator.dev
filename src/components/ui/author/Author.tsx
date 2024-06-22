@@ -8,6 +8,7 @@ interface AvatarProps {
   tooltipMessage: string;
   name: string;
   href: string;
+  title: string;
   date: string;
 }
 export const Author = ({
@@ -16,6 +17,7 @@ export const Author = ({
   tooltipMessage,
   name,
   href,
+  title,
   date,
 }: AvatarProps) => {
   return (
@@ -36,7 +38,10 @@ export const Author = ({
       >
         <div className="grid grid-rows-2 grid-flow-col ">
           <span className="text-sm ">{name}</span>
-          <FormattedDate date={date} />
+
+          <p className="text-sm">
+            {title} - <FormattedDate date={date} />
+          </p>
         </div>
       </AnimatedTooltip>
     </Link>

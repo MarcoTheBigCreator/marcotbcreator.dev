@@ -10,7 +10,7 @@ export const HeaderTitle = () => {
   return (
     <TypeWriterEffect
       words={words}
-      className={`${titleFont.className} text-white drop-shadow-text`}
+      className={`${titleFont.className} text-white`}
     />
   );
 };
