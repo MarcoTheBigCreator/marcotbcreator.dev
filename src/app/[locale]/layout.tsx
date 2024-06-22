@@ -45,6 +45,8 @@ export const metadata: Metadata = {
     'TypeScript',
     'Crummy Discord Music Bot',
     'Teslo shop',
+    'Puppys pet',
+    'MTBC Portfolio',
     'TailwindCSS',
     'Vercel',
     'Talentum',

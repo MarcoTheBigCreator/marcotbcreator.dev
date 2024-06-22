@@ -1,4 +1,4 @@
-import { Metadata, ResolvingMetadata } from 'next';
+import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
@@ -10,18 +10,24 @@ interface Props {
   params: { slug: string };
 }
 
-export async function generateMetadata(
-  { params }: Props,
-  parent: ResolvingMetadata
-): Promise<Metadata> {
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = params;
 
   const blogMetadata = await generateBlogMetadata(slug);
 
   return {
+    metadataBase: new URL(`https://marcotbcreator.dev/blog/${slug}`),
     title: blogMetadata.title,
     description: blogMetadata.summary,
     openGraph: {
+      title: blogMetadata.title,
+      description: blogMetadata.summary,
+      type: 'article',
+      url: `https://marcotbcreator.dev/blog/${slug}`,
+      images: [blogMetadata.projectImage],
+    },
+    twitter: {
+      card: 'summary_large_image',
       title: blogMetadata.title,
       description: blogMetadata.summary,
       images: [blogMetadata.projectImage],
@@ -38,7 +44,7 @@ export default function Blog({ params }: Props) {
 
   const t = useTranslations(`portfolioBlog.${slug}`);
 
-  const backButtonMessage = useTranslations('titles');
+  const titles = useTranslations('titles');
 
   const BlogData = {
     title: t('title'),
@@ -60,7 +66,7 @@ export default function Blog({ params }: Props) {
       />
       <div className="lg:max-w-5xl bg-neutral-900 border-[1px] border-white/20 rounded-2xl lg:rounded-3xl mx-4 pt-4 p-2 pb-4 lg:p-12 relative z-10 w-full my-16">
         <div className="mb-4">
-          <BackButton path="/#portfolio" message={backButtonMessage('back')} />
+          <BackButton path="/#portfolio" message={titles('back')} />
         </div>
         {/* title */}
         <h1
@@ -77,6 +83,7 @@ export default function Blog({ params }: Props) {
             tooltipMessage="Check out my GitHub"
             name={BlogData.author}
             href={BlogData.authorGithub}
+            title={titles('lastUpdate')}
             date={BlogData.lastUpdateDate}
           />
         </div>
