@@ -25,10 +25,12 @@ export const metadata: Metadata = {
       'Software Engineering graduated from the Polytechnic University of Durango. Tech enthusiast committed to growth. Skilled in front-end development, project leadership, and agile methodologies. A problem solver with clear communication and quick adaptability.',
     url: 'https://marcotbcreator.vercel.app/',
     siteName: 'Marco Rodriguez',
-    locale: 'en',
+    locale: 'en_US',
     type: 'website',
     images: [
-      `https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268304/Portfolio/xtyrtmbbmdckey25ek1l.png`,
+      {
+        url: 'https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268304/Portfolio/xtyrtmbbmdckey25ek1l.png',
+      },
     ],
   },
   keywords: [
