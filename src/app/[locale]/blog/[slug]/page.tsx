@@ -106,7 +106,7 @@ export default function Blog({ params }: Props) {
           <div>
             <BlogLinksList
               technologies={BlogData.technologies}
-              title="Technologies"
+              title={titles('technologies')}
             />
           </div>
 
@@ -114,7 +114,10 @@ export default function Blog({ params }: Props) {
 
           {/* Links */}
           <div className="my-3">
-            <BlogLinksList technologies={BlogData.links} title="Links" />
+            <BlogLinksList
+              technologies={BlogData.links}
+              title={titles('links')}
+            />
           </div>
         </div>
 
