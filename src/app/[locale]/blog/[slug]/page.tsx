@@ -13,44 +13,24 @@ interface Props {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = params;
 
-  // const blogMetadata = await generateBlogMetadata(slug);
+  const blogMetadata = await generateBlogMetadata(slug);
 
   return {
-    // metadataBase: new URL(`https://marcotbcreator.dev/blog/${slug}`),
-    // title: blogMetadata.title,
-    // description: blogMetadata.summary,
-    // openGraph: {
-    //   title: blogMetadata.title,
-    //   description: blogMetadata.summary,
-    //   type: 'article',
-    //   url: `https://marcotbcreator.dev/blog/${slug}`,
-    //   images: [`${blogMetadata.projectImage}`],
-    // },
-    // twitter: {
-    //   card: 'summary_large_image',
-    //   title: blogMetadata.title,
-    //   description: blogMetadata.summary,
-    //   images: [`${blogMetadata.projectImage}`],
-    // },
     metadataBase: new URL(`https://marcotbcreator.dev/blog/${slug}`),
-    title: 'Blog',
-    description: 'Blog',
+    title: blogMetadata.title,
+    description: blogMetadata.summary,
     openGraph: {
-      title: 'Blog',
-      description: 'Blog',
+      title: blogMetadata.title,
+      description: blogMetadata.summary,
       type: 'article',
       url: `https://marcotbcreator.dev/blog/${slug}`,
-      images: [
-        'https://res.cloudinary.com/dmlpgks2h/image/upload/v1718305713/Portfolio/vwtm5am8qphcl6u96j8e.png',
-      ],
+      images: [`${blogMetadata.projectImage}`],
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'Blog',
-      description: 'Blog',
-      images: [
-        'https://res.cloudinary.com/dmlpgks2h/image/upload/v1718305713/Portfolio/vwtm5am8qphcl6u96j8e.png',
-      ],
+      title: blogMetadata.title,
+      description: blogMetadata.summary,
+      images: [`${blogMetadata.projectImage}`],
     },
   };
 }
