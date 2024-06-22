@@ -17,20 +17,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     metadataBase: new URL(`https://marcotbcreator.dev/blog/${slug}`),
-    title: blogMetadata.title,
-    description: blogMetadata.summary,
+    title: blogMetadata?.title ?? '',
+    description: blogMetadata?.summary ?? '',
     openGraph: {
-      title: blogMetadata.title,
-      description: blogMetadata.summary,
+      title: blogMetadata?.title ?? '',
+      description: blogMetadata?.summary ?? '',
       type: 'article',
       url: `https://marcotbcreator.dev/blog/${slug}`,
-      images: [blogMetadata.projectImage],
+      images: [blogMetadata?.projectImage] ?? [],
     },
     twitter: {
       card: 'summary_large_image',
-      title: blogMetadata.title,
-      description: blogMetadata.summary,
-      images: [blogMetadata.projectImage],
+      title: blogMetadata?.title ?? '',
+      description: blogMetadata?.summary ?? '',
+      images: [blogMetadata?.projectImage] ?? [],
     },
   };
 }
