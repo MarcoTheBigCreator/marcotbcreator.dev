@@ -28,9 +28,7 @@ export const metadata: Metadata = {
     locale: 'en_US',
     type: 'website',
     images: [
-      {
-        url: 'https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268304/Portfolio/xtyrtmbbmdckey25ek1l.png',
-      },
+      `https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268304/Portfolio/xtyrtmbbmdckey25ek1l.png`,
     ],
   },
   keywords: [
