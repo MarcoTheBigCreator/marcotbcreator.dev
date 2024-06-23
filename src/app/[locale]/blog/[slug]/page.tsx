@@ -1,5 +1,3 @@
-export const dynamic = 'force-dynamic';
-
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Image from 'next/image';
@@ -18,14 +16,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const blogMetadata = await generateBlogMetadata(slug);
 
   return {
-    metadataBase: new URL(`https://marcotbcreator.dev/blog/${slug}`),
+    metadataBase: new URL(`https://marcotbcreator.dev/en/blog/${slug}`),
     title: blogMetadata.title,
     description: blogMetadata.summary,
     openGraph: {
       title: blogMetadata.title,
       description: blogMetadata.summary,
       type: 'article',
-      url: `https://marcotbcreator.dev/blog/${slug}`,
+      url: `https://marcotbcreator.dev/en/blog/${slug}`,
       images: [`${blogMetadata.projectImage}`],
     },
     twitter: {
