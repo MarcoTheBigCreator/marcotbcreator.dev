@@ -16,7 +16,7 @@ export const FormattedDate = ({ date }: FormattedDateProps) => {
   };
 
   const formatDate = (dateStr: string, locale: string): string => {
-    const date = new Date(dateStr);
+    const date = new Date(dateStr + 'T00:00:00');
     const dateTimeFormat = new Intl.DateTimeFormat(locale, dateOptions);
     return dateTimeFormat.format(date);
   };
