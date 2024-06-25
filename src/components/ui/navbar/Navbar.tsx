@@ -1,7 +1,9 @@
 'use client';
 
-import { Logo } from '@/components/logo/Logo';
+import { useState } from 'react';
 import Link from 'next/link';
+import { usePathname, useRouter } from 'next/navigation';
+import { Logo } from '@/components/logo/Logo';
 import {
   IoCloseOutline,
   IoDownload,
@@ -10,17 +12,16 @@ import {
 } from 'react-icons/io5';
 import { LanguageButton } from '../laguange-button/LaguageButton';
 import { useUIStore } from '@/store';
-import { useState } from 'react';
 import { languages } from '@/locales';
 import { titleFont } from '@/config/fonts';
 import { navItemsProps } from '@/interfaces';
-import { usePathname, useRouter } from 'next/navigation';
 
 export const Navbar = ({ navItems, href }: navItemsProps) => {
   const openMenu = useUIStore((state) => state.openSideMenu);
   const closeMenu = useUIStore((state) => state.closeSideMenu);
   const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);
 
+  const [isLogoOnHover, setIsLogoOnHover] = useState('white');
   const [isResumeOnHover, setIsResumeOnHover] = useState(false);
 
   const pathname = usePathname();
@@ -65,9 +66,11 @@ export const Navbar = ({ navItems, href }: navItemsProps) => {
       <div className="hidden lg:flex col-span-2 justify-center">
         <button
           onClick={() => handleNavigation('#header')}
+          onMouseEnter={() => setIsLogoOnHover('rgb(124,58,237)')}
+          onMouseLeave={() => setIsLogoOnHover('white')}
           className={`${titleFont.className} flex text-lg font-semibold gap-2 text-white hover:text-violet-600 transition duration-200 ease-linear`}
         >
-          <Logo width={25} height={25} color="white" />
+          <Logo width={25} height={25} color={isLogoOnHover} />
           MarcoTheBigCreator
         </button>
       </div>
