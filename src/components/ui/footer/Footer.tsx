@@ -1,16 +1,19 @@
 'use client';
 
+import { useState } from 'react';
+import Link from 'next/link';
+import { usePathname, useRouter } from 'next/navigation';
 import { Logo } from '@/components';
 import { titleFont } from '@/config/fonts';
 import { navItemsProps } from '@/interfaces/navInterface';
-import Link from 'next/link';
 import { IoLogoGithub } from 'react-icons/io5';
 import { TfiLinkedin } from 'react-icons/tfi';
-import { usePathname, useRouter } from 'next/navigation';
 
 export const Footer = ({ navItems }: navItemsProps) => {
   const pathname = usePathname();
   const router = useRouter();
+
+  const [logoOnHover, setLogoOnHover] = useState('black');
 
   const handleNavigation = (itemHref: string) => {
     const isOnMainPage = pathname === '/en' || pathname === '/es';
@@ -57,10 +60,12 @@ export const Footer = ({ navItems }: navItemsProps) => {
           </Link>
           <button
             onClick={() => handleNavigation('#header')}
+            onMouseEnter={() => setLogoOnHover('white')}
+            onMouseLeave={() => setLogoOnHover('black')}
             aria-label="Logo of MarcoTheBigCreator to go to the home page"
             className="p-3 flex align-middle justify-center bg-white hover:bg-violet-600 rounded-full drop-shadow-text hover:drop-shadow-purple transition duration-200 ease-linear"
           >
-            <Logo width={40} height={40} color="black" />
+            <Logo width={40} height={40} color={logoOnHover} />
           </button>
           <Link
             href={'https://www.linkedin.com/in/marcotbcreator/'}
