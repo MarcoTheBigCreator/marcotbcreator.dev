@@ -1,4 +1,4 @@
-import { titleFont } from '@/config/fonts';
+import { titleFont } from '@/config';
 
 interface Props {
   timelineTitle: string;

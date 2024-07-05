@@ -1,8 +1,8 @@
 'use client';
 
 import { useEffect } from 'react';
-import { useUIStore } from '@/store';
 import { useRouter, usePathname } from 'next/navigation';
+import { useUIStore } from '@/store';
 
 interface Props {
   icon?: React.ReactNode;

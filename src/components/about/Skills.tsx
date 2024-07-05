@@ -1,7 +1,7 @@
+import { useTranslations } from 'next-intl';
 import { skills } from '@/locales';
 import { AnimatedTooltip } from '../ui/animated-tooltip/AnimatedTooltip';
-import { titleFont } from '@/config/fonts';
-import { useTranslations } from 'next-intl';
+import { titleFont } from '@/config';
 
 export const Skills = () => {
   const t = useTranslations('titles');

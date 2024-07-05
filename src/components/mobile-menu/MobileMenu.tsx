@@ -1,13 +1,13 @@
 'use client';
 
-import Link from 'next/link';
-import { useUIStore } from '@/store';
-import clsx from 'clsx';
-import { LanguageButtonMobile } from '@/components';
 import { useEffect } from 'react';
+import { usePathname, useRouter } from 'next/navigation';
+import Link from 'next/link';
+import clsx from 'clsx';
+import { useUIStore } from '@/store';
+import { LanguageButtonMobile } from '@/components';
 import { languages } from '@/locales';
 import { navItemsProps } from '@/interfaces';
-import { usePathname, useRouter } from 'next/navigation';
 
 export const MobileMenu = ({ navItems, href }: navItemsProps) => {
   const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);

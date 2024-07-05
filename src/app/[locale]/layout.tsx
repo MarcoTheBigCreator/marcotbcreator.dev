@@ -1,11 +1,10 @@
-import type { Metadata } from 'next';
-import { poppins } from '@/config/fonts';
 import './globals.css';
-import { Footer, Navbar } from '@/components';
-import { MobileMenu } from '@/components/ui/mobile-menu/MobileMenu';
+import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { useTranslations } from 'next-intl';
+import { Footer, MobileMenu, Navbar } from '@/components';
+import { poppins } from '@/config';
 
 interface RootLayoutProps {
   children: React.ReactNode;

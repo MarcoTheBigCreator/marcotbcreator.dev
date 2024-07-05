@@ -1,8 +1,8 @@
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 import { BentoGrid, BentoGridItem } from '../ui/bento-grid/BentoGrid';
 import { PortfolioImageGrid } from './PortfolioImageGrid';
-import { titleFont } from '@/config/fonts';
-import { useTranslations } from 'next-intl';
+import { titleFont } from '@/config';
 
 export interface portfolioItemsProps {
   portfolioItems: portfolioItem[];

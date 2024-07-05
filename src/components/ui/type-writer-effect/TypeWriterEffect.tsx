@@ -1,9 +1,9 @@
 'use client';
 
-import { titleFont } from '@/config/fonts';
-import { cn } from '@/utils/cn';
-import { motion, stagger, useAnimate, useInView } from 'framer-motion';
 import { useEffect } from 'react';
+import { motion, stagger, useAnimate, useInView } from 'framer-motion';
+import { titleFont } from '@/config';
+import { cn } from '@/utils/cn';
 
 export const TypeWriterEffect = ({
   words,

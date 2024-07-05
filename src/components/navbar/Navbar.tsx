@@ -10,11 +10,11 @@ import {
   IoDownloadOutline,
   IoReorderTwoOutline,
 } from 'react-icons/io5';
-import { LanguageButton } from '../laguange-button/LaguageButton';
 import { useUIStore } from '@/store';
 import { languages } from '@/locales';
-import { titleFont } from '@/config/fonts';
+import { titleFont } from '@/config';
 import { navItemsProps } from '@/interfaces';
+import { LanguageButton } from '../ui/laguange-button/LaguageButton';
 
 export const Navbar = ({ navItems, href }: navItemsProps) => {
   const openMenu = useUIStore((state) => state.openSideMenu);

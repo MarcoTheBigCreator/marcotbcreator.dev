@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { Author, BackButton, BlogLinksList, Spotlight } from '@/components';
-import { poppins, titleFont } from '@/config/fonts';
+import { poppins, titleFont } from '@/config';
 import { generateBlogMetadata, isSlugAllowed } from '@/utils';
 
 interface Props {

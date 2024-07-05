@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { titleFont } from '@/config/fonts';
+import { titleFont } from '@/config';
 
 let interval: any;
 
