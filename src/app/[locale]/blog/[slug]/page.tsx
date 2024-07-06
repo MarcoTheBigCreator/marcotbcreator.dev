@@ -64,7 +64,7 @@ export default function Blog({ params }: Props) {
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="rgb(109, 40, 217)"
       />
-      <div className="lg:max-w-5xl bg-neutral-900 border-[1px] border-white/20 rounded-2xl lg:rounded-3xl mx-4 pt-4 p-2 pb-4 lg:p-12 relative z-10 w-full my-16">
+      <div className="lg:max-w-5xl bg-neutral-900 border-[1px] border-white/20 rounded-2xl lg:rounded-3xl mx-4 py-10 p-4 lg:p-12 relative z-10 w-full my-16">
         <div className="mb-4">
           <BackButton path="/#portfolio" message={titles('back')} />
         </div>
