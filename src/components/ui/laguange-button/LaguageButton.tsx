@@ -10,18 +10,25 @@ interface Props {
   href: string;
 }
 
+const updateLocaleUrl = (currentPath: string, href: string) => {
+  const newPath =
+    currentPath.startsWith('/en') || currentPath.startsWith('/es')
+      ? currentPath.substring(3)
+      : currentPath;
+
+  const hash = typeof window !== 'undefined' ? window.location.hash : '';
+
+  return `${href}${newPath}${hash}`;
+};
+
 export const LanguageButton = ({ icon, text, href }: Props) => {
   const router = useRouter();
   const pathname = usePathname();
 
   const onHandleLocale = (href: string) => {
-    const currentPath = pathname;
-    const newUrl = `${href}${
-      currentPath.startsWith('/en') || currentPath.startsWith('/es')
-        ? currentPath.substring(3)
-        : currentPath
-    }`;
+    const newUrl = updateLocaleUrl(pathname, href);
     router.replace(newUrl);
+    router.refresh();
   };
 
   return (
@@ -38,7 +45,6 @@ export const LanguageButton = ({ icon, text, href }: Props) => {
 export const LanguageButtonMobile = ({ icon, text, href }: Props) => {
   const router = useRouter();
   const pathname = usePathname();
-
   const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);
 
   useEffect(() => {
@@ -46,12 +52,7 @@ export const LanguageButtonMobile = ({ icon, text, href }: Props) => {
   }, [isSideMenuOpen]);
 
   const onHandleLocaleMobile = (href: string) => {
-    const currentPath = pathname;
-    const newUrl = `${href}${
-      currentPath.startsWith('/en') || currentPath.startsWith('/es')
-        ? currentPath.substring(3)
-        : currentPath
-    }`;
+    const newUrl = updateLocaleUrl(pathname, href);
     useUIStore.setState({ isSideMenuOpen: false });
     router.replace(newUrl);
   };
