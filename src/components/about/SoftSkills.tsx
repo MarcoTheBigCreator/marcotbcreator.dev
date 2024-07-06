@@ -1,5 +1,5 @@
-import { titleFont } from '@/config/fonts';
 import { useTranslations } from 'next-intl';
+import { titleFont } from '@/config';
 
 export const SoftSkills = () => {
   const t = useTranslations();

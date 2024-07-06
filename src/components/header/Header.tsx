@@ -1,6 +1,5 @@
-import { Spotlight } from '../ui/spotlight-effect/Spotlight';
-import { HeaderTitle, TextGenerateEffect } from '@/components';
 import { useTranslations } from 'next-intl';
+import { HeaderTitle, Spotlight, TextGenerateEffect } from '@/components';
 
 export const Header = () => {
   const description = useTranslations('headerInfo');

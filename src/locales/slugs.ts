@@ -1,6 +1,7 @@
 export const allowedSlugs = [
   'teslo-shop',
-  'mtbc-portfolio',
+  'mtbchat',
   'crummy-music-discord-bot',
   'puppys-pet',
+  'mtbc-portfolio',
 ];

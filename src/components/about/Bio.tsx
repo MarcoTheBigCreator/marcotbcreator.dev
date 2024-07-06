@@ -1,4 +1,4 @@
-import { titleFont } from '@/config/fonts';
+import { titleFont } from '@/config';
 import { useTranslations } from 'next-intl';
 
 interface BioInfo {

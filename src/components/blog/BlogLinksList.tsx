@@ -1,5 +1,5 @@
-import { titleFont } from '@/config/fonts';
 import Link from 'next/link';
+import { titleFont } from '@/config';
 
 interface Props {
   technologies: string;

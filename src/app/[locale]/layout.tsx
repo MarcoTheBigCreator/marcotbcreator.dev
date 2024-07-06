@@ -1,11 +1,10 @@
-import type { Metadata } from 'next';
-import { poppins } from '@/config/fonts';
 import './globals.css';
-import { Footer, Navbar } from '@/components';
-import { MobileMenu } from '@/components/ui/mobile-menu/MobileMenu';
+import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import { useTranslations } from 'next-intl';
+import { NextIntlClientProvider, useTranslations } from 'next-intl';
+import { Footer, MobileMenu, Navbar } from '@/components';
+import { poppins } from '@/config';
 
 interface RootLayoutProps {
   children: React.ReactNode;
@@ -44,12 +43,14 @@ export default function LocaleLayout({
   return (
     <html lang={locale} className="min-h-screen pt-16 dark">
       <body className={poppins.className}>
-        <Navbar navItems={navItems} href={cvLink} />
-        <MobileMenu navItems={navItems} href={cvLink} />
-        {children}
-        <Footer navItems={navItems} href={cvLink} />
-        <Analytics />
-        <SpeedInsights />
+        <NextIntlClientProvider>
+          <Navbar navItems={navItems} href={cvLink} />
+          <MobileMenu navItems={navItems} href={cvLink} />
+          {children}
+          <Footer navItems={navItems} href={cvLink} />
+          <Analytics />
+          <SpeedInsights />
+        </NextIntlClientProvider>
       </body>
     </html>
   );
