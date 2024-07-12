@@ -17,11 +17,11 @@ export const metadata: Metadata = {
     default: 'Marco Rodriguez',
   },
   description:
-    'Software Engineering graduated from the Polytechnic University of Durango. Tech enthusiast committed to growth. Skilled in front-end development, project leadership, and agile methodologies. A problem solver with clear communication and quick adaptability.',
+    'Software Engineer. Tech enthusiast committed to growth. Skilled in front-end development, project leadership, and agile methodologies. A problem solver with clear communication and quick adaptability.',
   openGraph: {
     title: 'Marco Rodriguez',
     description:
-      'Software Engineering graduated from the Polytechnic University of Durango. Tech enthusiast committed to growth. Skilled in front-end development, project leadership, and agile methodologies. A problem solver with clear communication and quick adaptability.',
+      'Software Engineer. Tech enthusiast committed to growth. Skilled in front-end development, project leadership, and agile methodologies. A problem solver with clear communication and quick adaptability.',
     url: 'https://marcotbcreator.dev/',
     siteName: 'Marco Rodriguez',
     locale: 'en_US',
