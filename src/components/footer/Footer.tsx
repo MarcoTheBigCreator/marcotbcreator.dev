@@ -7,7 +7,6 @@ import { Logo } from '@/components';
 import { titleFont } from '@/config';
 import { IoLogoGithub } from 'react-icons/io5';
 import { TfiLinkedin } from 'react-icons/tfi';
-import { navItemsProps } from '@/interfaces';
 
 export const Footer = ({ navItems }: navItemsProps) => {
   const pathname = usePathname();

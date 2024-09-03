@@ -7,17 +7,7 @@ export const AnimatedTooltip = ({
   items,
   children,
 }: {
-  items: {
-    id: number;
-    name: string;
-    designation?: string;
-    path: string;
-    width?: number;
-    height?: number;
-    priority?: boolean;
-    imageClassName?: string;
-    className?: string;
-  }[];
+  items: TooltipItem[];
   children?: React.ReactNode;
 }) => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);

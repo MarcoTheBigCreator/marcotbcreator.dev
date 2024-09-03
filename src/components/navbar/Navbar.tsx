@@ -13,7 +13,6 @@ import {
 import { useUIStore } from '@/store';
 import { languages } from '@/locales';
 import { titleFont } from '@/config';
-import { navItemsProps } from '@/interfaces';
 import { LanguageButton } from '../ui/language-button/LanguageButton';
 
 export const Navbar = ({ navItems, href }: navItemsProps) => {

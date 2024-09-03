@@ -7,7 +7,6 @@ import clsx from 'clsx';
 import { useUIStore } from '@/store';
 import { LanguageButtonMobile } from '@/components';
 import { languages } from '@/locales';
-import { navItemsProps } from '@/interfaces';
 
 export const MobileMenu = ({ navItems, href }: navItemsProps) => {
   const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);
