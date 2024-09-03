@@ -2,6 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { getTranslations } from 'next-intl/server';
 import { NextIntlClientProvider, useTranslations } from 'next-intl';
 import { Footer, MobileMenu, Navbar } from '@/components';
 import { poppins } from '@/config';
@@ -11,26 +12,59 @@ interface RootLayoutProps {
   params: { locale: string };
 }
 
-export const metadata: Metadata = {
-  title: {
-    template: '%s | Marco Rodriguez',
-    default: 'Marco Rodriguez',
-  },
-  description:
-    'Software Engineer. Tech enthusiast committed to growth. Skilled in front-end development, project leadership, and agile methodologies. A problem solver with clear communication and quick adaptability.',
-  openGraph: {
-    title: 'Marco Rodriguez',
-    description:
-      'Software Engineer. Tech enthusiast committed to growth. Skilled in front-end development, project leadership, and agile methodologies. A problem solver with clear communication and quick adaptability.',
-    url: 'https://marcotbcreator.dev/',
-    siteName: 'Marco Rodriguez',
-    locale: 'en_US',
-    type: 'website',
-    images: [
-      `https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268304/Portfolio/xtyrtmbbmdckey25ek1l.png`,
-    ],
-  },
-};
+export async function generateMetadata(params: {
+  locale: string;
+}): Promise<Metadata> {
+  const { locale } = params;
+
+  const t = await getTranslations({ locale });
+
+  const MetadataTitle = await getTranslations({ locale, namespace: 'title' });
+  const authorsList = t.raw('authors') as { name: string }[];
+  const keywordsList = t.raw('keywords') as string[];
+
+  const openGraphMetadata = await getTranslations({
+    locale,
+    namespace: 'openGraph',
+  });
+  const openGraphImages = openGraphMetadata.raw('images') as string[];
+
+  const twitterMetadata = await getTranslations({
+    locale,
+    namespace: 'twitter',
+  });
+  const twitterImages = twitterMetadata.raw('images') as string[];
+
+  return {
+    title: {
+      template: MetadataTitle('template'),
+      default: MetadataTitle('default'),
+    },
+    description: t('description'),
+    applicationName: t('applicationName'),
+    authors: authorsList,
+    generator: t('generator'),
+    keywords: keywordsList,
+    creator: t('creator'),
+    publisher: t('publisher'),
+    metadataBase: new URL(t('metadataBase')),
+    openGraph: {
+      title: openGraphMetadata('title'),
+      description: openGraphMetadata('description'),
+      url: openGraphMetadata('url'),
+      siteName: openGraphMetadata('siteName'),
+      type: openGraphMetadata('type') as OGtype,
+      locale: openGraphMetadata('locale'),
+      images: openGraphImages,
+    },
+    twitter: {
+      card: twitterMetadata('card') as TwitterCard,
+      title: twitterMetadata('title'),
+      description: twitterMetadata('description'),
+      images: twitterImages,
+    },
+  };
+}
 
 export default function LocaleLayout({
   children,

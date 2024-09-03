@@ -1,4 +1,85 @@
 {
+  "title": {
+    "template": "%s | Marco Rodríguez",
+    "default": "Marco Rodríguez"
+  },
+  "description": "Ingeniero en Software. Entusiasta de la tecnología comprometido con el crecimiento. Hábil en desarrollo front-end, liderazgo de proyectos y metodologías ágiles. Excelente en la resolución de problemas con comunicación clara y rápida adaptabilidad.",
+  "applicationName": "Marco Rodríguez | Portfolio",
+  "authors": [
+    { "name": "Marco Rodríguez" },
+    { "name": "Marcotbcreator" },
+    { "name": "Marco The Big Creator" },
+    { "name": "MTBC" }
+  ],
+  "generator": "Next.js",
+  "keywords": [
+    "Marco Rodríguez",
+    "Marcotbcreator",
+    "Marco The Big Creator",
+    "MTBC",
+    "Portfolio",
+    "Web",
+    "Software",
+    "Ingeniero",
+    "Front-end",
+    "Desarrollador",
+    "Proyectos",
+    "Metodologías Ágiles",
+    "Problemas",
+    "Comunicación",
+    "Adaptabilidad",
+    "UI",
+    "UX",
+    "México",
+    "Teslo Shop",
+    "MTBCHAT",
+    "Crummy Music Discord Bot",
+    "Puppy’s Pet",
+    "MTBC | Portfolio",
+    "Durango",
+    "Universidad Politécnica de Durango",
+    "CBTis 110",
+    "EST 67 \"José Santos Valdés\"",
+    "Talentum Space",
+    "Work Nest Durango",
+    "Gekocards",
+    "Next.js",
+    "TypeScript",
+    "Formik",
+    "Yup",
+    "Cookies",
+    "Drag and Drop",
+    "React",
+    "Sass",
+    "JavaScript",
+    "Postman",
+    "Angular",
+    "CAJA",
+    "Refactorización"
+  ],
+  "creator": "Marco Rodríguez",
+  "publisher": "Marco Rodríguez",
+  "metadataBase": "https://marcotbcreator.dev/es",
+  "openGraph": {
+    "title": "Home | Marco Rodríguez",
+    "description": "Ingeniero en Software. Entusiasta de la tecnología comprometido con el crecimiento. Hábil en desarrollo front-end, liderazgo de proyectos y metodologías ágiles. Excelente en la resolución de problemas con comunicación clara y rápida adaptabilidad.",
+    "url": "https://marcotbcreator.dev/es",
+    "siteName": "Marco Rodríguez | Portfolio",
+    "type": "website",
+    "locale": "es_MX",
+    "images": [
+      "https://res.cloudinary.com/dmlpgks2h/image/upload/v1725402556/Portfolio/x0xk7gmqev7z1kltxicr.png"
+    ]
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Home | Marco Rodríguez",
+    "description": "Ingeniero en Software. Entusiasta de la tecnología comprometido con el crecimiento. Hábil en desarrollo front-end, liderazgo de proyectos y metodologías ágiles. Excelente en la resolución de problemas con comunicación clara y rápida adaptabilidad.",
+    "images": [
+      "https://res.cloudinary.com/dmlpgks2h/image/upload/v1725402556/Portfolio/x0xk7gmqev7z1kltxicr.png"
+    ]
+  },
+
   "titles": {
     "interestTitle": "Intereses",
     "expertiseTitle": "Experiencia",

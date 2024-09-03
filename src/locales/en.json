@@ -1,4 +1,85 @@
 {
+  "title": {
+    "template": "%s | Marco Rodriguez",
+    "default": "Marco Rodriguez"
+  },
+  "description": "Software Engineer. Tech enthusiast committed to growth. Skilled in front-end development, project leadership, and agile methodologies. Excellent at solving problems with clear communication and quick adaptability.",
+  "applicationName": "Marco Rodriguez | Portfolio",
+  "authors": [
+    { "name": "Marco Rodriguez" },
+    { "name": "Marcotbcreator" },
+    { "name": "Marco The Big Creator" },
+    { "name": "MTBC" }
+  ],
+  "generator": "Next.js",
+  "keywords": [
+    "Marco Rodriguez",
+    "Marcotbcreator",
+    "Marco The Big Creator",
+    "MTBC",
+    "Portfolio",
+    "Web",
+    "Software",
+    "Engineer",
+    "Front-end",
+    "Developer",
+    "Projects",
+    "Agile Methodologies",
+    "Problem Solving",
+    "Communication",
+    "Adaptability",
+    "UI",
+    "UX",
+    "Mexico",
+    "Teslo Shop",
+    "MTBCHAT",
+    "Crummy Music Discord Bot",
+    "Puppy’s Pet",
+    "MTBC | Portfolio",
+    "Durango",
+    "Polytechnic University of Durango",
+    "CBTis 110",
+    "EST 67 \"José Santos Valdés\"",
+    "Talentum Space",
+    "Work Nest Durango",
+    "Gekocards",
+    "Next.js",
+    "TypeScript",
+    "Formik",
+    "Yup",
+    "Cookies",
+    "Drag and Drop",
+    "React",
+    "Sass",
+    "JavaScript",
+    "Postman",
+    "Angular",
+    "CAJA",
+    "Refactoring"
+  ],
+  "creator": "Marco Rodriguez",
+  "publisher": "Marco Rodriguez",
+  "metadataBase": "https://marcotbcreator.dev/en",
+  "openGraph": {
+    "title": "Home | Marco Rodriguez",
+    "description": "Software Engineer. Tech enthusiast committed to growth. Skilled in front-end development, project leadership, and agile methodologies. Excellent at solving problems with clear communication and quick adaptability.",
+    "url": "https://marcotbcreator.dev/en",
+    "siteName": "Marco Rodriguez | Portfolio",
+    "type": "website",
+    "locale": "en_US",
+    "images": [
+      "https://res.cloudinary.com/dmlpgks2h/image/upload/v1725402696/Portfolio/peg5pwxr3e0qnvlwmejs.png"
+    ]
+  },
+  "twitter": {
+    "card": "summary_large_image",
+    "title": "Home | Marco Rodriguez",
+    "description": "Software Engineer. Tech enthusiast committed to growth. Skilled in front-end development, project leadership, and agile methodologies. Excellent problem solver with clear communication and quick adaptability.",
+    "images": [
+      "https://res.cloudinary.com/dmlpgks2h/image/upload/v1725402696/Portfolio/peg5pwxr3e0qnvlwmejs.png"
+    ]
+  },
+
   "titles": {
     "interestTitle": "Interests",
     "expertiseTitle": "Expertise",
