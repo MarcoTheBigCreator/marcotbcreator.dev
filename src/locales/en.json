@@ -1,4 +1,38 @@
 {
+  "languageButtonAccessibility": {
+    "changeTo": "Change to "
+  },
+  "navbarAccessibility": {
+    "navigation": "Main navigation",
+    "mobilenavigation": "Mobile navigation",
+    "closeMenu": "Close menu",
+    "openMenu": "Open menu",
+    "goToTop": "Go to top",
+    "goTo": "Go to",
+    "about": "About",
+    "cv": "Download CV",
+    "language": "Change language to"
+  },
+  "aboutAccessibility": {
+    "expertiseHeader": "Expertise",
+    "skillsHeader": "Skills and Soft Skills",
+    "educationHeader": "Education",
+    "experienceHeader": "Experience"
+  },
+  "portfolioAccessibility": {
+    "navigateTo": "Navigate to"
+  },
+  "footerAccessibility": {
+    "goHome": "Return to the homepage",
+    "sendEmail": "Send an email to Marco",
+    "socialMedia": "Social media links",
+    "gitHub": "MarcoTheBigCreator's GitHub profile",
+    "goToTop": "Go to the top of the page",
+    "linkedIn": "Marco Rodríguez's LinkedIn profile",
+    "navigation": "Footer navigation",
+    "navigateTo": "Navigate to"
+  },
+
   "title": {
     "template": "%s | Marco Rodriguez",
     "default": "Marco Rodriguez"
@@ -122,6 +156,7 @@
   "cvLink": "https://res.cloudinary.com/dmlpgks2h/image/upload/fl_attachment/v1724264175/Portfolio/cv-en-marco-rodriguez.pdf",
 
   "headerInfo": {
+    "headerTitle": "Hi, I’m Marco",
     "words": [
       {
         "text": "Hi,"

@@ -8,9 +8,15 @@ export const HeaderTitle = () => {
   const words = t.raw('words');
 
   return (
-    <TypeWriterEffect
-      words={words}
+    <h1
       className={`${titleFont.className} text-white`}
-    />
+      aria-live="polite"
+      aria-label={t('headerTitle')}
+    >
+      <TypeWriterEffect
+        words={words}
+        className={`${titleFont.className} text-white`}
+      />
+    </h1>
   );
 };

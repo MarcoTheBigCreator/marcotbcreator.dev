@@ -14,8 +14,11 @@ import { useUIStore } from '@/store';
 import { languages } from '@/locales';
 import { titleFont } from '@/config';
 import { LanguageButton } from '../ui/language-button/LanguageButton';
+import { useTranslations } from 'next-intl';
 
 export const Navbar = ({ navItems, href }: navItemsProps) => {
+  const t = useTranslations('navbarAccessibility');
+
   const openMenu = useUIStore((state) => state.openSideMenu);
   const closeMenu = useUIStore((state) => state.closeSideMenu);
   const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);
@@ -37,13 +40,16 @@ export const Navbar = ({ navItems, href }: navItemsProps) => {
   };
 
   return (
-    <nav className="grid grid-cols-1 lg:grid-cols-7 gap-4 backdrop-blur-3xl fixed top-0 left-0 right-0 z-50 bg-black opacity-95 p-2 center w-full items-center">
+    <nav
+      className="grid grid-cols-1 lg:grid-cols-7 gap-4 backdrop-blur-3xl fixed top-0 left-0 right-0 z-50 bg-black opacity-95 p-2 center w-full items-center"
+      aria-label={t('navigation')}
+    >
       {/* Mobile Menu */}
       <div className="lg:hidden justify-start transition-all">
         {isSideMenuOpen ? (
           <button
             id="close-menu"
-            aria-label="Close Menu"
+            aria-label={t('closeMenu')}
             onClick={closeMenu}
             className="p-2 text-white font-medium"
           >
@@ -52,7 +58,7 @@ export const Navbar = ({ navItems, href }: navItemsProps) => {
         ) : (
           <button
             id="open-menu"
-            aria-label="Open Menu"
+            aria-label={t('openMenu')}
             onClick={openMenu}
             className="p-2 text-white font-medium"
           >
@@ -68,6 +74,7 @@ export const Navbar = ({ navItems, href }: navItemsProps) => {
           onMouseEnter={() => setIsLogoOnHover('rgb(124,58,237)')}
           onMouseLeave={() => setIsLogoOnHover('white')}
           className={`${titleFont.className} flex text-lg font-semibold gap-2 text-white hover:text-violet-600 transition duration-200 ease-linear`}
+          aria-label={t('goToTop')}
         >
           <Logo width={25} height={25} color={isLogoOnHover} />
           MarcoTheBigCreator
@@ -75,30 +82,38 @@ export const Navbar = ({ navItems, href }: navItemsProps) => {
       </div>
 
       {/* Navigation */}
-      <div className="hidden lg:flex col-span-3 justify-center">
+      <ul className="hidden lg:flex col-span-3 justify-center" role="menu">
         {navItems.map((item) => (
-          <button
-            key={item.name}
-            onClick={() => handleNavigation(item.href)}
-            className="m-2 px-5 p-2 flex align-middle justify-center hover:shadow-[0_6px_20px_rgba(140,0,255,55%)] hover:bg-violet-700 rounded-full text-white font-medium transition duration-200 ease-linear"
-          >
-            {item.name}
-          </button>
+          <li key={item.name} role="none">
+            <button
+              onClick={() => handleNavigation(item.href)}
+              className="m-2 px-5 p-2 flex align-middle justify-center hover:shadow-[0_6px_20px_rgba(140,0,255,55%)] hover:bg-violet-700 rounded-full text-white font-medium transition duration-200 ease-linear"
+              aria-label={`${t('goTo')} ${item.name}`}
+              role="menuitem"
+            >
+              {item.name}
+            </button>
+          </li>
         ))}
-        <Link
-          href={href}
-          className="m-2 p-2 flex align-middle justify-center hover:shadow-[0_6px_20px_rgba(140,0,255,55%)] hover:bg-violet-700 rounded-full text-white font-medium transition duration-200 ease-linear"
-          onMouseEnter={() => setIsResumeOnHover(true)}
-          onMouseLeave={() => setIsResumeOnHover(false)}
-        >
-          {isResumeOnHover ? (
-            <IoDownload size={20} className="mr-1" />
-          ) : (
-            <IoDownloadOutline size={20} className="mr-1" />
-          )}
-          CV
-        </Link>
-      </div>
+        <li role="none">
+          <Link
+            href={href}
+            className="m-2 p-2 flex align-middle justify-center hover:shadow-[0_6px_20px_rgba(140,0,255,55%)] hover:bg-violet-700 rounded-full text-white font-medium transition duration-200 ease-linear"
+            onMouseEnter={() => setIsResumeOnHover(true)}
+            onMouseLeave={() => setIsResumeOnHover(false)}
+            aria-label={t('cv')}
+            role="menuitem"
+            rel="noopener noreferrer"
+          >
+            {isResumeOnHover ? (
+              <IoDownload size={20} className="mr-1" />
+            ) : (
+              <IoDownloadOutline size={20} className="mr-1" />
+            )}
+            CV
+          </Link>
+        </li>
+      </ul>
 
       {/* Resume Button */}
       <div className="hidden lg:flex col-span-2 gap-4 justify-center">
@@ -107,6 +122,7 @@ export const Navbar = ({ navItems, href }: navItemsProps) => {
             key={language.name}
             text={language.name}
             href={language.href}
+            aria-label={`${t('language')} ${language.name}`}
           />
         ))}
       </div>
