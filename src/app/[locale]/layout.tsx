@@ -2,7 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import { getTranslations } from 'next-intl/server';
+import { getMessages, getTranslations } from 'next-intl/server';
 import { NextIntlClientProvider, useTranslations } from 'next-intl';
 import { Footer, MobileMenu, Navbar } from '@/components';
 import { poppins } from '@/config';
@@ -66,18 +66,20 @@ export async function generateMetadata(params: {
   };
 }
 
-export default function LocaleLayout({
+export default async function LocaleLayout({
   children,
   params: { locale },
 }: Readonly<RootLayoutProps>) {
-  const t = useTranslations();
+  const messages = await getMessages();
+
+  const t = await getTranslations();
   const navItems = t.raw('navItems');
   const cvLink = t('cvLink');
 
   return (
     <html lang={locale} className="min-h-screen pt-16 dark">
       <body className={poppins.className}>
-        <NextIntlClientProvider>
+        <NextIntlClientProvider messages={messages}>
           <Navbar navItems={navItems} href={cvLink} />
           <MobileMenu navItems={navItems} href={cvLink} />
           {children}

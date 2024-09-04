@@ -12,7 +12,7 @@ export const Author = ({
   date,
 }: AvatarProps) => {
   return (
-    <Link href={href}>
+    <Link href={href} target="_blank" rel="noopener noreferrer">
       <AnimatedTooltip
         items={[
           {

@@ -33,7 +33,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       images: [`${t('projectImage')}`],
     },
     twitter: {
-      // card: t('card') as TwitterCard,
       title: t('title'),
       description: t('summary'),
       images: [`${t('projectImage')}`],
@@ -49,7 +48,6 @@ export default function Blog({ params }: Props) {
   }
 
   const t = useTranslations(`portfolioBlog.${slug}`);
-
   const titles = useTranslations('titles');
 
   const technologiesList = t.raw('technologies') as link[];
@@ -73,18 +71,23 @@ export default function Blog({ params }: Props) {
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="rgb(109, 40, 217)"
       />
-      <div className="lg:max-w-5xl bg-neutral-900 border-[1px] border-white/20 rounded-2xl lg:rounded-3xl mx-4 py-10 p-4 lg:p-12 relative z-10 w-full my-16">
+      <div
+        className="lg:max-w-5xl bg-neutral-900 border-[1px] border-white/20 rounded-2xl lg:rounded-3xl mx-4 py-10 p-4 lg:p-12 relative z-10 w-full my-16"
+        role="article"
+        aria-labelledby="blog-title"
+      >
         <div className="mb-4">
           <BackButton path="/#portfolio" message={titles('back')} />
         </div>
-        {/* title */}
+        {/* Title */}
         <h1
+          id="blog-title"
           className={`${titleFont.className} text-4xl font-bold text-white drop-shadow-text mb-3 ml-1`}
         >
           {blogData.title}
         </h1>
 
-        {/* author */}
+        {/* Author */}
         <div className="ml-2 mt-4">
           <Author
             id={1}
@@ -97,7 +100,7 @@ export default function Blog({ params }: Props) {
           />
         </div>
 
-        {/* blog image */}
+        {/* Blog Image */}
         <div>
           <Image
             src={blogData.projectImage}
@@ -111,11 +114,12 @@ export default function Blog({ params }: Props) {
 
         {/* Links */}
         <div className="mt-6 md:mt-8">
-          {/* Tecnologies */}
+          {/* Technologies */}
           <div>
             <BlogLinksList
               links={blogData.technologies}
               title={titles('technologies')}
+              aria-label={titles('technologies')}
             />
           </div>
 
@@ -123,13 +127,17 @@ export default function Blog({ params }: Props) {
 
           {/* Links */}
           <div className="my-3">
-            <BlogLinksList links={blogData.links} title={titles('links')} />
+            <BlogLinksList
+              links={blogData.links}
+              title={titles('links')}
+              aria-label={titles('links')}
+            />
           </div>
         </div>
 
         <div className="dashes-bright mt-6 md:mt-8" />
 
-        {/* description */}
+        {/* Description */}
         <div className="mt-6 md:mt-8">
           <pre className={`${poppins.className} text-balance text-gray-300`}>
             {blogData.description}

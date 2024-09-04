@@ -28,10 +28,10 @@ export const TextGenerateEffect = ({
 
   const renderWords = () => {
     return (
-      <motion.div ref={scope}>
+      <motion.div ref={scope} aria-live="polite" aria-label={words}>
         {wordsArray.map((word, idx) => {
           return (
-            <motion.span key={word + idx} className=" text-white opacity-0">
+            <motion.span key={word + idx} className="text-white opacity-0">
               {word}{' '}
             </motion.span>
           );

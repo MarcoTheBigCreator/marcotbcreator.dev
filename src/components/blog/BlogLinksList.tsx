@@ -20,6 +20,7 @@ export const BlogLinksList = ({ links, title }: Props) => {
             <Link
               href={link.link}
               target="_blank"
+              rel="noopener noreferrer"
               className="font-light hover:underline transition duration-200 ease-linear"
             >
               {link.title}

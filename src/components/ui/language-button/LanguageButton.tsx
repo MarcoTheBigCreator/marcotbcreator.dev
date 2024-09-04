@@ -2,12 +2,14 @@
 
 import { useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 import { useUIStore } from '@/store';
 
 interface Props {
   icon?: React.ReactNode;
   text: string;
   href: string;
+  tabIndex?: number; // Agregamos tabIndex como propiedad opcional
 }
 
 const updateLocaleUrl = (currentPath: string, href: string) => {
@@ -21,7 +23,9 @@ const updateLocaleUrl = (currentPath: string, href: string) => {
   return `${href}${newPath}${hash}`;
 };
 
-export const LanguageButton = ({ icon, text, href }: Props) => {
+export const LanguageButton = ({ icon, text, href, tabIndex }: Props) => {
+  const t = useTranslations('languageButtonAccessibility');
+
   const router = useRouter();
   const pathname = usePathname();
 
@@ -34,7 +38,9 @@ export const LanguageButton = ({ icon, text, href }: Props) => {
   return (
     <button
       onClick={() => onHandleLocale(href)}
+      tabIndex={tabIndex}
       className="pt-3 h-12 w-12 flex align-middle justify-center shadow-[0_5px_15px_1px_rgb(140,0,255,55%)] hover:shadow-[0_6px_20px_rgba(140,0,255,30%)] hover:bg-violet-900 bg-violet-700 rounded-full text-white font-semibold lg:font-medium transition duration-200 ease-linear"
+      aria-label={`${t('changeTo')} ${text}`}
     >
       {icon && <span className="mr-1">{icon}</span>}
       {text}
@@ -42,7 +48,9 @@ export const LanguageButton = ({ icon, text, href }: Props) => {
   );
 };
 
-export const LanguageButtonMobile = ({ icon, text, href }: Props) => {
+export const LanguageButtonMobile = ({ icon, text, href, tabIndex }: Props) => {
+  const t = useTranslations('languageButtonAccessibility');
+
   const router = useRouter();
   const pathname = usePathname();
   const isSideMenuOpen = useUIStore((state) => state.isSideMenuOpen);
@@ -60,7 +68,9 @@ export const LanguageButtonMobile = ({ icon, text, href }: Props) => {
   return (
     <button
       onClick={() => onHandleLocaleMobile(href)}
+      tabIndex={tabIndex}
       className="pt-3 h-12 w-12 flex align-middle justify-center shadow-[0_5px_15px_1px_rgb(140,0,255,55%)] hover:shadow-[0_6px_20px_rgba(140,0,255,30%)] hover:bg-violet-900 bg-violet-700 rounded-full text-white font-semibold lg:font-medium transition duration-200 ease-linear"
+      aria-label={`${t('changeTo')} ${text}`}
     >
       {icon && <span className="mr-1">{icon}</span>}
       {text}

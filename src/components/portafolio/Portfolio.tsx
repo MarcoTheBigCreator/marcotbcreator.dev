@@ -6,11 +6,10 @@ import { titleFont } from '@/config';
 
 export function Portfolio() {
   const t = useTranslations();
+  const portfolioAccessibility = useTranslations('portfolioAccessibility');
 
   const portfolioTitle = t('titles.portfolioTitle');
-
   const items = t.raw('portfolioItems.items');
-
   const soonItemTitle = t('soonItem.title');
   const soonItemDescription = t('soonItem.description');
   const soonItemPath = t('soonItem.path');
@@ -22,6 +21,7 @@ export function Portfolio() {
     >
       <h2
         className={`${titleFont.className} text-5xl font-bold mb-7 mt-4 text-white drop-shadow-text justify-center flex`}
+        aria-label={portfolioTitle}
       >
         {portfolioTitle}
       </h2>
@@ -31,6 +31,7 @@ export function Portfolio() {
             href={`/blog/${item.slug}`}
             key={i}
             className="hover:scale-105 ease-linear duration-200"
+            aria-label={`${portfolioAccessibility('navigateTo')} ${item.title}`}
           >
             <BentoGridItem
               title={item.title}
