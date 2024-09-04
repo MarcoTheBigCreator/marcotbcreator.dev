@@ -1,36 +1,42 @@
+import Image from 'next/image';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import Image from 'next/image';
+import { getTranslations } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import { Author, BackButton, BlogLinksList, Spotlight } from '@/components';
 import { poppins, titleFont } from '@/config';
-import { generateBlogMetadata, isSlugAllowed } from '@/utils';
+import { isSlugAllowed } from '@/utils';
 
 interface Props {
-  params: { slug: string };
+  params: { locale: string; slug: string };
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = params;
+  const { slug, locale } = params;
 
-  const blogMetadata = await generateBlogMetadata(slug);
+  const t = await getTranslations({
+    locale,
+    namespace: `portfolioBlog.${slug}`,
+  });
 
   return {
-    metadataBase: new URL(`https://marcotbcreator.dev/en/blog/${slug}`),
-    title: blogMetadata.title,
-    description: blogMetadata.summary,
+    title: t('title'),
+    description: t('summary'),
+    applicationName: t('applicationName'),
+    metadataBase: new URL(t('metadataBase')),
     openGraph: {
-      title: blogMetadata.title,
-      description: blogMetadata.summary,
-      type: 'article',
-      url: `https://marcotbcreator.dev/en/blog/${slug}`,
-      images: [`${blogMetadata.projectImage}`],
+      title: t('title'),
+      description: t('summary'),
+      url: t('metadataBase'),
+      siteName: t('applicationName'),
+      type: t('type') as OGtype,
+      images: [`${t('projectImage')}`],
     },
     twitter: {
-      card: 'summary_large_image',
-      title: blogMetadata.title,
-      description: blogMetadata.summary,
-      images: [`${blogMetadata.projectImage}`],
+      // card: t('card') as TwitterCard,
+      title: t('title'),
+      description: t('summary'),
+      images: [`${t('projectImage')}`],
     },
   };
 }
