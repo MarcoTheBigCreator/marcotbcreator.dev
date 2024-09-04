@@ -1,36 +1,42 @@
+import Image from 'next/image';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import Image from 'next/image';
+import { getTranslations } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
 import { Author, BackButton, BlogLinksList, Spotlight } from '@/components';
 import { poppins, titleFont } from '@/config';
-import { generateBlogMetadata, isSlugAllowed } from '@/utils';
+import { isSlugAllowed } from '@/utils';
 
 interface Props {
-  params: { slug: string };
+  params: { locale: string; slug: string };
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug } = params;
+  const { slug, locale } = params;
 
-  const blogMetadata = await generateBlogMetadata(slug);
+  const t = await getTranslations({
+    locale,
+    namespace: `portfolioBlog.${slug}`,
+  });
 
   return {
-    metadataBase: new URL(`https://marcotbcreator.dev/en/blog/${slug}`),
-    title: blogMetadata.title,
-    description: blogMetadata.summary,
+    title: t('title'),
+    description: t('summary'),
+    applicationName: t('applicationName'),
+    metadataBase: new URL(t('metadataBase')),
     openGraph: {
-      title: blogMetadata.title,
-      description: blogMetadata.summary,
-      type: 'article',
-      url: `https://marcotbcreator.dev/en/blog/${slug}`,
-      images: [`${blogMetadata.projectImage}`],
+      title: t('title'),
+      description: t('summary'),
+      url: t('metadataBase'),
+      siteName: t('applicationName'),
+      type: t('type') as OGtype,
+      images: [`${t('projectImage')}`],
     },
     twitter: {
-      card: 'summary_large_image',
-      title: blogMetadata.title,
-      description: blogMetadata.summary,
-      images: [`${blogMetadata.projectImage}`],
+      // card: t('card') as TwitterCard,
+      title: t('title'),
+      description: t('summary'),
+      images: [`${t('projectImage')}`],
     },
   };
 }
@@ -46,7 +52,10 @@ export default function Blog({ params }: Props) {
 
   const titles = useTranslations('titles');
 
-  const BlogData = {
+  const technologiesList = t.raw('technologies') as link[];
+  const linksList = t.raw('links') as link[];
+
+  const blogData: BlogData = {
     title: t('title'),
     author: t('author'),
     authorImage: t('authorImage'),
@@ -54,8 +63,8 @@ export default function Blog({ params }: Props) {
     lastUpdateDate: t('lastUpdateDate'),
     projectImage: t('projectImage'),
     description: t('description'),
-    technologies: t('technologies'),
-    links: t('links'),
+    technologies: technologiesList,
+    links: linksList,
   };
 
   return (
@@ -72,27 +81,27 @@ export default function Blog({ params }: Props) {
         <h1
           className={`${titleFont.className} text-4xl font-bold text-white drop-shadow-text mb-3 ml-1`}
         >
-          {BlogData.title}
+          {blogData.title}
         </h1>
 
         {/* author */}
         <div className="ml-2 mt-4">
           <Author
             id={1}
-            src={BlogData.authorImage}
+            src={blogData.authorImage}
             tooltipMessage="Check out my GitHub"
-            name={BlogData.author}
-            href={BlogData.authorGithub}
+            name={blogData.author}
+            href={blogData.authorGithub}
             title={titles('lastUpdate')}
-            date={BlogData.lastUpdateDate}
+            date={blogData.lastUpdateDate}
           />
         </div>
 
         {/* blog image */}
         <div>
           <Image
-            src={BlogData.projectImage}
-            alt={`${BlogData.title} - Project Image`}
+            src={blogData.projectImage}
+            alt={`${blogData.title} - Project Image`}
             width={1920}
             height={1080}
             quality={100}
@@ -105,7 +114,7 @@ export default function Blog({ params }: Props) {
           {/* Tecnologies */}
           <div>
             <BlogLinksList
-              technologies={BlogData.technologies}
+              links={blogData.technologies}
               title={titles('technologies')}
             />
           </div>
@@ -114,10 +123,7 @@ export default function Blog({ params }: Props) {
 
           {/* Links */}
           <div className="my-3">
-            <BlogLinksList
-              technologies={BlogData.links}
-              title={titles('links')}
-            />
+            <BlogLinksList links={blogData.links} title={titles('links')} />
           </div>
         </div>
 
@@ -126,7 +132,7 @@ export default function Blog({ params }: Props) {
         {/* description */}
         <div className="mt-6 md:mt-8">
           <pre className={`${poppins.className} text-balance text-gray-300`}>
-            {BlogData.description}
+            {blogData.description}
           </pre>
         </div>
       </div>

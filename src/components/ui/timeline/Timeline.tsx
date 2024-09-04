@@ -1,16 +1,6 @@
 import { titleFont } from '@/config';
 
-interface Props {
-  timelineTitle: string;
-  info: {
-    date: string;
-    title: string;
-    place: string;
-    description: string;
-  }[];
-}
-
-export const Timeline = ({ timelineTitle, info }: Props) => {
+export const Timeline = ({ timelineTitle, info }: TimelineProps) => {
   return (
     <div className="w-full max-w-3xl lg:min-h-[1500px] slg:min-h-[1050px] xl:min-h-[770px]">
       <h2

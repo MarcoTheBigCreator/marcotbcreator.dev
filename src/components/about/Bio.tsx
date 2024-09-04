@@ -1,22 +1,6 @@
 import { titleFont } from '@/config';
 import { useTranslations } from 'next-intl';
 
-interface BioInfo {
-  name: string;
-  profession: string;
-  from: string;
-  live_in: string;
-  age: string;
-}
-
-interface BioInfoTitles {
-  nameTitle: string;
-  professionTitle: string;
-  fromTitle: string;
-  live_inTitle: string;
-  ageTitle: string;
-}
-
 export const Bio = () => {
   const t = useTranslations('bioInfo');
   const bioTitles = useTranslations('bioTitles');

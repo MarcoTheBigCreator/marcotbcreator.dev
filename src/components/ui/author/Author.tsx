@@ -2,15 +2,6 @@ import Link from 'next/link';
 import { AnimatedTooltip } from '../animated-tooltip/AnimatedTooltip';
 import { FormattedDate } from '../formatted-date/FormattedDate';
 
-interface AvatarProps {
-  id: number;
-  src: string;
-  tooltipMessage: string;
-  name: string;
-  href: string;
-  title: string;
-  date: string;
-}
 export const Author = ({
   id,
   src,

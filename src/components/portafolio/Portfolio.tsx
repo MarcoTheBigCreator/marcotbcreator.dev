@@ -4,17 +4,6 @@ import { BentoGrid, BentoGridItem } from '../ui/bento-grid/BentoGrid';
 import { PortfolioImageGrid } from './PortfolioImageGrid';
 import { titleFont } from '@/config';
 
-export interface PortfolioItemsProps {
-  PortfolioItems: PortfolioItem[];
-}
-
-export interface PortfolioItem {
-  title: string;
-  description: string;
-  path: string;
-  slug: string;
-}
-
 export function Portfolio() {
   const t = useTranslations();
 

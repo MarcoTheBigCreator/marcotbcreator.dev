@@ -2,19 +2,11 @@ import Link from 'next/link';
 import { titleFont } from '@/config';
 
 interface Props {
-  technologies: string;
+  links: link[];
   title: string;
 }
 
-export const BlogLinksList = ({ technologies, title }: Props) => {
-  const techList = technologies
-    .split(',')
-    .filter((tech) => tech.trim() !== '')
-    .map((tech) => {
-      const [name, link] = tech.split(';');
-      return { name: name.trim(), link: link.trim() };
-    });
-
+export const BlogLinksList = ({ links, title }: Props) => {
   return (
     <>
       <h3
@@ -22,17 +14,21 @@ export const BlogLinksList = ({ technologies, title }: Props) => {
       >
         {title}
       </h3>
-      <div className="flex flex-wrap gap-1 ml-1 text-gray-300">
-        {techList.map((tech, index) => (
-          <div key={tech.name}>
+      <div className="flex flex-wrap gap-1 ml-1 space-x-1 text-gray-300">
+        {links.map((link, index) => (
+          <div key={link.title}>
             <Link
-              href={tech.link}
+              href={link.link}
               target="_blank"
               className="font-light hover:underline transition duration-200 ease-linear"
             >
-              {tech.name}
+              {link.title}
             </Link>
-            {index !== techList.length - 1 && ' -'}
+            {index !== links.length - 1 && (
+              <>
+                <span className="ml-2">-</span>
+              </>
+            )}
           </div>
         ))}
       </div>

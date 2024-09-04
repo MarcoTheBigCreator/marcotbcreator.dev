@@ -6,24 +6,12 @@ import { titleFont } from '@/config';
 
 let interval: any;
 
-type Card = {
-  id: number;
-  name: string;
-  designation?: string;
-  content: React.ReactNode;
-};
-
 export const CardStack = ({
   items,
   offset,
   scaleFactor,
   title,
-}: {
-  items: Card[];
-  offset?: number;
-  scaleFactor?: number;
-  title: string;
-}) => {
+}: CardStackProps) => {
   const CARD_OFFSET = offset || 10;
   const SCALE_FACTOR = scaleFactor || 0.06;
   const [cards, setCards] = useState<Card[]>(items);
