@@ -287,8 +287,24 @@
       "lastUpdateDate": "2024-08-21",
       "projectImage": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1718305713/Portfolio/y2ryai4ewwmtwjmwlsiv.png",
       "description": "This is an e-commerce functional prototype deployed on Vercel.\n\nI took a NextJs course to enhance my programming skills and knowledge about the technology. NextJs recently introduced significant changes with the new “App Router” version, and this project utilizes version 14 of Next. This allowed me to manage the backend through server actions.\n\nThe project also includes AuthJs for authentication verification and integrates a payment platform with PayPal. For testing purposes, the payment functionality is in sandbox mode. To simulate a payment, use this test account: [ojavio@gmail.com] with the password: 12345678.\n\nFor improved security, all data is verified with the database. Even if a user tries to alter the data, it is retrieved from the backend. For payments, we obtain the status from PayPal APIs. We then save the order status and transaction ID in our database for extra transaction security.\n\nThe database is created and managed through a Prisma schema. This was my first time using this ORM for a PostgreSQL Database. It’s a great technology due to the ease of creating tables and relations needed for an e-commerce platform. It also enhances type security to prevent errors when data is being created or modified. As mentioned earlier, the backend is made through server actions, which were easily implemented thanks to Prisma.\n\nThe website also includes Admin ([test@mail.com] with the password: 123456) sections where users and products can be modified or deleted, making it more complete and scalable.\n\nOther technologies used include Zustand for easy global state management. During development, the database was hosted in a Docker container. The styles were implemented using Tailwind CSS.\n\nIt has a huge focus on UX, implementing button loading animations, toast notifications, and loading skeleton pages using the loading.tsx file that NextJs detects automatically to implement first while the page is getting fully rendered. This project was a significant learning experience. I gained a lot of knowledge about NextJs and its features, such as side rendering, server actions, and options to create dynamic metadata for optimal SEO. These features make this React Framework a good choice for projects like this.",
-      "technologies": "Vercel;https://vercel.com/,Next.js;https://nextjs.org/,Auth.js;https://authjs.dev/,PayPal;https://www.paypal.com/,Prisma;https://www.prisma.io/,PostgreSQL;https://www.postgresql.org/,Zustand;https://zustand-demo.pmnd.rs/,Docker;https://www.docker.com/,Tailwind CSS;https://tailwindcss.com/",
-      "links": "page;https://mtbc-teslo-shop.vercel.app/,repo;https://github.com/MarcoTheBigCreator/teslo-shop",
+      "technologies": [
+        { "title": "Vercel", "link": "https://vercel.com/" },
+        { "title": "Next.js", "link": "https://nextjs.org/" },
+        { "title": "Auth.js", "link": "https://authjs.dev/" },
+        { "title": "PayPal", "link": "https://www.paypal.com/" },
+        { "title": "Prisma", "link": "https://www.prisma.io/" },
+        { "title": "PostgreSQL", "link": "https://www.postgresql.org/" },
+        { "title": "Zustand", "link": "https://zustand-demo.pmnd.rs/" },
+        { "title": "Docker", "link": "https://www.docker.com/" },
+        { "title": "Tailwind CSS", "link": "https://tailwindcss.com/" }
+      ],
+      "links": [
+        { "title": "page", "link": "https://mtbc-teslo-shop.vercel.app/" },
+        {
+          "title": "repo",
+          "link": "https://github.com/MarcoTheBigCreator/teslo-shop"
+        }
+      ],
       "metadataBase": "https://marcotbcreator.dev/es/portfolio/teslo-shop",
       "type": "article",
       "applicationName": "Teslo Shop | Marco Rodriguez"
@@ -302,8 +318,32 @@
       "lastUpdateDate": "2024-08-31",
       "projectImage": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1720071016/Portfolio/rdfhunhsmvub24retvrg.png",
       "description": "A project intended to be fast.\n\nThis is a real-time web chat application with a focus on performance. I remembered one project I made in university similar to this one, consisting of making use of WebSockets. At that time, I just made a simple chat using React and Socket.io, and I got fascinated by the utilities of WebSockets for real-time applications.\n\nSo I thought one day to resume that little project. I started to do some research in order to verify the possibilities of making a web chat using Next.js, which is a framework I consider to have much potential in web performance due to SSR. That’s where I found a channel of a software developer from Germany. The channel is \"Josh tries coding\" and had a video on how to make a real-time chat with Next.js.\n\nMaking a project following a tutorial is controversial because some people say that nobody learns by watching other people coding with no errors and have everything planned doesn’t give you any experience. But in my personal point of view, it would depend more on the creator’s structure of the content than the tutorial itself. In the case of Josh, he explains everything and why he is taking some actions, and during the video, he got errors and explained his failures. He makes diagrams and tries to teach the logic any project needs.\n\nAs engineers or developers, we need to have great planning before starting a project. Making a project from zero, changing and adding features through the development is not the best way to develop any application, and it’s one of the best lessons I took from the channel. The importance of previous planning, diagramming, and even the choice of the stack of technologies to be used is crucial to the correct behavior of our project.\n\nI have enjoyed making this project and now I could amplify a little bit my tech stack because I learned about interesting technologies and services. One of them is Upstash, a serverless data platform to create a database with Redis API. I would lie if I said that now I’m a pro with Redis, but I finally had the chance to meet the technology and see its benefits and cons. Knowing the concepts behind Redis and why it’s so fast, it fits perfectly with the type of application that from the beginning had a performance focus due to being a web chat. The second technology I have a little bit of knowledge of is Pusher. Bi-directional hosted APIs that are flexible and could be scalable. I understood the decision of Joscha to use this and reside on the functionality of Next.js, that division between server and client side which Pusher works similarly to, communicating server and client information, creating an amazing real-time experience on this project. With all of that and some pretty cool styling, we could get a really good web application like this one.\n\nI amplified my tech stack, I kept learning cool styling stuff and gaining experience as a front-end engineer using Next.js. I say this because, during the development of “MTBCHAT,” I had to do some research and adapt some things to the new version of Next.js. At the time of the video, the current version of Next.js was 13, and things like the app routing system file, the server actions, and other features were kind of new or experimental. Now the server actions are stable, and I found some errors due to Next.js interpreting client and server more strictly than at the time of the video. So things like the implementation of an authentication method with Auth.js are different. Some functionalities are now divided into server actions to make the code cleaner, and the styling was modified. Also, a dark mode switcher was added. Some performance changes were also made, all to make this a really professional project.",
-      "technologies": "Vercel;https://vercel.com,Next.js;https://nextjs.org/,Upstash;https://upstash.com/,Redis;https://redis.io/,Pusher;https://pusher.com/,Auth.js;https://authjs.dev/,Tailwind CSS;https://tailwindcss.com/,React;https://reactjs.org/,Socket.io;https://socket.io/",
-      "links": "page;https://mtbchat.vercel.app/,repo;https://github.com/MarcoTheBigCreator/mtbchat,Josh tries coding (channel);https://www.youtube.com/@joshtriedcoding, Josh tries coding (video);https://youtu.be/NlXfg5Pxxh8?si=wA30Af0nRpOYkQS5",
+      "technologies": [
+        { "title": "Vercel", "link": "https://vercel.com" },
+        { "title": "Next.js", "link": "https://nextjs.org/" },
+        { "title": "Upstash", "link": "https://upstash.com/" },
+        { "title": "Redis", "link": "https://redis.io/" },
+        { "title": "Pusher", "link": "https://pusher.com/" },
+        { "title": "Auth.js", "link": "https://authjs.dev/" },
+        { "title": "Tailwind CSS", "link": "https://tailwindcss.com/" },
+        { "title": "React", "link": "https://reactjs.org/" },
+        { "title": "Socket.io", "link": "https://socket.io/" }
+      ],
+      "links": [
+        { "title": "page", "link": "https://mtbchat.vercel.app/" },
+        {
+          "title": "repo",
+          "link": "https://github.com/MarcoTheBigCreator/mtbchat"
+        },
+        {
+          "title": "Josh tries coding (channel)",
+          "link": "https://www.youtube.com/@joshtriedcoding"
+        },
+        {
+          "title": "Josh tries coding (video)",
+          "link": "https://youtu.be/NlXfg5Pxxh8?si=wA30Af0nRpOYkQS5"
+        }
+      ],
       "metadataBase": "https://marcotbcreator.dev/es/portfolio/mtbchat",
       "type": "article",
       "applicationName": "MTBCHAT | Marco Rodriguez"
@@ -332,8 +372,14 @@
       "lastUpdateDate": "2022-11-10",
       "projectImage": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1718305712/Portfolio/zdaqaw5mahyfayct8bkw.png",
       "description": "A project made for friends from another career (Bachelor of Business Administration).\n\nOne day, I received a message from a friend asking me if I had used Wix before. I said no and asked the reason for her question. She explained that her team had to present a webpage for a company for which they had previously created a brand image, defined the objectives, products, and some legal terms. They had to publish all that information on this webpage, which was essentially an e-commerce site. The only requirement was that it needed to be built with Wix.\n\nAs a rookie in web development, I had misconceptions about these kinds of technologies. I mean, the bad reputation a developer gets for using these no-coding tools for making projects. I thought it was terrible even considering the idea of implementing a webpage using Wix. But one of my professors told me that it was somewhat prejudiced to think that way, so I decided to accept the task.\n\nI had no experience at all using Wix, so it was somewhat complex for me to use it. That was ironic, because these tools target people who don’t know anything about coding a webpage and want visual management to create the page they desire. But in my case, I was searching for any option that would allow me to write code, which was not possible. Within days, I started to understand how this tool worked and now that I’m writing this, I look back and notice the simplicity of these tools for some features. The styling is easy with coding or non-coding tools, but aspects like the payment feature, the stock of products, were easier using this tool. For the stock, the page comes with a dashboard where you can personalize the products shown, the content and styles of the page, purchase and connect a domain, the delivery system of the products, SEO recommendations, and even help messages from a chat integrated into the page. Making this possible with coding would of course be possible, but it would cost a lot of time. It would involve an admin dashboard and all those features. That was another point my professor made. Most of the time, these tools help in real situations to save time and help the client understand how the page can be managed with no coding tools.\n\nSo, the products of the new company were added from the dashboard and everything was set up easily thanks to Wix. The payments, if I’m not wrong, are with Stripe and PayPal, and it also offers the possibility to sign up with different providers. But in this case, that feature wasn’t fully applied because a real Stripe account involves real information about the company, which was fictitious.\n\nIt took me some days to achieve the result and the requirements they wanted for their project page, but my friends were satisfied with the final product. The professor congratulated them for the page and, if we think seriously, it has some potential.\n\nIf somebody asks me if I would use Wix again, I would say that it depends on the kind of project and the time I have to make it. After using it, I still feel some limitations creating the pages and some features. I would like to do it myself to have full control of everything, but I have to agree it’s a good tool and as a Software Engineer, I should be open to testing new and different technologies that could be useful one day.",
-      "technologies": "Wix;https://www.wix.com/,Stripe;https://stripe.com/,PayPal;https://www.paypal.com/",
-      "links": "page;https://puppyspett.wixsite.com/my-site-1",
+      "technologies": [
+        { "title": "Wix", "link": "https://www.wix.com/" },
+        { "title": "Stripe", "link": "https://stripe.com/" },
+        { "title": "PayPal", "link": "https://www.paypal.com/" }
+      ],
+      "links": [
+        { "title": "page", "link": "https://puppyspett.wixsite.com/my-site-1" }
+      ],
       "metadataBase": "https://marcotbcreator.dev/es/portfolio/puppys-pet",
       "type": "article",
       "applicationName": "Puppy’s Pet | Marco Rodriguez"
@@ -347,8 +393,30 @@
       "lastUpdateDate": "2024-07-10",
       "projectImage": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1718305713/Portfolio/egomi2se47b2jzzwxf7z.png",
       "description": "One of my first web projects.\n\nNowadays, every professional searching for an opportunity needs to highlight their skills. That’s why I created my portfolio to stand out to future enterprises or recruiters. It started as a class project. Initially, it was made using PHP to show data dynamically from a MySQL database. I could access an admin menu where I could edit or add more information in some areas.\n\nHowever, the service that allowed me to host the PHP project was somewhat expensive. So, I decided to convert everything into a static HTML file to host it on a Github page. I forgot to mention that the styling was made using Bootstrap and some CSS, of course. This worked for a long time, but having all the information in one file made it harder to read and edit. I also noticed many areas for optimization after working with other projects and people who taught me principles about separating content into different components and making my code readable and reusable.\n\nThat’s why I decided in 2024 to revamp my Portfolio (the one you’re viewing right now), fixing all the issues of the first version.\n\nI chose to showcase this simple project to demonstrate my evolution in logic, clean code, and component division. I also incorporated new technologies and libraries that allowed me to improve SEO, speed optimization, and features like internationalization, styling and responsive design\n\nAnyway, this first version could be easily used by anyone who is starting in this world and wants to practice some skills and have a first portfolio.",
-      "technologies": "PHP;https://www.php.net/,MySQL;https://www.mysql.com/,GitHub Pages;https://pages.github.com/,Bootstrap;https://getbootstrap.com/,CSS;https://developer.mozilla.org/en-US/docs/Web/CSS",
-      "links": "page;https://marcothebigcreator.github.io/mtbc-old-portfolio/,repo;https://github.com/MarcoTheBigCreator/mtbc-old-portfolio,new portfolio repo;https://github.com/MarcoTheBigCreator/marcotbcreator.dev",
+      "technologies": [
+        { "title": "PHP", "link": "https://www.php.net/" },
+        { "title": "MySQL", "link": "https://www.mysql.com/" },
+        { "title": "GitHub sitios", "link": "https://sitios.github.com/" },
+        { "title": "Bootstrap", "link": "https://getbootstrap.com/" },
+        {
+          "title": "CSS",
+          "link": "https://developer.mozilla.org/en-US/docs/Web/CSS"
+        }
+      ],
+      "links": [
+        {
+          "title": "page",
+          "link": "https://marcothebigcreator.github.io/mtbc-old-portfolio/"
+        },
+        {
+          "title": "repo",
+          "link": "https://github.com/MarcoTheBigCreator/mtbc-old-portfolio"
+        },
+        {
+          "title": "new portfolio’s repo",
+          "link": "https://github.com/MarcoTheBigCreator/marcotbcreator.dev"
+        }
+      ],
       "metadataBase": "https://marcotbcreator.dev/es/portfolio/mtbc-portfolio",
       "type": "article",
       "applicationName": "MTBC | Portfolio | Marco Rodriguez"
