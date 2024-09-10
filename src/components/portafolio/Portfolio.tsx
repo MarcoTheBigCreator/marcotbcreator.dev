@@ -42,7 +42,8 @@ export function Portfolio() {
             />
           </Link>
         ))}
-        <div>
+        {/* Soon Projects Image Grid */}
+        {/* <div>
           <BentoGridItem
             className="hidden md:flex hover:scale-105 ease-linear duration-200"
             title={soonItemTitle}
@@ -51,7 +52,7 @@ export function Portfolio() {
               <PortfolioImageGrid path={soonItemPath} title={soonItemTitle} />
             }
           />
-        </div>
+        </div> */}
       </BentoGrid>
     </div>
   );

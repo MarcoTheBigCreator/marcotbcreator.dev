@@ -19,11 +19,9 @@
     "educationHeader": "Educación",
     "experienceHeader": "Experiencia"
   },
-
   "portfolioAccessibility": {
     "navigateTo": "Navegar a"
   },
-
   "footerAccessibility": {
     "goHome": "Regresar a la página principal",
     "sendEmail": "Enviar un correo electrónico a Marco",
@@ -288,6 +286,12 @@
         "slug": "mtbchat"
       },
       {
+        "title": "Clarify Landing Page",
+        "description": "Landing page para una aplicación móvil que apoya a personas ciegas, desarrollada con Next.js, Tailwind CSS y Framer Motion para resaltar la accesibilidad y la marca del equipo Clarify.",
+        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1725935716/Portfolio/rnog0gjwluun4pnv8esh.png",
+        "slug": "clarify-landing-page"
+      },
+      {
         "title": "Crummy Music Discord Bot",
         "description": "Un bot de música para Discord fácil de usar que reproduce música en tus servidores. Fácilmente desplegable en Heroku para una configuración rápida y disfrute.",
         "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268305/Portfolio/o1ui7jly1i1ct1kvsucw.png",
@@ -384,6 +388,40 @@
       "metadataBase": "https://marcotbcreator.dev/es/portfolio/mtbchat",
       "type": "article",
       "applicationName": "MTBCHAT | Marco Rodríguez"
+    },
+    "clarify-landing-page": {
+      "title": "Clarify Landing Page",
+      "summary": "Landing page para una aplicación móvil que apoya a personas ciegas, desarrollada con Next.js, Tailwind CSS y Framer Motion para resaltar la accesibilidad y la marca del equipo Clarify.",
+      "author": "Marco Antonio Rodríguez",
+      "authorImage": "https://avatars.githubusercontent.com/u/e?email=marcotbcreator@gmail.com",
+      "authorGithub": "https://github.com/MarcoTheBigCreator",
+      "lastUpdateDate": "2024-09-09",
+      "projectImage": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1725936471/Portfolio/uwga9myx18hhlqxjil7q.png",
+      "description": "Landing page para un equipo que realmente se preocupa por la accesibilidad.\n\nTuve el placer de conocer a los miembros del equipo de Clarify y aprender sobre su increíble idea. Estoy cercano al equipo, por lo que cuando supe que participarían en un torneo regional llamado InnovaTecNM 2024, supe que debía apoyarlos y su proyecto. Fue entonces cuando propuse crear una landing page para reforzar la imagen de su marca y agregar valor para el próximo evento. La líder del equipo, Karely Durán, quedó fascinada con la idea. Ella delineó las secciones que quería para la landing page y proporcionó todos los recursos necesarios, incluido un demo del proyecto, para que fuera visible para todos.\n\nComencé considerando las tecnologías que utilizaría. Una opción era Astro, uno de los frameworks más nuevos para el desarrollo web que creo que se convertirá en un estándar en los próximos años. ¿Por qué? Astro se centra mucho en el rendimiento y la velocidad de carga de las páginas, generando sitios estáticos en tiempo de construcción con JavaScript cero por defecto. Eso es impresionante, pero lo que realmente me sorprendió fue el concepto de \"Islands,\" que permite que diferentes tecnologías coexistan y se comuniquen a través de propiedades. Junto con otras características y funcionalidades, Astro parecía la mejor opción para este proyecto y otros más complejos.\n\nActualmente estoy estudiando el framework Astro, y cuanto más aprendo sobre él, más me encanta. Estoy emocionado por su brillante futuro. Sin embargo, en el momento de este proyecto, solo conocía lo básico de Astro y no estaba seguro de comenzar el proyecto con él. ¿Y si necesitaba aprender algo más? ¿Y si algo no funcionaba correctamente? Si fuera un proyecto personal, podría haber sido más flexible al tomar riesgos, pero esta era una página para un equipo que necesitaba impresionar lo mejor posible a los jueces para ganar esta fase. No habría sido profesional experimentar con tecnologías desconocidas en ese momento.\n\nEntonces, decidí trabajar con las tecnologías que conozco y domino mejor: Next.js. Podría haber usado React y Vite, pero quería usar Next.js, teniendo en cuenta que esta página podría escalar. Con ventajas como el rendimiento de Server Side Rendering, la posibilidad de crear un backend y acciones del servidor en el mismo proyecto, el enrutamiento de la aplicación y el rendimiento amigable para SEO, decidí hacerlo todo con Next.js y desplegar el proyecto en Vercel.\n\nCon Next.js y React como base, elegir Tailwind CSS para los estilos fue una decisión fácil. Dado el tiempo limitado para crear la página, no podía permitirme perder tiempo haciendo estilos desde cero. Además, si necesitaba componentes, hay muchos recursos disponibles con Tailwind. Para hacer la página llamativa, utilicé Framer Motion para las animaciones. Para los íconos, probé Radix UI Icons, ya que me gusta su diseño.\n\nEl stack tecnológico final consistió en Next.js con React y TypeScript, Tailwind CSS para los estilos, Framer Motion para las animaciones y Vercel para el hosting. Dado que el demo del proyecto era bastante pesado, utilicé Cloudinary para el alojamiento de videos. Como un bono adicional, usé Next-intl para internacionalizar la página y llegar a una audiencia más amplia.\n\nComencé buscando inspiración, viendo diseños, creando maquetas y experimentando con una nueva herramienta llamada V0.dev de Vercel. Es una herramienta enfocada en IA para crear componentes UI, y funciona genial para una versión temprana. Adapté algunos componentes que realmente me gustaron, como las tarjetas de los miembros del equipo y la maqueta del teléfono hecha con Tailwind CSS. Con algunas mejoras de estilo, logré el diseño final que quería.\n\nEl resultado es una página minimalista, bellamente animada que ilustra el propósito del equipo. No lo he mencionado antes, pero Clarify es una aplicación móvil construida con Flutter para ayudar a personas discapacitadas, especialmente a aquellas que son ciegas, a hacer que sus teléfonos sean más útiles. La aplicación utiliza IA para detectar objetos en el entorno o documentos y proporciona retroalimentación de voz para que los usuarios sepan qué hay frente a su teléfono. El diseño de la aplicación es minimalista y claro, con botones grandes y un tema claro para resaltar esos botones, lo que facilita que las personas discapacitadas encuentren y usen las opciones. Apliqué estos principios a la landing page, proporcionando características como modo oscuro, contenido simple y legible, internacionalización y subtítulos para el demo.\n\nEste proyecto me enseñó cómo hacer una página verdaderamente accesible usando atributos ARIA y nombrando botones e íconos para mejorar la accesibilidad. Esta accesibilidad también está internacionalizada, por lo que las etiquetas y otros elementos están en el idioma seleccionado para mejorar aún más la experiencia para quienes las necesitan. También aprendí a crear metadatos dinámicos basados en el idioma, desarrollando una solución simple que planeo implementar en otros proyectos, como mi portafolio. A lo largo de este proyecto, me esforcé por hacer que mi código fuera limpio, mantenible, libre de errores, escalable y, lo más importante, accesible.\n\nFue un placer crear este proyecto para el equipo de Clarify. Estoy comprometido con su causa y me alegra ofrecer mis servicios como voluntario para un proyecto tan noble. Espero que esto fortalezca su imagen de marca y aumente su visibilidad. Les deseo la mejor de las suertes.\n\nActualización: Ganaron el tercer lugar en el torneo regional en Monterrey, Nuevo León, México. Han avanzado al torneo nacional. La página recibió muchos elogios, con otros equipos asombrados de que un equipo tuviera su propia página. \"Hermosa\" y \"minimalista\" fueron algunos de los comentarios más repetidos, según Karely Durán. (Actualizaré con los resultados de la fase nacional.)",
+      "technologies": [
+        { "title": "Next.js", "link": "https://nextjs.org/" },
+        { "title": "React", "link": "https://react.dev/" },
+        { "title": "Tailwind CSS", "link": "https://tailwindcss.com/" },
+        { "title": "Framer Motion", "link": "https://www.framer.com/motion/" },
+        { "title": "Vercel", "link": "https://vercel.com/" },
+        { "title": "TypeScript", "link": "https://www.typescriptlang.org/" },
+        { "title": "Cloudinary", "link": "https://cloudinary.com/" },
+        { "title": "Next-intl", "link": "https://next-intl-docs.vercel.app/" }
+      ],
+      "links": [
+        { "title": "página", "link": "https://clarify-page.vercel.app/" },
+        {
+          "title": "repo",
+          "link": "https://github.com/MarcoTheBigCreator/clarify-landing-page"
+        },
+        {
+          "title": "V0 by Vercel",
+          "link": "https://v0.dev/"
+        }
+      ],
+      "metadataBase": "https://marcotbcreator.dev/es/portfolio/clarify-landing-page",
+      "type": "article",
+      "applicationName": "Clarify Landing Page | Marco Rodríguez"
     },
     "crummy-music-discord-bot": {
       "title": "Crummy Music Discord Bot",

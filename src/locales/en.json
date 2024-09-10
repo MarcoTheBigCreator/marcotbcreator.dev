@@ -4,7 +4,7 @@
   },
   "navbarAccessibility": {
     "navigation": "Main navigation",
-    "mobilenavigation": "Mobile navigation",
+    "mobileNavigation": "Mobile navigation",
     "closeMenu": "Close menu",
     "openMenu": "Open menu",
     "goToTop": "Go to top",
@@ -26,9 +26,9 @@
     "goHome": "Return to the homepage",
     "sendEmail": "Send an email to Marco",
     "socialMedia": "Social media links",
-    "gitHub": "MarcoTheBigCreator's GitHub profile",
+    "gitHub": "MarcoTheBigCreator’s GitHub profile",
     "goToTop": "Go to the top of the page",
-    "linkedIn": "Marco Rodríguez's LinkedIn profile",
+    "linkedIn": "Marco Rodríguez’s LinkedIn profile",
     "navigation": "Footer navigation",
     "navigateTo": "Navigate to"
   },
@@ -286,6 +286,12 @@
         "slug": "mtbchat"
       },
       {
+        "title": "Clarify Landing Page",
+        "description": "Landing page for a mobile app that supports blind individuals, developed with Next.js, Tailwind CSS, and Framer Motion to highlight accessibility and Clarify’s brand.",
+        "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1725935716/Portfolio/rnog0gjwluun4pnv8esh.png",
+        "slug": "clarify-landing-page"
+      },
+      {
         "title": "Crummy Music Discord Bot",
         "description": "A user-friendly Discord Music Bot music playback in your servers. Easily deployable on Heroku for quick setup and enjoyment.",
         "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268305/Portfolio/o1ui7jly1i1ct1kvsucw.png",
@@ -308,7 +314,7 @@
 
   "soonItem": {
     "title": "Working on it!",
-    "description": "I'm currently searching for new projects to add to my portfolio. Stay tuned for more updates! 🚀",
+    "description": "I’m currently searching for new projects to add to my portfolio. Stay tuned for more updates! 🚀",
     "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1720147173/Portfolio/tfodpodmv18jjxyjxdg9.png"
   },
 
@@ -383,6 +389,40 @@
       "type": "article",
       "applicationName": "MTBCHAT | Marco Rodriguez"
     },
+    "clarify-landing-page": {
+      "title": "Clarify Landing Page",
+      "summary": "Landing page for a mobile app that supports blind individuals, developed with Next.js, Tailwind CSS, and Framer Motion to highlight accessibility and Clarify’s brand.",
+      "author": "Marco Antonio Rodriguez",
+      "authorImage": "https://avatars.githubusercontent.com/u/e?email=marcotbcreator@gmail.com",
+      "authorGithub": "https://github.com/MarcoTheBigCreator",
+      "lastUpdateDate": "2024-09-09",
+      "projectImage": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1725936471/Portfolio/uwga9myx18hhlqxjil7q.png",
+      "description": "Landing page for a team that really cares about accessibility.\n\nI had the pleasure of meeting the members of Clarify’s team and learning about their incredible idea. I’m close to the team, so when I found out they would participate in a regional tournament called InnovaTecNM 2024, I knew I had to support them and their project. That’s when I proposed creating a landing page to reinforce their brand image and add value for the upcoming event. The team leader, Karely Duran, was fascinated with the idea. She outlined the sections she wanted for the landing page and provided all the necessary resources, including a demo of the project, to make it visible to everyone.\n\nI began by considering the technologies I would use. One option was Astro, one of the newest frameworks for web development that I believe will become a standard in the coming years. Why? Astro focuses heavily on performance and page load speed, generating static sites at build time with zero JavaScript by default. That’s impressive, but what really blew my mind was the concept of \"Islands,\" which allows different technologies to coexist and communicate through properties. Along with other features and functionalities, Astro seemed like the best option for this project and more complex ones.\n\nI’m currently studying the Astro framework, and the more I learn about it, the more I love it. I’m excited about its brilliant future. However, at the time of this project, I only knew the basics of Astro and wasn’t sure about starting the project with it. What if I needed to learn something else? What if something didn’t work properly? If it were a personal project, I might have been more flexible about taking risks, but this was a page for a team that needed to make the best impression on the judges to win this phase. It wouldn’t have been professional to experiment with unfamiliar technologies at that moment.\n\nSo, I decided to work with the technologies I know and master best: Next.js. I could have used React and Vite, but I wanted to use Next.js, keeping in mind that this page could scale. With advantages like Server Side Rendering performance, the possibility of creating a backend and server actions in the same project, app routing, and SEO-friendly performance, I decided to do it all with Next.js and deploy the project on Vercel.\n\nWith Next.js and React as the foundation, choosing Tailwind CSS for styling was an easy decision. Given the limited time for creating the page, I couldn’t afford to lose time making styles from scratch. Also, if I needed components, there are many resources available with Tailwind. To make the page eye-catching, I used Framer Motion for animations. For icons, I tried Radix UI Icons, as I like their design.\n\nThe final tech stack consisted of Next.js with React and TypeScript, Tailwind CSS for styling, Framer Motion for animations, and Vercel for hosting. Since the project demo was quite heavy, I used Cloudinary for video hosting. As an added bonus, I used Next-intl to internationalize the page and reach a broader audience.\n\nI started by seeking inspiration, looking at designs, creating mockups, and experimenting with a new tool called V0.dev from Vercel. It’s an AI-focused tool for creating UI components, and it works great for an early version. I adapted some components I really liked, such as the team member cards and the phone mockup made with Tailwind CSS. With some styling improvements, I achieved the final design I wanted.\n\nThe result is a minimalist, beautifully animated page that illustrates the team’s purpose. I haven’t mentioned it before, but Clarify is a mobile application built with Flutter to help disabled people, especially those who are blind, make their phones more useful. The app uses AI to detect objects in the environment or documents and provides voice feedback so users know what’s in front of their phone. The app’s design is minimalistic and clear, with large buttons and a light theme to highlight those buttons, making it easier for disabled people to find and use options. I applied these principles to the landing page, providing features like dark mode, simple and readable content, internationalization, and subtitles for the demo.\n\nThis project taught me how to make a truly accessible page using ARIA attributes and naming buttons and icons to improve accessibility. This accessibility is also internationalized, so labels and other elements are in the selected language to further enhance the experience for those who need them. I also learned how to create dynamic metadata based on the language, developing a simple solution that I plan to implement in other projects, like my portfolio. Throughout this project, I strived to make my code clean, maintainable, error-free, scalable, and, most importantly, accessible.\n\nIt was a pleasure to create this project for the Clarify team. I’m committed to their cause and glad to volunteer my services for such a noble project. I hope this strengthens their brand image and increases their visibility. I wish them the best of luck.\n\nUpdate: They won 3rd place in the Regional tournament in Monterrey, Nuevo Leon, Mexico. They have advanced to the national tournament. The page received many compliments, with other teams amazed that a team had their own page. \"Beautiful\" and \"minimal\" were some of the most repeated comments, according to Karely Duran. (I will update with the results of the national phase.)",
+      "technologies": [
+        { "title": "Next.js", "link": "https://nextjs.org/" },
+        { "title": "React", "link": "https://react.dev/" },
+        { "title": "Tailwind CSS", "link": "https://tailwindcss.com/" },
+        { "title": "Framer Motion", "link": "https://www.framer.com/motion/" },
+        { "title": "Vercel", "link": "https://vercel.com/" },
+        { "title": "TypeScript", "link": "https://www.typescriptlang.org/" },
+        { "title": "Cloudinary", "link": "https://cloudinary.com/" },
+        { "title": "Next-intl", "link": "https://next-intl-docs.vercel.app/" }
+      ],
+      "links": [
+        { "title": "page", "link": "https://clarify-page.vercel.app/" },
+        {
+          "title": "repo",
+          "link": "https://github.com/MarcoTheBigCreator/clarify-landing-page"
+        },
+        {
+          "title": "V0 by Vercel",
+          "link": "https://v0.dev/"
+        }
+      ],
+      "metadataBase": "https://marcotbcreator.dev/en/portfolio/clarify-landing-page",
+      "type": "article",
+      "applicationName": "Clarify Landing Page | Marco Rodriguez"
+    },
     "crummy-music-discord-bot": {
       "title": "Crummy Music Discord Bot",
       "summary": "A user-friendly Discord Music Bot music playback in your servers. Easily deployable on Heroku for quick setup and enjoyment.",
@@ -392,8 +432,25 @@
       "lastUpdateDate": "2024-07-15",
       "projectImage": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1718305713/Portfolio/vwtm5am8qphcl6u96j8e.png",
       "description": "A Personal Project I started due to a necessity.\n\nProbably one of the social networks I use the most is Discord. That’s where I talk with my friends while we’re playing video games, and one of our favorite things is listening to music. We used to use one of the most famous music bots called Groovy. In our opinion, it was the best music bot due to its simplicity. Other bots required more user actions like choosing the song you wanted to play from several options shown, or sometimes didn’t give the expected results. With Groovy, you put the song or video you want to listen to, and the bot finds it exactly as you wanted. Also, the commands were very simple and did just what was needed. Other bots have several commands and sometimes were difficult to use.\n\nEverything was fine with Groovy, but during the pandemic, when social networks became more popular, something happened. It stopped functioning due to a cease and desist order issued by Google. Groovy was a popular bot that allowed users to play music from YouTube on their Discord servers. However, Google considered that the bot violated YouTube’s terms of service, as it was used to stream music from YouTube without showing ads and, in some cases, allowed users to bypass usage restrictions.\n\nThe Groovy team received the cease and desist notice in August 2021 and announced that the bot would stop working by the end of that month. The decision to shut down Groovy was a direct response to this legal action to avoid further legal issues with Google.\n\nAfter Groovy’s shutdown, other music bots on Discord faced similar situations, such as Rythm, which received a similar order shortly after. This indicates a broader effort by Google to enforce its terms of service and protect its copyrights and advertising revenue sources.\n\nThat was kind of sad for us because music is something essential for us. Several months passed, and we didn’t find a new replacement for Groovy, every bot was worse than the other. Most of them didn’t find the songs we wanted to play.\n\nThat’s when I saw one of my schoolmates making a very basic music Discord bot using Python packages of Discord. So I started to research how to make mine. I found thousands of videos, read the Discord documentation, and I decided to start the creation of my personal Discord Music Bot, keeping in mind the simplicity of Groovy. I wanted to create a bot closest to Groovy called Crummy (an antonym of Groovy).\n\nThat’s where I encountered technologies I didn’t know about such as FFmpeg and yt-dlp. These technologies allowed me to recreate the search functionality of Groovy. yt-dlp is a command-line program used for downloading videos and audio from various websites, including YouTube. It is a fork of the now-discontinued youtube-dl, and it includes several improvements and additional features. Probably it was the same tool Groovy used. But as a personal bot and not public, I wouldn’t have the same problems with Google. Then with FFmpeg, I got the link of the media to be reproduced. That resulted in a very functional bot keeping the simplicity and personal touches for our server.\n\nThe first version was uploaded to GitHub to help other people create a bot from zero. To make this achievable, a lot of work on documentation was done. If you look at the repo, you would see everything explained carefully to make it easier for each kind of audience.\n\nThe second version of the bot came with a lot of surprises, such as performance improvements, error handling, new commands and features, UI improvements using Discord resources, and Heroku option deployment with improvements in the documentation making a trustworthy image of the bot and making it more robust. With these last changes, the bot is near to what Groovy was and that was what I wanted from the beginning. Nowadays, we use that bot mainly. I hosted it myself due to Heroku’s prices (it’s not that expensive though), and we’re happy with it.",
-      "technologies": "Discord;https://discord.com/,Discord Developer Portal;https://discord.com/developers/docs/intro,Groovy;https://groovy.bot/,Python;https://www.python.org/,FFmpeg;https://ffmpeg.org/,yt-dlp;https://github.com/yt-dlp/yt-dlp,GitHub;https://github.com/,Heroku;https://www.heroku.com/",
-      "links": "repo;https://github.com/MarcoTheBigCreator/DiscordMusicBot",
+      "technologies": [
+        { "title": "Discord", "link": "https://discord.com/" },
+        {
+          "title": "Discord Developer Portal",
+          "link": "https://discord.com/developers/docs/intro"
+        },
+        { "title": "Groovy", "link": "https://groovy.bot/" },
+        { "title": "Python", "link": "https://www.python.org/" },
+        { "title": "FFmpeg", "link": "https://ffmpeg.org/" },
+        { "title": "yt-dlp", "link": "https://github.com/yt-dlp/yt-dlp" },
+        { "title": "GitHub", "link": "https://github.com/" },
+        { "title": "Heroku", "link": "https://www.heroku.com/" }
+      ],
+      "links": [
+        {
+          "title": "repo",
+          "link": "https://github.com/MarcoTheBigCreator/DiscordMusicBot"
+        }
+      ],
       "metadataBase": "https://marcotbcreator.dev/es/portfolio/crummy-music-discord-bot",
       "type": "article",
       "applicationName": "Crummy Music Discord Bot | Marco Rodriguez"
