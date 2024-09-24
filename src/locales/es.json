@@ -277,37 +277,43 @@
         "title": "Teslo Shop",
         "description": "Una plataforma de comercio electrónico inspirada en la tienda en línea de Tesla, desarrollada en un curso de Next.js.",
         "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268305/Portfolio/bp0nypegjlbg2mksieuj.png",
-        "slug": "teslo-shop"
+        "slug": "teslo-shop",
+        "lastUpdateDate": "2024-08-21"
       },
       {
         "title": "MTBCHAT",
         "description": "Una aplicación de chat web súper rápida creada con Next.js, Upstash y Pusher, donde puedes comunicarte con tus amigos en tiempo real.",
         "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1720070596/Portfolio/gvojdfxzifvoiv7atb0x.png",
-        "slug": "mtbchat"
+        "slug": "mtbchat",
+        "lastUpdateDate": "2024-08-31"
       },
       {
         "title": "Clarify Landing Page",
         "description": "Landing page para una aplicación móvil que apoya a personas ciegas, desarrollada con Next.js, Tailwind CSS y Framer Motion para resaltar la accesibilidad y la marca del equipo Clarify.",
         "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1725935716/Portfolio/rnog0gjwluun4pnv8esh.png",
-        "slug": "clarify-landing-page"
+        "slug": "clarify-landing-page",
+        "lastUpdateDate": "2024-09-09"
       },
       {
         "title": "Crummy Music Discord Bot",
         "description": "Un bot de música para Discord fácil de usar que reproduce música en tus servidores. Fácilmente desplegable en Heroku para una configuración rápida y disfrute.",
         "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268305/Portfolio/o1ui7jly1i1ct1kvsucw.png",
-        "slug": "crummy-music-discord-bot"
+        "slug": "crummy-music-discord-bot",
+        "lastUpdateDate": "2024-09-24"
       },
       {
         "title": "Puppy’s Pet",
         "description": "Desarrollo de un prototipo de comercio electrónico para el proyecto estudiantil 'LAGE' usando Wix.",
         "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716271056/Portfolio/leiyedeiyhngns2mikna.png",
-        "slug": "puppys-pet"
+        "slug": "puppys-pet",
+        "lastUpdateDate": "2022-11-10"
       },
       {
         "title": "MTBC | Portafolio",
         "description": "Este fue uno de mis primeros proyectos, mi propio portafolio construido con HTML, CSS mejorado con Bootstrap.",
         "path": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1716268305/Portfolio/pdsavuh4dxohvbqhjzbl.png",
-        "slug": "mtbc-portfolio"
+        "slug": "mtbc-portfolio",
+        "lastUpdateDate": "2024-07-10"
       }
     ]
   },
@@ -429,7 +435,7 @@
       "author": "Marco Antonio Rodríguez",
       "authorImage": "https://avatars.githubusercontent.com/u/e?email=marcotbcreator@gmail.com",
       "authorGithub": "https://github.com/MarcoTheBigCreator",
-      "lastUpdateDate": "2024-09-12",
+      "lastUpdateDate": "2024-09-24",
       "projectImage": "https://res.cloudinary.com/dmlpgks2h/image/upload/v1718305713/Portfolio/vwtm5am8qphcl6u96j8e.png",
       "description": "Un proyecto personal que empecé debido a una necesidad.\n\nProbablemente una de las redes sociales que más uso es Discord. Es donde hablo con mis amigos mientras jugamos a videojuegos, y una de nuestras cosas favoritas es escuchar música. Solíamos usar uno de los bots musicales más famosos, llamado Groovy. En nuestra opinión, era el mejor bot musical por su sencillez. Otros bots requerían más acciones por parte del usuario, como elegir la canción que querías reproducir entre varias opciones mostradas, o a veces no daban los resultados esperados. Con Groovy, pones la canción o el vídeo que quieres escuchar y el bot lo encuentra exactamente como querías. Además, los comandos eran muy sencillos y hacían justo lo que se necesitaba. Otros bots tienen varios comandos y a veces eran difíciles de usar.\n\nTodo iba bien con Groovy, pero durante la pandemia, cuando las redes sociales se hicieron más populares, algo ocurrió. Dejó de funcionar debido a una orden de cese y desistimiento emitida por Google. Groovy era un bot muy popular que permitía a los usuarios reproducir música de YouTube en sus servidores de Discord. Sin embargo, Google consideró que el bot violaba las condiciones de servicio de YouTube, ya que se utilizaba para transmitir música de YouTube sin mostrar anuncios y, en algunos casos, permitía a los usuarios saltarse las restricciones de uso.\n\nEl equipo de Groovy recibió el aviso de cese y desistimiento en agosto de 2021 y anunció que el bot dejaría de funcionar a finales de ese mes. La decisión de cerrar Groovy fue una respuesta directa a esta acción legal para evitar más problemas legales con Google.\n\nTras el cierre de Groovy, otros bots musicales de Discord se enfrentaron a situaciones similares, como Rythm, que recibió una orden similar poco después. Esto indica un esfuerzo más amplio por parte de Google para hacer cumplir sus condiciones de servicio y proteger sus derechos de autor y fuentes de ingresos por publicidad.\n\nFue algo triste para nosotros porque la música es algo esencial para nosotros. Pasaron varios meses y no encontrábamos un nuevo sustituto para Groovy, cada bot era peor que el otro. La mayoría no encontraba las canciones que queríamos tocar.\n\nFue entonces cuando vi a uno de mis compañeros de clase haciendo un bot de Discord de música muy básico usando paquetes Python de Discord. Así que empecé a investigar cómo hacer el mío. Encontré miles de videos, leí la documentación de Discord, y decidí comenzar la creación de mi personal Discord Music Bot, teniendo en cuenta la simplicidad de Groovy. Quería crear un bot lo más parecido a Groovy llamado Crummy (un antónimo de Groovy).\n\nAhí es donde me encontré con tecnologías que desconocía como FFmpeg e yt-dlp. Estas tecnologías me permitieron recrear la funcionalidad de búsqueda de Groovy. yt-dlp es un programa de línea de comandos utilizado para descargar vídeos y audio de varios sitios web, incluido YouTube. Es una bifurcación del ya descatalogado youtube-dl, e incluye varias mejoras y características adicionales. Probablemente era la misma herramienta que utilizaba Groovy. Pero al ser un bot personal y no público, no tendría los mismos problemas con Google. Luego, con FFmpeg, conseguí el enlace del medio a reproducir. Eso resultó en un bot muy funcional manteniendo la simplicidad y los toques personales para nuestro servidor.\n\nLa primera versión fue subida a GitHub para ayudar a otras personas a crear un bot desde cero. Para que esto fuera posible, se trabajó mucho en la documentación. Si echas un vistazo a la repo, verás que todo está explicado cuidadosamente para que sea más fácil para cada tipo de público.\n\nLa segunda versión del bot vino con un montón de sorpresas, como mejoras en el rendimiento, gestión de errores, nuevos comandos y características, mejoras en la interfaz de usuario utilizando recursos de Discord, y despliegue de la opción Heroku con mejoras en la documentación dando una imagen de confianza del bot y haciéndolo más robusto. Con estos últimos cambios, el bot está cerca de lo que era Groovy y eso era lo que quería desde el principio. Hoy en día, usamos ese bot principalmente. Lo alojé yo mismo debido a los precios de Heroku (aunque no es tan caro), y estamos contentos con él.",
       "technologies": [
