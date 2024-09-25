@@ -4,6 +4,4 @@ interface AvatarProps {
   tooltipMessage: string;
   name: string;
   href: string;
-  title: string;
-  date: string;
 }

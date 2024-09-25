@@ -16,7 +16,6 @@ export * from './ui/animated-tooltip/AnimatedTooltip';
 export * from './ui/author/Author';
 export * from './ui/back-button/BackButton';
 export * from './ui/bento-grid/BentoGrid';
-export * from './ui/button/Button';
 export * from './ui/formatted-date/FormattedDate';
 export * from './ui/highlight-text/HighlightText';
 export * from './ui/language-button/LanguageButton';

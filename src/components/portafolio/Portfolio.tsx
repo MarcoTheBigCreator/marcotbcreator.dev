@@ -1,3 +1,6 @@
+'use client';
+
+import { useState } from 'react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { BentoGrid, BentoGridItem } from '../ui/bento-grid/BentoGrid';
@@ -7,12 +10,18 @@ import { titleFont } from '@/config';
 export function Portfolio() {
   const t = useTranslations();
   const portfolioAccessibility = useTranslations('portfolioAccessibility');
-
   const portfolioTitle = t('titles.portfolioTitle');
-  const items = t.raw('portfolioItems.items');
-  const soonItemTitle = t('soonItem.title');
-  const soonItemDescription = t('soonItem.description');
-  const soonItemPath = t('soonItem.path');
+  const items = t.raw('portfolioItems.items') as PortfolioItem[];
+  const showMoreAccessibility = useTranslations('showMoreAccessibility');
+
+  const sortedItems = items.sort(
+    (a: PortfolioItem, b: PortfolioItem) =>
+      new Date(b.lastUpdateDate).getTime() -
+      new Date(a.lastUpdateDate).getTime()
+  );
+
+  const [showAll, setShowAll] = useState(false);
+  const displayedItems = showAll ? sortedItems : sortedItems.slice(0, 3);
 
   return (
     <div
@@ -26,7 +35,7 @@ export function Portfolio() {
         {portfolioTitle}
       </h2>
       <BentoGrid className="px-0 md:px-4">
-        {items.map((item: PortfolioItem, i: number) => (
+        {displayedItems.map((item: PortfolioItem, i: number) => (
           <Link
             href={`/blog/${item.slug}`}
             key={i}
@@ -42,18 +51,30 @@ export function Portfolio() {
             />
           </Link>
         ))}
-        {/* Soon Projects Image Grid */}
-        {/* <div>
-          <BentoGridItem
-            className="hidden md:flex hover:scale-105 ease-linear duration-200"
-            title={soonItemTitle}
-            description={soonItemDescription}
-            header={
-              <PortfolioImageGrid path={soonItemPath} title={soonItemTitle} />
-            }
-          />
-        </div> */}
       </BentoGrid>
+
+      {/* Button for displaying all sections */}
+      {sortedItems.length > 3 && (
+        <div className="flex mt-8 justify-center">
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="flex align-middle justify-center shadow-[0_5px_15px_1px_rgb(140,0,255,55%)] hover:shadow-[0_6px_20px_rgba(140,0,255,30%)] hover:bg-violet-800 px-8 py-2 bg-violet-700 rounded-full text-white font-light transition duration-200 ease-linear"
+            aria-label={
+              showAll
+                ? showMoreAccessibility('showLess')
+                : showMoreAccessibility('showAll', { n: sortedItems.length })
+            }
+          >
+            {showAll ? (
+              <p>{showMoreAccessibility('showLess')}</p>
+            ) : (
+              <p>
+                {showMoreAccessibility('showAll')} ({sortedItems.length})
+              </p>
+            )}
+          </button>
+        </div>
+      )}
     </div>
   );
 }

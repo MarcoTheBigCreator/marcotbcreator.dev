@@ -3,7 +3,13 @@ import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
 import { useTranslations } from 'next-intl';
-import { Author, BackButton, BlogLinksList, Spotlight } from '@/components';
+import {
+  Author,
+  BackButton,
+  BlogLinksList,
+  FormattedDate,
+  Spotlight,
+} from '@/components';
 import { poppins, titleFont } from '@/config';
 import { isSlugAllowed } from '@/utils';
 
@@ -55,9 +61,7 @@ export default function Blog({ params }: Props) {
 
   const blogData: BlogData = {
     title: t('title'),
-    author: t('author'),
-    authorImage: t('authorImage'),
-    authorGithub: t('authorGithub'),
+    authors: t.raw('authors'),
     lastUpdateDate: t('lastUpdateDate'),
     projectImage: t('projectImage'),
     description: t('description'),
@@ -87,17 +91,28 @@ export default function Blog({ params }: Props) {
           {blogData.title}
         </h1>
 
-        {/* Author */}
+        {/* Authors*/}
         <div className="ml-2 mt-4">
-          <Author
-            id={1}
-            src={blogData.authorImage}
-            tooltipMessage="Check out my GitHub"
-            name={blogData.author}
-            href={blogData.authorGithub}
-            title={titles('lastUpdate')}
-            date={blogData.lastUpdateDate}
-          />
+          <h3
+            className={`${titleFont.className} text-xl font-bold text-violet-600 drop-shadow-purple mb-2`}
+          >
+            {titles('authors')}
+          </h3>
+          {blogData.authors.map((author, index) => (
+            <Author
+              key={author.name}
+              id={index + 1}
+              src={author.image}
+              tooltipMessage="Check out my GitHub"
+              name={author.name}
+              href={author.github}
+            />
+          ))}
+          {/* Last Update */}
+          <p className="mt-4 text-sm text-gray-300">
+            {titles('lastUpdate')} -{' '}
+            <FormattedDate date={blogData.lastUpdateDate} />
+          </p>
         </div>
 
         {/* Blog Image */}
@@ -108,7 +123,7 @@ export default function Blog({ params }: Props) {
             width={1920}
             height={1080}
             quality={100}
-            className="rounded-2xl mt-5 max-h-[550px] w-full object-cover"
+            className="rounded-2xl mt-4 max-h-[550px] w-full object-cover"
           />
         </div>
 
