@@ -2,9 +2,7 @@ type link = { title: string; link: string };
 
 type BlogData = {
   title: string;
-  author: string;
-  authorImage: string;
-  authorGithub: string;
+  authors: Author[];
   lastUpdateDate: string;
   projectImage: string;
   description: string;

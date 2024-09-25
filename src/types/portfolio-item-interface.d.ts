@@ -3,8 +3,5 @@ interface PortfolioItem {
   description: string;
   path: string;
   slug: string;
-}
-
-interface PortfolioItemsProps {
-  PortfolioItems: PortfolioItem[];
+  lastUpdateDate: string;
 }
