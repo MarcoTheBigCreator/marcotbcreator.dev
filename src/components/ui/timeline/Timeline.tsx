@@ -1,8 +1,8 @@
-import { titleFont } from '@/config';
+import { poppins, titleFont } from '@/config';
 
 export const Timeline = ({ timelineTitle, info }: TimelineProps) => {
   return (
-    <div className="w-full max-w-3xl lg:min-h-[1500px] slg:min-h-[1050px] xl:min-h-[770px]">
+    <div className="w-full max-w-3xl lg:min-h-[1796px] slg:min-h-[1556px] xl:min-h-[1240px]">
       <h2
         className={`${titleFont.className} text-4xl font-bold mb-3 mt-3 text-white drop-shadow-text`}
       >
@@ -22,7 +22,9 @@ export const Timeline = ({ timelineTitle, info }: TimelineProps) => {
               {item.place}
             </div>
           </div>
-          <div className="text-gray-300">{item.description}</div>
+          <pre className={`${poppins.className} text-balance text-gray-300`}>
+            {item.description}
+          </pre>
         </div>
       ))}
     </div>
