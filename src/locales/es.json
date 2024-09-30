@@ -241,19 +241,19 @@
           "date": "2020 - 2024",
           "title": "Licenciatura en Ingeniería de Software",
           "place": "Universidad Politécnica de Durango",
-          "description": "Graduado con altos estándares en desarrollo de software y web, trabajando con diversas tecnologías. Además, he desarrollado habilidades excepcionales en comunicación, presentación e interacción con empresas del mundo real. Formando parte del programa Bilingüe Internacional y Sustentable (BIS), que proporciona un alto nivel de competencia en inglés (B2-C1)."
+          "description": "Graduado con altos estándares en desarrollo de software y web, con experiencia trabajando con una amplia variedad de tecnologías.\n\nHabilidades destacadas:\n- Comunicación efectiva y habilidades de presentación.\n- Interacción y colaboración directa con empresas en proyectos del mundo real.\n\nFormé parte del prestigioso programa Bilingüe Internacional y Sustentable (BIS), que me permitió alcanzar un alto nivel de competencia en inglés, equivalente a B2-C1, asegurando un dominio profesional del idioma."
         },
         {
           "date": "2017 - 2020",
           "title": "Técnico en Soporte y Mantenimiento de Equipo de Cómputo",
           "place": "CBTis 110",
-          "description": "He adquirido amplios conocimientos en reparación de computadoras, proporcionando soporte y gestión de clientes. Además, poseo un sólido entendimiento de los fundamentos de redes."
+          "description": "He adquirido amplios conocimientos en reparación de computadoras, proporcionando un servicio integral de soporte técnico y gestión de clientes.\n\nHabilidades destacadas:\n- Diagnóstico y reparación de hardware y software.\n- Atención personalizada a clientes, asegurando una rápida resolución de problemas.\n\nAdemás, poseo un sólido entendimiento de los fundamentos de redes, incluyendo la configuración, mantenimiento y resolución de problemas de conectividad."
         },
         {
           "date": "2014 - 2017",
           "title": "Certificado de Educación Secundaria",
           "place": "EST 67 \"José Santos Valdés\"",
-          "description": "Participé en un taller de computación con énfasis en robótica. Como parte de este programa, participé en numerosos torneos de VEX IQ, incluidos dos nacionales, y clasifiqué para varios campeonatos mundiales."
+          "description": "Participé en un taller de computación especializado en robótica, donde adquirí habilidades en programación y diseño de robots.\n\nLogros destacados:\n- Participación en numerosos torneos de VEX IQ, incluyendo dos competiciones a nivel nacional.\n- Clasificación para varios campeonatos mundiales, demostrando un alto nivel de competencia y trabajo en equipo.\n\nEste taller me permitió desarrollar habilidades técnicas y fortalecer mi capacidad para resolver problemas en entornos de alta presión."
         }
       ]
     },
@@ -264,13 +264,13 @@
           "date": "2023 - 2024",
           "title": "Desarrollador Front-end",
           "place": "Talentum Space",
-          "description": "Trabajé en el proyecto Gekocards usando Next.js con TypeScript para generar imágenes basadas en IA para invitaciones a eventos únicos. Las tareas incluyeron la creación de formularios con Formik y Yup, la gestión de cookies, la implementación de la funcionalidad de arrastrar y soltar imágenes, y asegurar la UI/UX y la capacidad de respuesta. Durante las prácticas profesionales en Talentum, contribuí creando componentes, pantallas y puntos finales de conexión para una nueva plataforma educativa. La plataforma ayuda a los mexicanos a prepararse para entrevistas de trabajo en el extranjero usando React, Sass, JavaScript y Postman para pruebas de endpoints."
+          "description": "Trabajé en el proyecto Gekocards usando Next.js con TypeScript para generar imágenes basadas en IA para invitaciones a eventos únicos.\n\nTareas realizadas en Gekocards:\n- Creación de formularios utilizando Formik y Yup.\n- Gestión de cookies para la personalización y experiencia del usuario.\n- Implementación de la funcionalidad de arrastrar y soltar imágenes.\n- Aseguramiento de la UI/UX y la capacidad de respuesta en dispositivos móviles.\n\nDurante las prácticas profesionales en Talentum, contribuí creando componentes, pantallas y puntos finales de conexión para una nueva plataforma educativa. La plataforma ayuda a los mexicanos a prepararse para entrevistas de trabajo en el extranjero.\n\nTareas realizadas en Talentum Space:\n- Creación de componentes reutilizables y pantallas funcionales.\n- Desarrollo de puntos finales de conexión (endpoints) para la interacción con la base de datos.\n- Pruebas de API utilizando Postman."
         },
         {
           "date": "2022 - 2023",
           "title": "Desarrollador Front-end y Gestión de Proyectos",
           "place": "Work Nest Durango",
-          "description": "Participé dos estancias en una orgullosa empresa mexicana. Durante la primera pasantía, participé en la refactorización del sistema 'CAJA', utilizado por municipios en México para diversos procesos. Las actividades incluyeron entrenamiento con el Framework Angular y el sistema 'CAJA', manteniendo comunicación constante con el equipo, y contribuyendo con ideas y sugerencias. Rediseñé las vistas del sistema para mejorar la capacidad de respuesta, la UI/UX y la estética, y refactoricé los módulos de soporte. En el segundo periodo de prácticas, gestioné tareas administrativas como la organización de la documentación, la creación de plantillas de prueba y artefactos, y la facilitación de reuniones de desarrolladores para realizar un seguimiento del progreso."
+          "description": "Participé en dos estancias en una orgullosa empresa mexicana.\n\nDurante la primera estancia, participé en la refactorización del sistema 'CAJA', utilizado por municipios en México para diversos procesos.\n\nTareas realizadas en la primera estancia:\n- Entrenamiento con el Framework Angular y el sistema 'CAJA'.\n- Mantenimiento de comunicación constante con el equipo.\n- Contribución con ideas y sugerencias para mejorar el sistema.\n- Rediseño de las vistas del sistema para mejorar la capacidad de respuesta, la UI/UX y la estética.\n- Refactorización de los módulos de soporte.\n\nEn el segundo periodo de prácticas, gestioné tareas administrativas.\n\nTareas realizadas en la segunda estancia:\n- Organización de la documentación.\n- Creación de plantillas de prueba y artefactos.\n- Facilitación de reuniones de desarrolladores para realizar un seguimiento del progreso."
         }
       ]
     }
