@@ -180,8 +180,8 @@
     "name": "Marco Antonio Rodríguez Arreola",
     "profession": "Ingeniero-de Software",
     "from": "Durango, México",
-    "live_in": "Durango, México",
-    "age": "22",
+    "live_in": "Ciudad de México, México",
+    "age": "22 años",
     "interests": [
       "Entrenamiento físico",
       "Música",
@@ -261,6 +261,12 @@
       "title": "Experiencia",
       "info": [
         {
+          "date": "Presente",
+          "title": "Ingeniero en Software Asociado",
+          "place": "Oliver Wyman",
+          "description": "Comencé esta posición el 19 de noviembre de 2024, en la Ciudad de México, y estoy emocionado de ser parte del equipo. Actualmente estoy trabajando en el desarrollo de una nueva plataforma para la empresa, utilizando Angular, Nest y TypeScript. También estoy aprendiendo sobre las metodologías y herramientas de la empresa para asegurar el éxito del proyecto."
+        },
+        {
           "date": "2023 - 2024",
           "title": "Desarrollador Front-end",
           "place": "Talentum Space",
@@ -268,7 +274,7 @@
         },
         {
           "date": "2022 - 2023",
-          "title": "Desarrollador Front-end y Gestión de Proyectos",
+          "title": "Desarrollador Front-end y Gestor de Proyectos",
           "place": "Work Nest Durango",
           "description": "Participé en dos estancias en una orgullosa empresa mexicana.\n\nDurante la primera estancia, participé en la refactorización del sistema 'CAJA', utilizado por municipios en México para diversos procesos.\n\nTareas realizadas en la primera estancia:\n- Entrenamiento con el Framework Angular y el sistema 'CAJA'.\n- Mantenimiento de comunicación constante con el equipo.\n- Contribución con ideas y sugerencias para mejorar el sistema.\n- Rediseño de las vistas del sistema para mejorar la capacidad de respuesta, la UI/UX y la estética.\n- Refactorización de los módulos de soporte.\n\nEn el segundo periodo de prácticas, gestioné tareas administrativas.\n\nTareas realizadas en la segunda estancia:\n- Organización de la documentación.\n- Creación de plantillas de prueba y artefactos.\n- Facilitación de reuniones de desarrolladores para realizar un seguimiento del progreso."
         }

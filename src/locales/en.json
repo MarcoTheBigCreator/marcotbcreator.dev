@@ -180,8 +180,8 @@
     "name": "Marco Antonio Rodriguez Arreola",
     "profession": "Software-Engineer",
     "from": "Durango, Mexico",
-    "live_in": "Durango, Mexico",
-    "age": "22",
+    "live_in": "Mexico City, Mexico",
+    "age": "22 years old",
     "interests": [
       "Physical training",
       "Music",
@@ -260,6 +260,12 @@
     "experience": {
       "title": "Experience",
       "info": [
+        {
+          "date": "Present",
+          "title": "Associate Software Engineer",
+          "place": "Oliver Wyman",
+          "description": "I started this position on November 19th, 2024, in Mexico City, and I'm excited to be part of the team. I'm currently working on the development of a new platform for the company, using Angular, Nest, and TypeScript. I'm also learning about the company's methodologies and tools to ensure the success of the project."
+        },
         {
           "date": "2023 - 2024",
           "title": "Front-end Developer",

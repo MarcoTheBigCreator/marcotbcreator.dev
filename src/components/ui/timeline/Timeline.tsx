@@ -2,7 +2,7 @@ import { poppins, titleFont } from '@/config';
 
 export const Timeline = ({ timelineTitle, info }: TimelineProps) => {
   return (
-    <div className="w-full max-w-3xl lg:min-h-[1796px] slg:min-h-[1556px] xl:min-h-[1240px]">
+    <div className="w-full lg:min-h-[2900px] slg:min-h-[2000px] xl:min-h-[1500px]">
       <h2
         className={`${titleFont.className} text-4xl font-bold mb-3 mt-3 text-white drop-shadow-text`}
       >
