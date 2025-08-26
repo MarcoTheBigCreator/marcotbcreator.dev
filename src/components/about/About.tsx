@@ -56,7 +56,7 @@ export const About = () => {
 
       {/* Education and Experience components */}
       <div
-        className="w-full bg-black/[0.96] bg-grid-white/[0.07] antialiased grid grid-cols-1 space-y-6 lg:space-x-6 lg:space-y-0 2xl:space-x-0 lg:grid-cols-2 md:place-items-center p-10 xl:px-0 pt-40"
+        className="w-full bg-black/[0.96] bg-grid-white/[0.07] antialiased grid grid-cols-1 space-y-10 lg:space-x-8 lg:space-y-0 lg:grid-cols-2 md:place-items-center p-10 px-16 pt-40"
         aria-labelledby="education-experience-heading"
       >
         <section
