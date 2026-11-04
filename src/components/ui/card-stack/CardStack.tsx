@@ -1,10 +1,8 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
 import { titleFont } from '@/config';
-
-let interval: any;
 
 export const CardStack = ({
   items,
@@ -16,29 +14,34 @@ export const CardStack = ({
   const SCALE_FACTOR = scaleFactor || 0.06;
   const [cards, setCards] = useState<Card[]>(items);
 
-  useEffect(() => {
-    startFlipping();
+  const intervalRef = useRef<ReturnType<typeof setInterval> | null>(null);
 
-    return () => clearInterval(interval);
-  }, []);
-
-  const startFlipping = () => {
-    interval = setInterval(() => {
-      setCards((prevCards: Card[]) => {
-        const newArray = [...prevCards];
-        newArray.unshift(newArray.pop()!);
-        return newArray;
+  const startFlipping = useCallback(() => {
+    if (intervalRef.current !== null) clearInterval(intervalRef.current);
+    intervalRef.current = setInterval(() => {
+      setCards((previous) => {
+        if (previous.length < 2) return previous;
+        const next = [...previous];
+        next.unshift(next.pop()!);
+        return next;
       });
     }, 6000);
-  };
+  }, []);
+
+  useEffect(() => {
+    startFlipping();
+    return () => {
+      if (intervalRef.current !== null) clearInterval(intervalRef.current);
+    };
+  }, [startFlipping]);
 
   const flipCardOnClick = (index: number) => {
-    clearInterval(interval);
-    setCards((prevCards: Card[]) => {
-      const newArray = [...prevCards];
-      const card = newArray.splice(index, 1)[0];
-      newArray.push(card);
-      return newArray;
+    setCards((previous) => {
+      if (!previous[index]) return previous;
+      const next = [...previous];
+      const [card] = next.splice(index, 1);
+      next.push(card);
+      return next;
     });
     startFlipping();
   };

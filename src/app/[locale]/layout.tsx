@@ -3,19 +3,22 @@ import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/react';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { getMessages, getTranslations } from 'next-intl/server';
-import { NextIntlClientProvider, useTranslations } from 'next-intl';
+import { hasLocale, NextIntlClientProvider } from 'next-intl';
+import { notFound } from 'next/navigation';
+import { routing } from '@/i18n/routing';
 import { Footer, MobileMenu, Navbar } from '@/components';
 import { poppins } from '@/config';
 
 interface RootLayoutProps {
   children: React.ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }
 
-export async function generateMetadata(params: {
-  locale: string;
-}): Promise<Metadata> {
-  const { locale } = params;
+export async function generateMetadata({
+  params,
+}: RootLayoutProps): Promise<Metadata> {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) notFound();
 
   const t = await getTranslations({ locale });
 
@@ -68,8 +71,10 @@ export async function generateMetadata(params: {
 
 export default async function LocaleLayout({
   children,
-  params: { locale },
+  params,
 }: Readonly<RootLayoutProps>) {
+  const { locale } = await params;
+  if (!hasLocale(routing.locales, locale)) notFound();
   const messages = await getMessages();
 
   const t = await getTranslations();
@@ -79,7 +84,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} className="min-h-screen pt-16 dark">
       <body className={poppins.className}>
-        <NextIntlClientProvider messages={messages}>
+        <NextIntlClientProvider locale={locale} messages={messages}>
           <Navbar navItems={navItems} href={cvLink} />
           <MobileMenu navItems={navItems} href={cvLink} />
           {children}
