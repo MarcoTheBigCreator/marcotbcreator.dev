@@ -2,7 +2,8 @@ import Image from 'next/image';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
-import { useTranslations } from 'next-intl';
+import { hasLocale } from 'next-intl';
+import { routing } from '@/i18n/routing';
 import {
   Author,
   BackButton,
@@ -14,11 +15,12 @@ import { poppins, titleFont } from '@/config';
 import { isSlugAllowed } from '@/utils';
 
 interface Props {
-  params: { locale: string; slug: string };
+  params: Promise<{ locale: string; slug: string }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { slug, locale } = params;
+  const { slug, locale } = await params;
+  if (!hasLocale(routing.locales, locale) || !isSlugAllowed(slug)) notFound();
 
   const t = await getTranslations({
     locale,
@@ -46,15 +48,15 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export default function Blog({ params }: Props) {
-  const { slug } = params;
+export default async function Blog({ params }: Props) {
+  const { slug, locale } = await params;
 
   if (!isSlugAllowed(slug)) {
     notFound();
   }
 
-  const t = useTranslations(`portfolioBlog.${slug}`);
-  const titles = useTranslations('titles');
+  const t = await getTranslations({ locale, namespace: `portfolioBlog.${slug}` });
+  const titles = await getTranslations({ locale, namespace: 'titles' });
 
   const technologiesList = t.raw('technologies') as link[];
   const linksList = t.raw('links') as link[];
